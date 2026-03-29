@@ -1,5 +1,5 @@
 import pandas as pd
-from numpy.linalg import linalg
+import numpy.linalg as linalg
 from sklearn.base import BaseEstimator
 from sklearn.decomposition._pca import PCA
 from sklearn.utils import *

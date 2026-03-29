@@ -127,19 +127,19 @@ if __name__ == "__main__":
     if args['dataset'] == 'mnist':
         net = Mnist_2NN()
         init_img = torch.zeros((1, 1, 28, 28), device=dev)
-        n_comm_rounds = 100
+        n_comm_rounds = 10
         batchsize = 64
 
     elif args['dataset'] == 'emnist':
         net = EMnist_CNN()
         init_img = torch.zeros((1, 1, 28, 28), device=dev)
-        n_comm_rounds = 100
+        n_comm_rounds = 10
         batchsize = 256
 
     elif args['dataset'] == 'cifar10':
         net = ResNet18_cifar10(num_classes=10)
         init_img = torch.zeros((1, 3, 32, 32), device=dev)
-        n_comm_rounds = 100
+        n_comm_rounds = 10
         batchsize = 128
 
     if torch.cuda.device_count() > 1:
