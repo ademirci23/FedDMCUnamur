@@ -1,21 +1,28 @@
 import pandas as pd
 import numpy.linalg as linalg
-from sklearn.base import BaseEstimator
-from sklearn.decomposition._pca import PCA
-from sklearn.utils import *
 import numpy as np
 from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+from sklearn.utils import check_random_state
+from sklearn.utils.validation import check_array
 
 
 def PCA_skl(X, n_components=2, random_state=0):
-    # base = BaseEstimator()
-    X = BaseEstimator()._validate_data(X, accept_sparse=['csr'], ensure_min_samples=2, dtype=[np.float32, np.float64])
+    X = check_array(
+    X,
+    accept_sparse=["csr"],
+    ensure_min_samples=2,
+    dtype=[np.float32, np.float64],
+    )
     random_state = check_random_state(random_state)
-    pca = PCA(n_components=n_components, svd_solver='randomized',
-              random_state=random_state)
-    # print(pca.explained_variance_ratio_)
+    pca = PCA(
+    n_components=n_components,
+    svd_solver="randomized",
+    random_state=random_state,
+    )
     X_embedded = pca.fit_transform(X).astype(np.float32, copy=False)
-    u = pca.fit_transform(X)
+    u = X_embedded.copy()
     return X_embedded, u
 
 
