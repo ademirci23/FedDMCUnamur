@@ -23,7 +23,7 @@ import socket
 import pandas as pd
 import torchvision.models as models
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 
 def get_args():
@@ -33,15 +33,15 @@ def get_args():
     parser.add_argument('--agg_type', type=str, default="pca_hdbscan_b",
                         help="average, multi_krum, auror, foolsgold, FLDetector, pca_kmeans_a,  pca_agglomer_c,"
                              "pca_agglomer_a, pca_hdbscan_b,pca_hdbscan_c")
-    parser.add_argument('-dataset', "--dataset", type=str, default="cifar10", help="mnist,emnist,cifar10")
+    parser.add_argument('-dataset', "--dataset", type=str, default="mnist", help="mnist,emnist,cifar10")
     parser.add_argument('-E', '--epoch', type=int, default=1, help='local train epoch')
     parser.add_argument('--pca_d', type=int, default=10, help='numer of pca descending dimensions')
-    parser.add_argument('-iid', '--IID', type=bool, default=True, help='the way to allocate data to clients')
+    parser.add_argument('-iid', '--IID', type=lambda x: x.lower() == 'true', default=False, help='the way to allocate data to clients (True=IID, False=non-IID with Dirichlet beta)')
     parser.add_argument('--beta', type=float, default=9, help='The parameter for the dirichlet distribution 1,3,5,7,9')
     # parser.add_argument('-B', '--batchsize', type=int, default=256, help='local train batch size')
 
     parser.add_argument('-nc', '--num_of_clients', type=int, default=100, help='numer of the clients')
-    parser.add_argument('-nmc', '--num_malicious_client', type=int, default=45, help='numer of the clients')
+    parser.add_argument('-nmc', '--num_malicious_client', type=int, default=28, help='numer of the clients')
     parser.add_argument('-cf', '--cfraction', type=float, default=1, help='0 means 1 client')
     parser.add_argument('-lr', "--learning_rate", type=float, default=0.01, help="learning rate")
     parser.add_argument('--logdir', type=str, required=False, default="./logs/", help='Log directory path')
@@ -53,6 +53,7 @@ def get_args():
     parser.add_argument('--load_model_round', type=int, default=0, help='how many rounds have executed')
     # parser.add_argument('--load_model_file', type=str, default=r"G:\FL\By-FL\logs\2022-10-22\23.14.05\global_weight\globalmodel.pth", help='the model to load as global model')
     # parser.add_argument('--load_model_round', type=int, default=101, help='how many rounds have executed')
+    parser.add_argument('--tb_port', type=int, default=6008, help='TensorBoard port')
 
     args = parser.parse_args()
     args = args.__dict__
@@ -65,6 +66,7 @@ if __name__ == "__main__":
     args = get_args()
     # os.environ['CUDA_VISIBLE_DEVICES'] = args['gpu']
     dev = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    print(f"\n*** Appareil détecté et utilisé par PyTorch : {dev.type.upper()} ***\n")
 
     # -----------------------配置日志文件，结果保存，以及TensorBoard-----------------------#
     logdir = os.path.join(args['logdir'], str(datetime.datetime.now().strftime("%Y-%m-%d/%H.%M.%S")))
@@ -92,7 +94,7 @@ if __name__ == "__main__":
 
     # initiate TensorBoard for tracking losses and metrics
     writer = SummaryWriter(log_dir=logdir, filename_suffix="info")
-    tb_port = 6007
+    tb_port = args['tb_port']
     tb_host = "127.0.0.1"
     tb_thread = threading.Thread(
         target=launch_tensor_board,
@@ -127,8 +129,8 @@ if __name__ == "__main__":
     if args['dataset'] == 'mnist':
         net = Mnist_2NN()
         init_img = torch.zeros((1, 1, 28, 28), device=dev)
-        n_comm_rounds = 10
-        batchsize = 64
+        n_comm_rounds = 200
+        batchsize = 128
 
     elif args['dataset'] == 'emnist':
         net = EMnist_CNN()
