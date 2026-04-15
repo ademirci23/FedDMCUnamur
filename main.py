@@ -135,8 +135,8 @@ if __name__ == "__main__":
     elif args['dataset'] == 'emnist':
         net = EMnist_CNN()
         init_img = torch.zeros((1, 1, 28, 28), device=dev)
-        n_comm_rounds = 10
-        batchsize = 256
+        n_comm_rounds = 200
+        batchsize = 128
 
     elif args['dataset'] == 'cifar10':
         net = ResNet18_cifar10(num_classes=10)
