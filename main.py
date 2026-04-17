@@ -23,6 +23,7 @@ import socket
 import pandas as pd
 import torchvision.models as models
 
+##version
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 
