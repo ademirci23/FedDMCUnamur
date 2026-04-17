@@ -1,0 +1,9 @@
+hdbscan
+numpy
+pandas
+scikit-learn
+scipy
+matplotlib
+torch
+torchvision
+tensorboard
