@@ -144,11 +144,10 @@ if __name__ == "__main__":
         n_comm_rounds = 10
         batchsize = 128
 
-    if torch.cuda.device_count() > 1:
+    net = net.to(dev)
+    if args['dataset'] != 'mnist' and torch.cuda.device_count() > 1:
         print("Let's use", torch.cuda.device_count(), "GPUs!")
         net = torch.nn.DataParallel(net)
-
-    net = net.to(dev)
     writer.add_graph(net.module if hasattr(net, 'module') else net, init_img)
 
     # 定义损失函数
