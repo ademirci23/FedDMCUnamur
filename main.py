@@ -149,7 +149,7 @@ if __name__ == "__main__":
         net = torch.nn.DataParallel(net)
 
     net = net.to(dev)
-    writer.add_graph(net, init_img)
+    writer.add_graph(net.module if hasattr(net, 'module') else net, init_img)
 
     # 定义损失函数
     loss_func = F.cross_entropy
