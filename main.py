@@ -23,7 +23,7 @@ import socket
 import pandas as pd
 import torchvision.models as models
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 
 def get_args():
