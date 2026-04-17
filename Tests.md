@@ -189,6 +189,9 @@ ASR ≈ 0.34
 TEST 8 :
 
 python main.py --dataset mnist --byz_type Scaling_attack --agg_type pca_hdbscan_b --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+Résultat attendu (Table IV) :
+TACC ≈ 98.06
+ASR ≈ 54.51
 
 [INFO](2026/04/15/ 05:22:12 AM) agg_type: pca_hdbscan_b
 [INFO](2026/04/15/ 05:22:12 AM) [Round: 199] >> Detect_malicious_client: []
@@ -200,6 +203,7 @@ python main.py --dataset mnist --byz_type Scaling_attack --agg_type pca_hdbscan_
 [INFO](2026/04/15/ 05:22:15 AM) [Round: 199] >> Global ASR: 0.902000
 [INFO](2026/04/15/ 05:22:15 AM) [Round: 199] >> Global Model Test accuracy: 0.980957
 [INFO](2026/04/15/ 05:22:15 AM) [Round: 199] >> Global Model Test loss: 0.077808
+asr à 90%, ne match pas bien
 
 RUN 2 : 
 
@@ -213,4 +217,5 @@ RUN 2 :
 [INFO](2026/04/15/ 05:22:23 AM) [Round: 199] >> Global ASR: 0.902000
 [INFO](2026/04/15/ 05:22:23 AM) [Round: 199] >> Global Model Test accuracy: 0.982910
 [INFO](2026/04/15/ 05:22:23 AM) [Round: 199] >> Global Model Test loss: 0.086210
-
+asr à 90%, ne match pas bien
+soucis peut venir d'ici : clip_rate = (num_in_comm / len(malicious_clients)) / 2
