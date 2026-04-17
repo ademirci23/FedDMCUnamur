@@ -22,7 +22,8 @@ class client(object):
                         byz_type, num_in_comm):
 
         Net.load_state_dict(global_parameters, strict=True)
-        self.train_DataLoader = DataLoader(self.train_ds, batch_size=localBatchSize, shuffle=True)
+        if self.train_DataLoader is None:
+            self.train_DataLoader = DataLoader(self.train_ds, batch_size=localBatchSize, shuffle=True)
 
         if self.id not in malicious_clients:
             for epoch in range(localEpoch):
