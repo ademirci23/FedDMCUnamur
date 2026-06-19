@@ -176,7 +176,7 @@ def agg_pca_agglomer(client_params, pca_d, round, logdir, dataset):
     if round % 10 == 0:
         fig = plt.figure(figsize=(16, 12))
         dendrogram(linkage_matrix, distance_sort=True, count_sort=True)
-        plt.show()
+        # plt.show()  # disabled: blocks the run; the dendrogram is still saved via savefig below
         mkdirs(logdir + '/tree')
         fig.savefig(logdir + '/tree/agglom_' + str(round) + '.png')
 

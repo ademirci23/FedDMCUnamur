@@ -264,21 +264,19 @@ def computer_defense_acc(detect_malicious_client, malicious_clients, clients_in_
     for client in malicious_clients:
         if client in detect_malicious_client:
             count1 += 1
-
-    if len(malicious_clients) != 0:
-        malicious_precision = count1 / len(malicious_clients)
+    #Inverse Precision-Recall labels        
+    # count1 = true positives (truly-malicious clients that were flagged)
+    # Corrected (the original code swapped these labels):
+    # precision = TP / (all flagged),  recall = TP / (all truly malicious)
+    if len(detect_malicious_client) != 0:
+        malicious_precision = count1 / len(detect_malicious_client)
     else:
         malicious_precision = 1
 
-    count2 = 0
-    for client in detect_malicious_client:
-        if client in malicious_clients:
-            count2 += 1
-
-    if len(detect_malicious_client) != 0:
-        malicious_recall = count1 / len(detect_malicious_client)
+    if len(malicious_clients) != 0:
+        malicious_recall = count1 / len(malicious_clients)
     else:
-        malicious_recall = 0
+        malicious_recall = 1
 
     return defense_acc, malicious_precision, malicious_recall
 

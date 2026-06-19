@@ -60,7 +60,7 @@ class client(object):
 
             local_param = Net.state_dict()
             if byz_type == 'Scaling_attack':
-                clip_rate = (num_in_comm / len(malicious_clients))
+                clip_rate = (num_in_comm / len(malicious_clients))/2
                 for key, var in local_param.items():
                     global_value = global_parameters[key].to(self.dev)
                     new_value = global_value + (var - global_value) * clip_rate
