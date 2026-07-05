@@ -46,8 +46,14 @@ class client(object):
                             label[example_id] = 0
 
                     if byz_type == 'LF_attack':
-                        label = self.nclass - 1 - label
-                        # label = (random.randint(1, self.nclass-1) + label) % self.nclass
+                        # The paper flips each label to a random different one, so I do
+                        # the same here. Adding an offset of 1..nclass-1 (mod nclass) is
+                        # an easy way to make sure the new label is never the old one.
+                        offset = torch.randint(1, self.nclass, label.shape, device=label.device)
+                        label = (label + offset) % self.nclass
+                        # The repo originally just reversed the label (9-l). Left here in
+                        # case I want to compare the two:
+                        # label = self.nclass - 1 - label
 
                     data, label = data.to(self.dev), label.to(self.dev)
 
@@ -60,6 +66,7 @@ class client(object):
 
             local_param = Net.state_dict()
             if byz_type == 'Scaling_attack':
+                # Try Divided by 2 and not divided by 2
                 clip_rate = (num_in_comm / len(malicious_clients))/2
                 for key, var in local_param.items():
                     global_value = global_parameters[key].to(self.dev)
