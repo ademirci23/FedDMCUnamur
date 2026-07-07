@@ -153,7 +153,9 @@ if __name__ == "__main__":
     # 定义损失函数
     loss_func = F.cross_entropy
     lr = args['learning_rate']
-    opti = optim.Adam(net.parameters(), lr=lr)
+    # Testing SGD (the conventional choice) instead of ADAM that was the default in the repo
+    opti = optim.SGD(net.parameters(), lr=lr)
+    # opti = optim.Adam(net.parameters(), lr=lr)  # original repo choice
 
     # 得到全局的参数
     global_parameters = {}
