@@ -1,0 +1,32 @@
+[INFO](2026/03/29/ 09:26:31 PM) ***<host>***
+[INFO](2026/03/29/ 09:26:34 PM) **Basic Setting...
+[INFO](2026/03/29/ 09:26:34 PM) {'debug': False, 'byz_type': 'GS_attack', 'agg_type': 'pca_hdbscan_b', 'dataset': 'mnist', 'epoch': 1, 'pca_d': 10, 'IID': True, 'beta': 9, 'num_of_clients': 20, 'num_malicious_client': 4, 'cfraction': 1, 'learning_rate': 0.01, 'logdir': './logs/', 'datadir': './data/', 'load_model_file': None, 'load_model_round': 0}
+[INFO](2026/03/29/ 09:26:34 PM) **Initializing clients data...
+[INFO](2026/03/29/ 09:26:34 PM) {'client0': [290, 338, 334, 300, 293, 285, 282, 313, 277, 288], 'client1': [300, 345, 294, 286, 306, 259, 291, 327, 302, 290], 'client2': [302, 353, 291, 300, 276, 267, 289, 312, 306, 304], 'client3': [297, 332, 331, 297, 304, 269, 289, 302, 292, 287], 'client4': [305, 358, 308, 298, 278, 269, 302, 307, 287, 288], 'client5': [302, 305, 303, 310, 304, 281, 262, 312, 307, 314], 'client6': [309, 328, 301, 324, 306, 251, 306, 299, 296, 280], 'client7': [292, 350, 293, 309, 270, 273, 313, 295, 320, 285], 'client8': [281, 325, 274, 290, 307, 298, 280, 301, 315, 329], 'client9': [302, 336, 272, 347, 270, 267, 310, 298, 294, 304], 'client10': [293, 328, 278, 319, 279, 260, 326, 299, 305, 313], 'client11': [300, 357, 303, 303, 261, 261, 277, 353, 294, 291], 'client12': [291, 301, 315, 299, 332, 272, 312, 336, 260, 282], 'client13': [292, 325, 284, 331, 307, 298, 269, 299, 276, 319], 'client14': [279, 376, 307, 315, 282, 238, 297, 325, 269, 312], 'client15': [291, 335, 303, 317, 296, 270, 288, 300, 273, 327], 'client16': [302, 367, 288, 303, 268, 249, 298, 343, 287, 295], 'client17': [296, 327, 303, 316, 297, 277, 290, 313, 318, 263], 'client18': [326, 331, 265, 290, 295, 329, 311, 302, 259, 292], 'client19': [273, 325, 311, 277, 311, 248, 326, 329, 314, 286]}
+[INFO](2026/03/29/ 09:26:34 PM) **Initializing nets
+[INFO](2026/03/29/ 09:26:34 PM) **malicious_clients: ['client4', 'client18', 'client2', 'client8']
+[INFO](2026/03/29/ 09:26:34 PM) **malicious_clients: 4 / 20
+[INFO](2026/03/29/ 09:26:34 PM) **Completed...
+[INFO](2026/03/29/ 09:26:34 PM) ----------------------------------------------------------------------------------------------------  Start Training  ----------------------------------------------------------------------------------------------------
+[INFO](2026/03/29/ 09:26:34 PM) **COMMON ROUND:0
+[INFO](2026/03/29/ 09:26:35 PM) [Round: 0 client0] accuracy: 0.886914  loss: 0.360842 | GS_attack
+[INFO](2026/03/29/ 09:26:36 PM) [Round: 0 client1] accuracy: 0.877734  loss: 0.389318 | GS_attack
+[INFO](2026/03/29/ 09:26:37 PM) [Round: 0 client2] accuracy: 0.050977  loss: 2.873734 | GS_attack
+[INFO](2026/03/29/ 09:26:38 PM) [Round: 0 client3] accuracy: 0.890430  loss: 0.357361 | GS_attack
+[INFO](2026/03/29/ 09:26:39 PM) [Round: 0 client4] accuracy: 0.109473  loss: 2.781135 | GS_attack
+[INFO](2026/03/29/ 09:26:40 PM) [Round: 0 client5] accuracy: 0.891602  loss: 0.346890 | GS_attack
+[INFO](2026/03/29/ 09:26:41 PM) [Round: 0 client6] accuracy: 0.900000  loss: 0.329113 | GS_attack
+[INFO](2026/03/29/ 09:26:42 PM) [Round: 0 client7] accuracy: 0.881445  loss: 0.372083 | GS_attack
+[INFO](2026/03/29/ 09:26:43 PM) [Round: 0 client8] accuracy: 0.055859  loss: 2.892877 | GS_attack
+[INFO](2026/03/29/ 09:26:45 PM) [Round: 0 client9] accuracy: 0.881836  loss: 0.374679 | GS_attack
+[INFO](2026/03/29/ 09:26:46 PM) [Round: 0 client10] accuracy: 0.883984  loss: 0.364994 | GS_attack
+[INFO](2026/03/29/ 09:26:47 PM) [Round: 0 client11] accuracy: 0.882227  loss: 0.382313 | GS_attack
+[INFO](2026/03/29/ 09:26:48 PM) [Round: 0 client12] accuracy: 0.872461  loss: 0.404247 | GS_attack
+[INFO](2026/03/29/ 09:26:49 PM) [Round: 0 client13] accuracy: 0.871387  loss: 0.416263 | GS_attack
+[INFO](2026/03/29/ 09:26:50 PM) [Round: 0 client14] accuracy: 0.889063  loss: 0.367166 | GS_attack
+[INFO](2026/03/29/ 09:26:51 PM) [Round: 0 client15] accuracy: 0.877246  loss: 0.382580 | GS_attack
+[INFO](2026/03/29/ 09:26:52 PM) [Round: 0 client16] accuracy: 0.890430  loss: 0.356448 | GS_attack
+[INFO](2026/03/29/ 09:26:53 PM) [Round: 0 client17] accuracy: 0.874512  loss: 0.387361 | GS_attack
+[INFO](2026/03/29/ 09:26:54 PM) [Round: 0 client18] accuracy: 0.063770  loss: 2.697880 | GS_attack
+[INFO](2026/03/29/ 09:26:56 PM) [Round: 0 client19] accuracy: 0.874023  loss: 0.407174 | GS_attack
+[INFO](2026/03/29/ 09:26:56 PM) agg_type: pca_hdbscan_b

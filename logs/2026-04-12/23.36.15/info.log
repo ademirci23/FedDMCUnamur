@@ -1,0 +1,1186 @@
+[INFO](2026/04/12/ 11:36:15 PM) ***<host>***
+[INFO](2026/04/12/ 11:36:18 PM) **Basic Setting...
+[INFO](2026/04/12/ 11:36:18 PM) {'debug': False, 'byz_type': 'LIT_attack', 'agg_type': 'multi_krum', 'dataset': 'mnist', 'epoch': 1, 'pca_d': 10, 'IID': True, 'beta': 5.0, 'num_of_clients': 100, 'num_malicious_client': 28, 'cfraction': 1, 'learning_rate': 0.01, 'logdir': './logs/', 'datadir': './data/', 'load_model_file': None, 'load_model_round': 0, 'tb_port': 6008}
+[INFO](2026/04/12/ 11:36:18 PM) **Initializing clients data...
+[INFO](2026/04/12/ 11:36:18 PM) {'client0': [51, 63, 81, 61, 55, 67, 59, 76, 39, 48], 'client1': [70, 64, 69, 61, 56, 60, 51, 48, 52, 69], 'client2': [50, 69, 55, 61, 62, 46, 71, 69, 61, 56], 'client3': [63, 79, 59, 45, 60, 59, 55, 63, 59, 58], 'client4': [56, 63, 70, 72, 60, 53, 46, 57, 66, 57], 'client5': [65, 56, 62, 52, 67, 58, 59, 59, 58, 64], 'client6': [60, 85, 55, 63, 59, 48, 54, 67, 56, 53], 'client7': [51, 65, 64, 62, 62, 49, 58, 65, 69, 55], 'client8': [69, 59, 61, 52, 59, 52, 59, 65, 67, 57], 'client9': [55, 80, 52, 57, 59, 52, 61, 71, 52, 61], 'client10': [65, 61, 59, 51, 63, 53, 62, 70, 56, 60], 'client11': [63, 88, 53, 50, 46, 55, 53, 65, 65, 62], 'client12': [58, 70, 63, 73, 49, 59, 58, 53, 57, 60], 'client13': [60, 68, 59, 57, 53, 48, 65, 58, 75, 57], 'client14': [56, 66, 57, 69, 65, 52, 51, 66, 53, 65], 'client15': [61, 81, 55, 56, 55, 53, 53, 62, 62, 62], 'client16': [53, 65, 77, 65, 66, 49, 68, 58, 36, 63], 'client17': [63, 62, 72, 56, 63, 56, 53, 53, 74, 48], 'client18': [53, 72, 62, 57, 65, 53, 52, 66, 62, 58], 'client19': [67, 52, 65, 63, 55, 58, 63, 63, 58, 56], 'client20': [53, 70, 61, 64, 60, 55, 59, 63, 63, 52], 'client21': [74, 75, 63, 52, 56, 49, 65, 61, 49, 56], 'client22': [60, 84, 70, 53, 57, 43, 52, 58, 63, 60], 'client23': [58, 62, 61, 65, 58, 61, 60, 66, 51, 58], 'client24': [60, 67, 53, 64, 47, 61, 66, 59, 61, 62], 'client25': [60, 50, 70, 67, 52, 48, 44, 73, 65, 71], 'client26': [56, 63, 61, 65, 64, 64, 51, 77, 53, 46], 'client27': [64, 62, 55, 61, 68, 52, 53, 55, 63, 67], 'client28': [65, 62, 62, 66, 57, 60, 53, 52, 61, 62], 'client29': [57, 68, 55, 51, 63, 57, 61, 55, 65, 68], 'client30': [58, 72, 58, 65, 61, 44, 70, 55, 61, 56], 'client31': [65, 68, 71, 60, 68, 43, 54, 61, 67, 43], 'client32': [65, 55, 58, 71, 52, 60, 62, 62, 62, 53], 'client33': [59, 65, 65, 61, 46, 52, 67, 62, 55, 68], 'client34': [62, 68, 49, 67, 79, 52, 53, 59, 51, 60], 'client35': [47, 90, 60, 59, 57, 54, 65, 52, 62, 54], 'client36': [62, 72, 56, 54, 54, 57, 73, 56, 57, 59], 'client37': [66, 54, 63, 63, 57, 53, 58, 56, 68, 62], 'client38': [59, 69, 49, 70, 54, 53, 61, 65, 68, 52], 'client39': [58, 65, 65, 63, 48, 56, 56, 66, 65, 58], 'client40': [63, 58, 57, 61, 59, 65, 51, 61, 67, 58], 'client41': [46, 79, 56, 53, 73, 52, 55, 63, 63, 60], 'client42': [52, 68, 48, 65, 63, 63, 51, 57, 54, 79], 'client43': [68, 56, 65, 51, 55, 59, 56, 59, 68, 63], 'client44': [52, 64, 48, 60, 57, 59, 67, 61, 63, 69], 'client45': [49, 73, 69, 52, 61, 55, 68, 59, 53, 61], 'client46': [66, 60, 54, 79, 63, 48, 59, 54, 61, 56], 'client47': [60, 63, 55, 75, 49, 56, 64, 59, 61, 58], 'client48': [60, 69, 50, 80, 46, 53, 55, 63, 53, 71], 'client49': [67, 71, 44, 61, 51, 55, 64, 63, 66, 58], 'client50': [62, 73, 65, 52, 45, 47, 77, 60, 52, 67], 'client51': [59, 49, 62, 71, 68, 52, 65, 53, 62, 59], 'client52': [54, 76, 54, 75, 56, 57, 48, 70, 57, 53], 'client53': [60, 53, 37, 68, 59, 55, 71, 68, 66, 63], 'client54': [58, 77, 60, 53, 51, 49, 65, 48, 68, 71], 'client55': [60, 72, 60, 57, 47, 60, 53, 73, 63, 55], 'client56': [63, 59, 61, 60, 71, 51, 62, 71, 45, 57], 'client57': [74, 68, 59, 62, 52, 33, 53, 66, 69, 64], 'client58': [52, 80, 58, 60, 51, 57, 57, 72, 56, 57], 'client59': [51, 78, 65, 64, 40, 60, 52, 71, 61, 58], 'client60': [63, 54, 54, 67, 68, 57, 66, 61, 45, 65], 'client61': [53, 53, 59, 61, 74, 61, 62, 70, 55, 52], 'client62': [57, 68, 68, 64, 67, 41, 56, 65, 52, 62], 'client63': [58, 62, 69, 48, 67, 56, 70, 61, 59, 50], 'client64': [60, 64, 65, 59, 56, 57, 58, 79, 49, 53], 'client65': [58, 70, 55, 62, 64, 57, 57, 69, 55, 53], 'client66': [55, 68, 64, 56, 63, 68, 49, 68, 48, 61], 'client67': [73, 48, 53, 75, 58, 72, 45, 60, 46, 70], 'client68': [54, 70, 51, 73, 56, 54, 57, 52, 67, 66], 'client69': [52, 69, 61, 65, 66, 47, 61, 50, 60, 69], 'client70': [56, 72, 64, 66, 65, 37, 59, 67, 55, 59], 'client71': [55, 95, 51, 67, 51, 55, 62, 57, 49, 58], 'client72': [48, 75, 74, 61, 52, 44, 58, 69, 61, 58], 'client73': [65, 71, 61, 66, 49, 53, 56, 56, 55, 68], 'client74': [55, 63, 57, 55, 65, 49, 62, 76, 49, 69], 'client75': [58, 75, 56, 69, 54, 46, 53, 68, 61, 60], 'client76': [45, 70, 66, 72, 52, 68, 63, 60, 47, 57], 'client77': [73, 61, 60, 54, 62, 54, 56, 57, 51, 72], 'client78': [60, 66, 61, 64, 62, 47, 54, 53, 63, 70], 'client79': [55, 63, 60, 58, 66, 55, 62, 62, 51, 68], 'client80': [64, 63, 55, 51, 51, 62, 68, 62, 55, 69], 'client81': [66, 69, 57, 69, 59, 44, 67, 68, 39, 62], 'client82': [48, 87, 66, 55, 50, 50, 53, 77, 67, 47], 'client83': [65, 73, 52, 65, 51, 41, 56, 68, 69, 60], 'client84': [59, 75, 58, 63, 57, 52, 54, 68, 57, 57], 'client85': [64, 59, 62, 48, 68, 43, 68, 59, 71, 58], 'client86': [61, 68, 54, 66, 50, 63, 56, 73, 64, 45], 'client87': [55, 69, 57, 65, 59, 56, 68, 55, 57, 59], 'client88': [53, 66, 60, 67, 63, 68, 47, 59, 62, 55], 'client89': [63, 65, 70, 70, 57, 47, 51, 67, 64, 46], 'client90': [62, 60, 65, 55, 66, 62, 60, 68, 48, 54], 'client91': [70, 70, 47, 56, 62, 69, 57, 60, 46, 63], 'client92': [63, 80, 54, 51, 58, 63, 69, 58, 43, 61], 'client93': [62, 70, 48, 63, 61, 61, 54, 61, 53, 67], 'client94': [69, 51, 51, 65, 48, 74, 71, 55, 69, 47], 'client95': [58, 64, 57, 54, 67, 45, 63, 64, 64, 64], 'client96': [58, 63, 56, 56, 65, 49, 65, 66, 65, 57], 'client97': [45, 68, 64, 45, 64, 54, 70, 70, 59, 61], 'client98': [49, 59, 81, 55, 56, 47, 77, 65, 60, 51], 'client99': [63, 71, 53, 67, 59, 53, 51, 64, 66, 53]}
+[INFO](2026/04/12/ 11:36:18 PM) **Initializing nets
+[INFO](2026/04/12/ 11:36:19 PM) **malicious_clients: ['client17', 'client72', 'client97', 'client8', 'client32', 'client15', 'client63', 'client57', 'client60', 'client83', 'client48', 'client26', 'client12', 'client62', 'client3', 'client49', 'client55', 'client77', 'client0', 'client92', 'client34', 'client29', 'client75', 'client13', 'client40', 'client85', 'client2', 'client74']
+[INFO](2026/04/12/ 11:36:19 PM) **malicious_clients: 28 / 100
+[INFO](2026/04/12/ 11:36:19 PM) **Completed...
+[INFO](2026/04/12/ 11:36:19 PM) ----------------------------------------------------------------------------------------------------  Start Training  ----------------------------------------------------------------------------------------------------
+[INFO](2026/04/12/ 11:36:19 PM) **COMMON ROUND:0
+[INFO](2026/04/12/ 11:36:20 PM) [Round: 0 client0] accuracy: 0.706543  loss: 0.888536 | LIT_attack
+[INFO](2026/04/12/ 11:36:20 PM) [Round: 0 client1] accuracy: 0.739062  loss: 0.752406 | LIT_attack
+[INFO](2026/04/12/ 11:36:21 PM) [Round: 0 client2] accuracy: 0.808496  loss: 0.595867 | LIT_attack
+[INFO](2026/04/12/ 11:36:22 PM) [Round: 0 client3] accuracy: 0.829102  loss: 0.554013 | LIT_attack
+[INFO](2026/04/12/ 11:36:23 PM) [Round: 0 client4] accuracy: 0.815039  loss: 0.594980 | LIT_attack
+[INFO](2026/04/12/ 11:36:23 PM) [Round: 0 client5] accuracy: 0.820215  loss: 0.609769 | LIT_attack
+[INFO](2026/04/12/ 11:36:24 PM) [Round: 0 client6] accuracy: 0.804688  loss: 0.589588 | LIT_attack
+[INFO](2026/04/12/ 11:36:25 PM) [Round: 0 client7] accuracy: 0.820215  loss: 0.548000 | LIT_attack
+[INFO](2026/04/12/ 11:36:26 PM) [Round: 0 client8] accuracy: 0.739648  loss: 0.760736 | LIT_attack
+[INFO](2026/04/12/ 11:36:27 PM) [Round: 0 client9] accuracy: 0.844531  loss: 0.516660 | LIT_attack
+[INFO](2026/04/12/ 11:36:28 PM) [Round: 0 client10] accuracy: 0.812695  loss: 0.568982 | LIT_attack
+[INFO](2026/04/12/ 11:36:29 PM) [Round: 0 client11] accuracy: 0.807715  loss: 0.606596 | LIT_attack
+[INFO](2026/04/12/ 11:36:30 PM) [Round: 0 client12] accuracy: 0.834375  loss: 0.530147 | LIT_attack
+[INFO](2026/04/12/ 11:36:31 PM) [Round: 0 client13] accuracy: 0.835938  loss: 0.517235 | LIT_attack
+[INFO](2026/04/12/ 11:36:32 PM) [Round: 0 client14] accuracy: 0.791113  loss: 0.603556 | LIT_attack
+[INFO](2026/04/12/ 11:36:32 PM) [Round: 0 client15] accuracy: 0.806836  loss: 0.608699 | LIT_attack
+[INFO](2026/04/12/ 11:36:33 PM) [Round: 0 client16] accuracy: 0.815527  loss: 0.569646 | LIT_attack
+[INFO](2026/04/12/ 11:36:34 PM) [Round: 0 client17] accuracy: 0.820410  loss: 0.553773 | LIT_attack
+[INFO](2026/04/12/ 11:36:35 PM) [Round: 0 client18] accuracy: 0.783984  loss: 0.675813 | LIT_attack
+[INFO](2026/04/12/ 11:36:35 PM) [Round: 0 client19] accuracy: 0.808496  loss: 0.563414 | LIT_attack
+[INFO](2026/04/12/ 11:36:36 PM) [Round: 0 client20] accuracy: 0.825391  loss: 0.545973 | LIT_attack
+[INFO](2026/04/12/ 11:36:37 PM) [Round: 0 client21] accuracy: 0.836523  loss: 0.514083 | LIT_attack
+[INFO](2026/04/12/ 11:36:38 PM) [Round: 0 client22] accuracy: 0.833301  loss: 0.532308 | LIT_attack
+[INFO](2026/04/12/ 11:36:38 PM) [Round: 0 client23] accuracy: 0.831055  loss: 0.546370 | LIT_attack
+[INFO](2026/04/12/ 11:36:39 PM) [Round: 0 client24] accuracy: 0.835254  loss: 0.525944 | LIT_attack
+[INFO](2026/04/12/ 11:36:40 PM) [Round: 0 client25] accuracy: 0.835742  loss: 0.528214 | LIT_attack
+[INFO](2026/04/12/ 11:36:41 PM) [Round: 0 client26] accuracy: 0.814355  loss: 0.544945 | LIT_attack
+[INFO](2026/04/12/ 11:36:41 PM) [Round: 0 client27] accuracy: 0.850586  loss: 0.482787 | LIT_attack
+[INFO](2026/04/12/ 11:36:42 PM) [Round: 0 client28] accuracy: 0.832520  loss: 0.538565 | LIT_attack
+[INFO](2026/04/12/ 11:36:43 PM) [Round: 0 client29] accuracy: 0.789844  loss: 0.620714 | LIT_attack
+[INFO](2026/04/12/ 11:36:44 PM) [Round: 0 client30] accuracy: 0.828711  loss: 0.526400 | LIT_attack
+[INFO](2026/04/12/ 11:36:45 PM) [Round: 0 client31] accuracy: 0.847168  loss: 0.510104 | LIT_attack
+[INFO](2026/04/12/ 11:36:45 PM) [Round: 0 client32] accuracy: 0.847559  loss: 0.497444 | LIT_attack
+[INFO](2026/04/12/ 11:36:46 PM) [Round: 0 client33] accuracy: 0.845313  loss: 0.496299 | LIT_attack
+[INFO](2026/04/12/ 11:36:47 PM) [Round: 0 client34] accuracy: 0.845605  loss: 0.489651 | LIT_attack
+[INFO](2026/04/12/ 11:36:48 PM) [Round: 0 client35] accuracy: 0.822266  loss: 0.551383 | LIT_attack
+[INFO](2026/04/12/ 11:36:49 PM) [Round: 0 client36] accuracy: 0.803613  loss: 0.598123 | LIT_attack
+[INFO](2026/04/12/ 11:36:50 PM) [Round: 0 client37] accuracy: 0.820898  loss: 0.549194 | LIT_attack
+[INFO](2026/04/12/ 11:36:51 PM) [Round: 0 client38] accuracy: 0.837891  loss: 0.509500 | LIT_attack
+[INFO](2026/04/12/ 11:36:52 PM) [Round: 0 client39] accuracy: 0.823926  loss: 0.541320 | LIT_attack
+[INFO](2026/04/12/ 11:36:52 PM) [Round: 0 client40] accuracy: 0.829590  loss: 0.531045 | LIT_attack
+[INFO](2026/04/12/ 11:36:53 PM) [Round: 0 client41] accuracy: 0.783301  loss: 0.617117 | LIT_attack
+[INFO](2026/04/12/ 11:36:54 PM) [Round: 0 client42] accuracy: 0.822949  loss: 0.557161 | LIT_attack
+[INFO](2026/04/12/ 11:36:55 PM) [Round: 0 client43] accuracy: 0.784961  loss: 0.636666 | LIT_attack
+[INFO](2026/04/12/ 11:36:56 PM) [Round: 0 client44] accuracy: 0.795508  loss: 0.591378 | LIT_attack
+[INFO](2026/04/12/ 11:36:57 PM) [Round: 0 client45] accuracy: 0.808105  loss: 0.593736 | LIT_attack
+[INFO](2026/04/12/ 11:36:58 PM) [Round: 0 client46] accuracy: 0.810840  loss: 0.586835 | LIT_attack
+[INFO](2026/04/12/ 11:36:59 PM) [Round: 0 client47] accuracy: 0.845215  loss: 0.508022 | LIT_attack
+[INFO](2026/04/12/ 11:37:00 PM) [Round: 0 client48] accuracy: 0.829297  loss: 0.537607 | LIT_attack
+[INFO](2026/04/12/ 11:37:01 PM) [Round: 0 client49] accuracy: 0.828516  loss: 0.544885 | LIT_attack
+[INFO](2026/04/12/ 11:37:02 PM) [Round: 0 client50] accuracy: 0.815625  loss: 0.572987 | LIT_attack
+[INFO](2026/04/12/ 11:37:03 PM) [Round: 0 client51] accuracy: 0.820410  loss: 0.570235 | LIT_attack
+[INFO](2026/04/12/ 11:37:04 PM) [Round: 0 client52] accuracy: 0.804980  loss: 0.579513 | LIT_attack
+[INFO](2026/04/12/ 11:37:05 PM) [Round: 0 client53] accuracy: 0.808691  loss: 0.570772 | LIT_attack
+[INFO](2026/04/12/ 11:37:06 PM) [Round: 0 client54] accuracy: 0.778613  loss: 0.642500 | LIT_attack
+[INFO](2026/04/12/ 11:37:07 PM) [Round: 0 client55] accuracy: 0.823926  loss: 0.589346 | LIT_attack
+[INFO](2026/04/12/ 11:37:08 PM) [Round: 0 client56] accuracy: 0.786719  loss: 0.619241 | LIT_attack
+[INFO](2026/04/12/ 11:37:09 PM) [Round: 0 client57] accuracy: 0.830957  loss: 0.530495 | LIT_attack
+[INFO](2026/04/12/ 11:37:10 PM) [Round: 0 client58] accuracy: 0.795215  loss: 0.572399 | LIT_attack
+[INFO](2026/04/12/ 11:37:11 PM) [Round: 0 client59] accuracy: 0.838086  loss: 0.538288 | LIT_attack
+[INFO](2026/04/12/ 11:37:11 PM) [Round: 0 client60] accuracy: 0.824512  loss: 0.559942 | LIT_attack
+[INFO](2026/04/12/ 11:37:12 PM) [Round: 0 client61] accuracy: 0.782520  loss: 0.620093 | LIT_attack
+[INFO](2026/04/12/ 11:37:13 PM) [Round: 0 client62] accuracy: 0.830859  loss: 0.557745 | LIT_attack
+[INFO](2026/04/12/ 11:37:13 PM) [Round: 0 client63] accuracy: 0.833203  loss: 0.528429 | LIT_attack
+[INFO](2026/04/12/ 11:37:14 PM) [Round: 0 client64] accuracy: 0.835254  loss: 0.527638 | LIT_attack
+[INFO](2026/04/12/ 11:37:15 PM) [Round: 0 client65] accuracy: 0.821289  loss: 0.569805 | LIT_attack
+[INFO](2026/04/12/ 11:37:16 PM) [Round: 0 client66] accuracy: 0.763379  loss: 0.662499 | LIT_attack
+[INFO](2026/04/12/ 11:37:16 PM) [Round: 0 client67] accuracy: 0.837109  loss: 0.524492 | LIT_attack
+[INFO](2026/04/12/ 11:37:17 PM) [Round: 0 client68] accuracy: 0.765137  loss: 0.686365 | LIT_attack
+[INFO](2026/04/12/ 11:37:18 PM) [Round: 0 client69] accuracy: 0.827344  loss: 0.519433 | LIT_attack
+[INFO](2026/04/12/ 11:37:19 PM) [Round: 0 client70] accuracy: 0.780762  loss: 0.673863 | LIT_attack
+[INFO](2026/04/12/ 11:37:20 PM) [Round: 0 client71] accuracy: 0.836914  loss: 0.522606 | LIT_attack
+[INFO](2026/04/12/ 11:37:21 PM) [Round: 0 client72] accuracy: 0.843848  loss: 0.495557 | LIT_attack
+[INFO](2026/04/12/ 11:37:22 PM) [Round: 0 client73] accuracy: 0.847070  loss: 0.499188 | LIT_attack
+[INFO](2026/04/12/ 11:37:22 PM) [Round: 0 client74] accuracy: 0.839551  loss: 0.514738 | LIT_attack
+[INFO](2026/04/12/ 11:37:23 PM) [Round: 0 client75] accuracy: 0.826953  loss: 0.537024 | LIT_attack
+[INFO](2026/04/12/ 11:37:24 PM) [Round: 0 client76] accuracy: 0.844141  loss: 0.485902 | LIT_attack
+[INFO](2026/04/12/ 11:37:25 PM) [Round: 0 client77] accuracy: 0.834766  loss: 0.517878 | LIT_attack
+[INFO](2026/04/12/ 11:37:25 PM) [Round: 0 client78] accuracy: 0.791895  loss: 0.639994 | LIT_attack
+[INFO](2026/04/12/ 11:37:26 PM) [Round: 0 client79] accuracy: 0.832715  loss: 0.527648 | LIT_attack
+[INFO](2026/04/12/ 11:37:27 PM) [Round: 0 client80] accuracy: 0.835938  loss: 0.521971 | LIT_attack
+[INFO](2026/04/12/ 11:37:28 PM) [Round: 0 client81] accuracy: 0.816504  loss: 0.574973 | LIT_attack
+[INFO](2026/04/12/ 11:37:28 PM) [Round: 0 client82] accuracy: 0.838477  loss: 0.509618 | LIT_attack
+[INFO](2026/04/12/ 11:37:29 PM) [Round: 0 client83] accuracy: 0.833984  loss: 0.553275 | LIT_attack
+[INFO](2026/04/12/ 11:37:30 PM) [Round: 0 client84] accuracy: 0.823535  loss: 0.564032 | LIT_attack
+[INFO](2026/04/12/ 11:37:31 PM) [Round: 0 client85] accuracy: 0.797461  loss: 0.631009 | LIT_attack
+[INFO](2026/04/12/ 11:37:32 PM) [Round: 0 client86] accuracy: 0.767383  loss: 0.745503 | LIT_attack
+[INFO](2026/04/12/ 11:37:32 PM) [Round: 0 client87] accuracy: 0.773047  loss: 0.657725 | LIT_attack
+[INFO](2026/04/12/ 11:37:33 PM) [Round: 0 client88] accuracy: 0.838672  loss: 0.522440 | LIT_attack
+[INFO](2026/04/12/ 11:37:34 PM) [Round: 0 client89] accuracy: 0.774414  loss: 0.623591 | LIT_attack
+[INFO](2026/04/12/ 11:37:35 PM) [Round: 0 client90] accuracy: 0.810547  loss: 0.562169 | LIT_attack
+[INFO](2026/04/12/ 11:37:35 PM) [Round: 0 client91] accuracy: 0.767090  loss: 0.640740 | LIT_attack
+[INFO](2026/04/12/ 11:37:36 PM) [Round: 0 client92] accuracy: 0.835254  loss: 0.528323 | LIT_attack
+[INFO](2026/04/12/ 11:37:37 PM) [Round: 0 client93] accuracy: 0.783691  loss: 0.619247 | LIT_attack
+[INFO](2026/04/12/ 11:37:38 PM) [Round: 0 client94] accuracy: 0.822754  loss: 0.562620 | LIT_attack
+[INFO](2026/04/12/ 11:37:38 PM) [Round: 0 client95] accuracy: 0.842676  loss: 0.510397 | LIT_attack
+[INFO](2026/04/12/ 11:37:39 PM) [Round: 0 client96] accuracy: 0.839258  loss: 0.520501 | LIT_attack
+[INFO](2026/04/12/ 11:37:40 PM) [Round: 0 client97] accuracy: 0.840918  loss: 0.517970 | LIT_attack
+[INFO](2026/04/12/ 11:37:40 PM) [Round: 0 client98] accuracy: 0.822949  loss: 0.567073 | LIT_attack
+[INFO](2026/04/12/ 11:37:41 PM) [Round: 0 client99] accuracy: 0.810645  loss: 0.572203 | LIT_attack
+[INFO](2026/04/12/ 11:37:45 PM) [LIT_attack client17] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:46 PM) [LIT_attack client72] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:47 PM) [LIT_attack client97] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:47 PM) [LIT_attack client8] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:48 PM) [LIT_attack client32] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:49 PM) [LIT_attack client15] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:50 PM) [LIT_attack client63] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:50 PM) [LIT_attack client57] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:51 PM) [LIT_attack client60] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:52 PM) [LIT_attack client83] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:53 PM) [LIT_attack client48] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:54 PM) [LIT_attack client26] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:55 PM) [LIT_attack client12] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:56 PM) [LIT_attack client62] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:57 PM) [LIT_attack client3] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:58 PM) [LIT_attack client49] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:37:59 PM) [LIT_attack client55] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:38:00 PM) [LIT_attack client77] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:38:01 PM) [LIT_attack client0] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:38:01 PM) [LIT_attack client92] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:38:02 PM) [LIT_attack client34] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:38:03 PM) [LIT_attack client29] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:38:04 PM) [LIT_attack client75] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:38:05 PM) [LIT_attack client13] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:38:06 PM) [LIT_attack client40] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:38:07 PM) [LIT_attack client85] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:38:08 PM) [LIT_attack client2] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:38:09 PM) [LIT_attack client74] accuracy: 0.749023  loss: 0.796296 
+[INFO](2026/04/12/ 11:38:09 PM) agg_type: multi_krum
+[INFO](2026/04/12/ 11:38:09 PM) [Round: 0] >> Detect_malicious_client: ['client25', 'client66', 'client67', 'client58', 'client59', 'client47', 'client36', 'client95', 'client99', 'client44', 'client37', 'client88', 'client46', 'client89', 'client86', 'client7', 'client16', 'client9', 'client11', 'client18', 'client91', 'client6', 'client56', 'client87', 'client10', 'client5', 'client4', 'client1']
+[INFO](2026/04/12/ 11:38:09 PM) [Round: 0] >> Number_malicious_client: 28
+[INFO](2026/04/12/ 11:38:09 PM) [Round: 0] >> Server Defense accuracy: 0.440000
+[INFO](2026/04/12/ 11:38:09 PM) [Round: 0] >> Server Detect malicious Precision: 0.000000
+[INFO](2026/04/12/ 11:38:09 PM) [Round: 0] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/04/12/ 11:38:09 PM) [Round: 0] >> Time of aggregation: 0.174477 s
+[INFO](2026/04/12/ 11:38:16 PM) [Round: 0] >> Global ASR: 0.037000
+[INFO](2026/04/12/ 11:38:16 PM) [Round: 0] >> Global Model Test accuracy: 0.857813
+[INFO](2026/04/12/ 11:38:16 PM) [Round: 0] >> Global Model Test loss: 0.487958
+[INFO](2026/04/12/ 11:38:16 PM) **COMMON ROUND:1
+[INFO](2026/04/12/ 11:38:17 PM) [Round: 1 client0] accuracy: 0.797461  loss: 0.650097 | LIT_attack
+[INFO](2026/04/12/ 11:38:18 PM) [Round: 1 client1] accuracy: 0.852441  loss: 0.510553 | LIT_attack
+[INFO](2026/04/12/ 11:38:19 PM) [Round: 1 client2] accuracy: 0.871973  loss: 0.425768 | LIT_attack
+[INFO](2026/04/12/ 11:38:20 PM) [Round: 1 client3] accuracy: 0.865332  loss: 0.425029 | LIT_attack
+[INFO](2026/04/12/ 11:38:21 PM) [Round: 1 client4] accuracy: 0.859277  loss: 0.448441 | LIT_attack
+[INFO](2026/04/12/ 11:38:22 PM) [Round: 1 client5] accuracy: 0.880566  loss: 0.396997 | LIT_attack
+[INFO](2026/04/12/ 11:38:23 PM) [Round: 1 client6] accuracy: 0.882031  loss: 0.385927 | LIT_attack
+[INFO](2026/04/12/ 11:38:24 PM) [Round: 1 client7] accuracy: 0.862402  loss: 0.434575 | LIT_attack
+[INFO](2026/04/12/ 11:38:25 PM) [Round: 1 client8] accuracy: 0.864258  loss: 0.443422 | LIT_attack
+[INFO](2026/04/12/ 11:38:26 PM) [Round: 1 client9] accuracy: 0.865137  loss: 0.432392 | LIT_attack
+[INFO](2026/04/12/ 11:38:27 PM) [Round: 1 client10] accuracy: 0.859375  loss: 0.451177 | LIT_attack
+[INFO](2026/04/12/ 11:38:29 PM) [Round: 1 client11] accuracy: 0.855176  loss: 0.452674 | LIT_attack
+[INFO](2026/04/12/ 11:38:30 PM) [Round: 1 client12] accuracy: 0.864453  loss: 0.442622 | LIT_attack
+[INFO](2026/04/12/ 11:38:30 PM) [Round: 1 client13] accuracy: 0.880859  loss: 0.394660 | LIT_attack
+[INFO](2026/04/12/ 11:38:31 PM) [Round: 1 client14] accuracy: 0.869629  loss: 0.423811 | LIT_attack
+[INFO](2026/04/12/ 11:38:32 PM) [Round: 1 client15] accuracy: 0.870313  loss: 0.415280 | LIT_attack
+[INFO](2026/04/12/ 11:38:33 PM) [Round: 1 client16] accuracy: 0.861523  loss: 0.438290 | LIT_attack
+[INFO](2026/04/12/ 11:38:34 PM) [Round: 1 client17] accuracy: 0.865625  loss: 0.435142 | LIT_attack
+[INFO](2026/04/12/ 11:38:35 PM) [Round: 1 client18] accuracy: 0.860352  loss: 0.441729 | LIT_attack
+[INFO](2026/04/12/ 11:38:36 PM) [Round: 1 client19] accuracy: 0.867090  loss: 0.413734 | LIT_attack
+[INFO](2026/04/12/ 11:38:37 PM) [Round: 1 client20] accuracy: 0.853809  loss: 0.443260 | LIT_attack
+[INFO](2026/04/12/ 11:38:38 PM) [Round: 1 client21] accuracy: 0.841602  loss: 0.485335 | LIT_attack
+[INFO](2026/04/12/ 11:38:39 PM) [Round: 1 client22] accuracy: 0.858105  loss: 0.448356 | LIT_attack
+[INFO](2026/04/12/ 11:38:40 PM) [Round: 1 client23] accuracy: 0.858984  loss: 0.429379 | LIT_attack
+[INFO](2026/04/12/ 11:38:40 PM) [Round: 1 client24] accuracy: 0.885254  loss: 0.391998 | LIT_attack
+[INFO](2026/04/12/ 11:38:41 PM) [Round: 1 client25] accuracy: 0.876953  loss: 0.412303 | LIT_attack
+[INFO](2026/04/12/ 11:38:42 PM) [Round: 1 client26] accuracy: 0.861523  loss: 0.432383 | LIT_attack
+[INFO](2026/04/12/ 11:38:43 PM) [Round: 1 client27] accuracy: 0.876758  loss: 0.401866 | LIT_attack
+[INFO](2026/04/12/ 11:38:44 PM) [Round: 1 client28] accuracy: 0.880273  loss: 0.390607 | LIT_attack
+[INFO](2026/04/12/ 11:38:45 PM) [Round: 1 client29] accuracy: 0.850684  loss: 0.458399 | LIT_attack
+[INFO](2026/04/12/ 11:38:46 PM) [Round: 1 client30] accuracy: 0.878027  loss: 0.392988 | LIT_attack
+[INFO](2026/04/12/ 11:38:47 PM) [Round: 1 client31] accuracy: 0.839844  loss: 0.482209 | LIT_attack
+[INFO](2026/04/12/ 11:38:48 PM) [Round: 1 client32] accuracy: 0.862012  loss: 0.439990 | LIT_attack
+[INFO](2026/04/12/ 11:38:49 PM) [Round: 1 client33] accuracy: 0.853516  loss: 0.455777 | LIT_attack
+[INFO](2026/04/12/ 11:38:50 PM) [Round: 1 client34] accuracy: 0.862109  loss: 0.422025 | LIT_attack
+[INFO](2026/04/12/ 11:38:51 PM) [Round: 1 client35] accuracy: 0.834277  loss: 0.488278 | LIT_attack
+[INFO](2026/04/12/ 11:38:52 PM) [Round: 1 client36] accuracy: 0.865430  loss: 0.429677 | LIT_attack
+[INFO](2026/04/12/ 11:38:53 PM) [Round: 1 client37] accuracy: 0.887500  loss: 0.373626 | LIT_attack
+[INFO](2026/04/12/ 11:38:54 PM) [Round: 1 client38] accuracy: 0.878516  loss: 0.397287 | LIT_attack
+[INFO](2026/04/12/ 11:38:55 PM) [Round: 1 client39] accuracy: 0.852344  loss: 0.455621 | LIT_attack
+[INFO](2026/04/12/ 11:38:56 PM) [Round: 1 client40] accuracy: 0.825586  loss: 0.521929 | LIT_attack
+[INFO](2026/04/12/ 11:38:57 PM) [Round: 1 client41] accuracy: 0.883203  loss: 0.384740 | LIT_attack
+[INFO](2026/04/12/ 11:38:58 PM) [Round: 1 client42] accuracy: 0.870313  loss: 0.407444 | LIT_attack
+[INFO](2026/04/12/ 11:38:59 PM) [Round: 1 client43] accuracy: 0.871973  loss: 0.408644 | LIT_attack
+[INFO](2026/04/12/ 11:38:59 PM) [Round: 1 client44] accuracy: 0.866797  loss: 0.414089 | LIT_attack
+[INFO](2026/04/12/ 11:39:00 PM) [Round: 1 client45] accuracy: 0.875488  loss: 0.397179 | LIT_attack
+[INFO](2026/04/12/ 11:39:01 PM) [Round: 1 client46] accuracy: 0.882031  loss: 0.396915 | LIT_attack
+[INFO](2026/04/12/ 11:39:02 PM) [Round: 1 client47] accuracy: 0.873730  loss: 0.414388 | LIT_attack
+[INFO](2026/04/12/ 11:39:03 PM) [Round: 1 client48] accuracy: 0.874316  loss: 0.406313 | LIT_attack
+[INFO](2026/04/12/ 11:39:04 PM) [Round: 1 client49] accuracy: 0.820312  loss: 0.544336 | LIT_attack
+[INFO](2026/04/12/ 11:39:05 PM) [Round: 1 client50] accuracy: 0.862109  loss: 0.421596 | LIT_attack
+[INFO](2026/04/12/ 11:39:06 PM) [Round: 1 client51] accuracy: 0.856152  loss: 0.443946 | LIT_attack
+[INFO](2026/04/12/ 11:39:07 PM) [Round: 1 client52] accuracy: 0.871484  loss: 0.407471 | LIT_attack
+[INFO](2026/04/12/ 11:39:08 PM) [Round: 1 client53] accuracy: 0.824121  loss: 0.543256 | LIT_attack
+[INFO](2026/04/12/ 11:39:09 PM) [Round: 1 client54] accuracy: 0.876367  loss: 0.419504 | LIT_attack
+[INFO](2026/04/12/ 11:39:09 PM) [Round: 1 client55] accuracy: 0.875684  loss: 0.415114 | LIT_attack
+[INFO](2026/04/12/ 11:39:10 PM) [Round: 1 client56] accuracy: 0.867676  loss: 0.419986 | LIT_attack
+[INFO](2026/04/12/ 11:39:12 PM) [Round: 1 client57] accuracy: 0.886035  loss: 0.387264 | LIT_attack
+[INFO](2026/04/12/ 11:39:12 PM) [Round: 1 client58] accuracy: 0.866895  loss: 0.434549 | LIT_attack
+[INFO](2026/04/12/ 11:39:13 PM) [Round: 1 client59] accuracy: 0.868359  loss: 0.426226 | LIT_attack
+[INFO](2026/04/12/ 11:39:14 PM) [Round: 1 client60] accuracy: 0.869238  loss: 0.430787 | LIT_attack
+[INFO](2026/04/12/ 11:39:15 PM) [Round: 1 client61] accuracy: 0.857324  loss: 0.448678 | LIT_attack
+[INFO](2026/04/12/ 11:39:16 PM) [Round: 1 client62] accuracy: 0.849902  loss: 0.467937 | LIT_attack
+[INFO](2026/04/12/ 11:39:17 PM) [Round: 1 client63] accuracy: 0.870703  loss: 0.413614 | LIT_attack
+[INFO](2026/04/12/ 11:39:18 PM) [Round: 1 client64] accuracy: 0.882910  loss: 0.382224 | LIT_attack
+[INFO](2026/04/12/ 11:39:19 PM) [Round: 1 client65] accuracy: 0.835840  loss: 0.490400 | LIT_attack
+[INFO](2026/04/12/ 11:39:20 PM) [Round: 1 client66] accuracy: 0.866211  loss: 0.407694 | LIT_attack
+[INFO](2026/04/12/ 11:39:21 PM) [Round: 1 client67] accuracy: 0.873438  loss: 0.402361 | LIT_attack
+[INFO](2026/04/12/ 11:39:22 PM) [Round: 1 client68] accuracy: 0.856055  loss: 0.462294 | LIT_attack
+[INFO](2026/04/12/ 11:39:23 PM) [Round: 1 client69] accuracy: 0.867090  loss: 0.417056 | LIT_attack
+[INFO](2026/04/12/ 11:39:24 PM) [Round: 1 client70] accuracy: 0.848535  loss: 0.480342 | LIT_attack
+[INFO](2026/04/12/ 11:39:25 PM) [Round: 1 client71] accuracy: 0.861621  loss: 0.452706 | LIT_attack
+[INFO](2026/04/12/ 11:39:26 PM) [Round: 1 client72] accuracy: 0.845215  loss: 0.457017 | LIT_attack
+[INFO](2026/04/12/ 11:39:27 PM) [Round: 1 client73] accuracy: 0.858691  loss: 0.438869 | LIT_attack
+[INFO](2026/04/12/ 11:39:27 PM) [Round: 1 client74] accuracy: 0.876172  loss: 0.404329 | LIT_attack
+[INFO](2026/04/12/ 11:39:28 PM) [Round: 1 client75] accuracy: 0.869531  loss: 0.413184 | LIT_attack
+[INFO](2026/04/12/ 11:39:29 PM) [Round: 1 client76] accuracy: 0.865527  loss: 0.431660 | LIT_attack
+[INFO](2026/04/12/ 11:39:30 PM) [Round: 1 client77] accuracy: 0.869727  loss: 0.415029 | LIT_attack
+[INFO](2026/04/12/ 11:39:31 PM) [Round: 1 client78] accuracy: 0.873047  loss: 0.421779 | LIT_attack
+[INFO](2026/04/12/ 11:39:32 PM) [Round: 1 client79] accuracy: 0.858887  loss: 0.431322 | LIT_attack
+[INFO](2026/04/12/ 11:39:33 PM) [Round: 1 client80] accuracy: 0.874609  loss: 0.413605 | LIT_attack
+[INFO](2026/04/12/ 11:39:34 PM) [Round: 1 client81] accuracy: 0.882520  loss: 0.385094 | LIT_attack
+[INFO](2026/04/12/ 11:39:35 PM) [Round: 1 client82] accuracy: 0.873926  loss: 0.413690 | LIT_attack
+[INFO](2026/04/12/ 11:39:36 PM) [Round: 1 client83] accuracy: 0.860254  loss: 0.439302 | LIT_attack
+[INFO](2026/04/12/ 11:39:37 PM) [Round: 1 client84] accuracy: 0.859570  loss: 0.462475 | LIT_attack
+[INFO](2026/04/12/ 11:39:39 PM) [Round: 1 client85] accuracy: 0.861035  loss: 0.431056 | LIT_attack
+[INFO](2026/04/12/ 11:39:40 PM) [Round: 1 client86] accuracy: 0.841699  loss: 0.464234 | LIT_attack
+[INFO](2026/04/12/ 11:39:40 PM) [Round: 1 client87] accuracy: 0.880469  loss: 0.398811 | LIT_attack
+[INFO](2026/04/12/ 11:39:41 PM) [Round: 1 client88] accuracy: 0.849316  loss: 0.452347 | LIT_attack
+[INFO](2026/04/12/ 11:39:42 PM) [Round: 1 client89] accuracy: 0.856836  loss: 0.433263 | LIT_attack
+[INFO](2026/04/12/ 11:39:43 PM) [Round: 1 client90] accuracy: 0.852930  loss: 0.457483 | LIT_attack
+[INFO](2026/04/12/ 11:39:43 PM) [Round: 1 client91] accuracy: 0.877539  loss: 0.399804 | LIT_attack
+[INFO](2026/04/12/ 11:39:44 PM) [Round: 1 client92] accuracy: 0.860938  loss: 0.424184 | LIT_attack
+[INFO](2026/04/12/ 11:39:45 PM) [Round: 1 client93] accuracy: 0.888086  loss: 0.385023 | LIT_attack
+[INFO](2026/04/12/ 11:39:46 PM) [Round: 1 client94] accuracy: 0.852344  loss: 0.460909 | LIT_attack
+[INFO](2026/04/12/ 11:39:47 PM) [Round: 1 client95] accuracy: 0.887793  loss: 0.371045 | LIT_attack
+[INFO](2026/04/12/ 11:39:49 PM) [Round: 1 client96] accuracy: 0.878711  loss: 0.411323 | LIT_attack
+[INFO](2026/04/12/ 11:39:50 PM) [Round: 1 client97] accuracy: 0.861621  loss: 0.449327 | LIT_attack
+[INFO](2026/04/12/ 11:39:51 PM) [Round: 1 client98] accuracy: 0.849707  loss: 0.462571 | LIT_attack
+[INFO](2026/04/12/ 11:39:52 PM) [Round: 1 client99] accuracy: 0.870410  loss: 0.424854 | LIT_attack
+[INFO](2026/04/12/ 11:39:56 PM) [LIT_attack client17] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:39:57 PM) [LIT_attack client72] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:39:58 PM) [LIT_attack client97] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:39:58 PM) [LIT_attack client8] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:39:59 PM) [LIT_attack client32] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:00 PM) [LIT_attack client15] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:00 PM) [LIT_attack client63] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:01 PM) [LIT_attack client57] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:02 PM) [LIT_attack client60] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:03 PM) [LIT_attack client83] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:03 PM) [LIT_attack client48] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:04 PM) [LIT_attack client26] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:05 PM) [LIT_attack client12] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:06 PM) [LIT_attack client62] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:06 PM) [LIT_attack client3] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:07 PM) [LIT_attack client49] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:08 PM) [LIT_attack client55] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:09 PM) [LIT_attack client77] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:10 PM) [LIT_attack client0] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:11 PM) [LIT_attack client92] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:12 PM) [LIT_attack client34] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:13 PM) [LIT_attack client29] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:14 PM) [LIT_attack client75] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:14 PM) [LIT_attack client13] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:15 PM) [LIT_attack client40] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:16 PM) [LIT_attack client85] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:17 PM) [LIT_attack client2] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:18 PM) [LIT_attack client74] accuracy: 0.905664  loss: 0.353324 
+[INFO](2026/04/12/ 11:40:18 PM) agg_type: multi_krum
+[INFO](2026/04/12/ 11:40:18 PM) [Round: 1] >> Detect_malicious_client: ['client68', 'client96', 'client5', 'client93', 'client76', 'client4', 'client33', 'client35', 'client69', 'client87', 'client39', 'client36', 'client95', 'client73', 'client70', 'client71', 'client94', 'client86', 'client54', 'client53', 'client84', 'client81', 'client88', 'client99', 'client89', 'client91', 'client90', 'client1']
+[INFO](2026/04/12/ 11:40:18 PM) [Round: 1] >> Number_malicious_client: 28
+[INFO](2026/04/12/ 11:40:18 PM) [Round: 1] >> Server Defense accuracy: 0.440000
+[INFO](2026/04/12/ 11:40:18 PM) [Round: 1] >> Server Detect malicious Precision: 0.000000
+[INFO](2026/04/12/ 11:40:18 PM) [Round: 1] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/04/12/ 11:40:18 PM) [Round: 1] >> Time of aggregation: 0.170011 s
+[INFO](2026/04/12/ 11:40:26 PM) [Round: 1] >> Global ASR: 0.004100
+[INFO](2026/04/12/ 11:40:26 PM) [Round: 1] >> Global Model Test accuracy: 0.905859
+[INFO](2026/04/12/ 11:40:26 PM) [Round: 1] >> Global Model Test loss: 0.335495
+[INFO](2026/04/12/ 11:40:26 PM) **COMMON ROUND:2
+[INFO](2026/04/12/ 11:40:27 PM) [Round: 2 client0] accuracy: 0.841504  loss: 0.516377 | LIT_attack
+[INFO](2026/04/12/ 11:40:28 PM) [Round: 2 client1] accuracy: 0.857422  loss: 0.458902 | LIT_attack
+[INFO](2026/04/12/ 11:40:29 PM) [Round: 2 client2] accuracy: 0.873047  loss: 0.408578 | LIT_attack
+[INFO](2026/04/12/ 11:40:29 PM) [Round: 2 client3] accuracy: 0.896289  loss: 0.344845 | LIT_attack
+[INFO](2026/04/12/ 11:40:30 PM) [Round: 2 client4] accuracy: 0.887207  loss: 0.372668 | LIT_attack
+[INFO](2026/04/12/ 11:40:31 PM) [Round: 2 client5] accuracy: 0.885938  loss: 0.376477 | LIT_attack
+[INFO](2026/04/12/ 11:40:33 PM) [Round: 2 client6] accuracy: 0.893652  loss: 0.366147 | LIT_attack
+[INFO](2026/04/12/ 11:40:34 PM) [Round: 2 client7] accuracy: 0.885156  loss: 0.373401 | LIT_attack
+[INFO](2026/04/12/ 11:40:35 PM) [Round: 2 client8] accuracy: 0.888281  loss: 0.356828 | LIT_attack
+[INFO](2026/04/12/ 11:40:36 PM) [Round: 2 client9] accuracy: 0.898242  loss: 0.333228 | LIT_attack
+[INFO](2026/04/12/ 11:40:37 PM) [Round: 2 client10] accuracy: 0.896875  loss: 0.332738 | LIT_attack
+[INFO](2026/04/12/ 11:40:38 PM) [Round: 2 client11] accuracy: 0.888965  loss: 0.360305 | LIT_attack
+[INFO](2026/04/12/ 11:40:39 PM) [Round: 2 client12] accuracy: 0.861523  loss: 0.410544 | LIT_attack
+[INFO](2026/04/12/ 11:40:39 PM) [Round: 2 client13] accuracy: 0.894824  loss: 0.353666 | LIT_attack
+[INFO](2026/04/12/ 11:40:40 PM) [Round: 2 client14] accuracy: 0.898340  loss: 0.332708 | LIT_attack
+[INFO](2026/04/12/ 11:40:41 PM) [Round: 2 client15] accuracy: 0.888086  loss: 0.374896 | LIT_attack
+[INFO](2026/04/12/ 11:40:42 PM) [Round: 2 client16] accuracy: 0.901660  loss: 0.344579 | LIT_attack
+[INFO](2026/04/12/ 11:40:43 PM) [Round: 2 client17] accuracy: 0.900684  loss: 0.347561 | LIT_attack
+[INFO](2026/04/12/ 11:40:44 PM) [Round: 2 client18] accuracy: 0.905762  loss: 0.324933 | LIT_attack
+[INFO](2026/04/12/ 11:40:45 PM) [Round: 2 client19] accuracy: 0.905078  loss: 0.325923 | LIT_attack
+[INFO](2026/04/12/ 11:40:46 PM) [Round: 2 client20] accuracy: 0.900098  loss: 0.336484 | LIT_attack
+[INFO](2026/04/12/ 11:40:47 PM) [Round: 2 client21] accuracy: 0.891895  loss: 0.355805 | LIT_attack
+[INFO](2026/04/12/ 11:40:48 PM) [Round: 2 client22] accuracy: 0.902930  loss: 0.315797 | LIT_attack
+[INFO](2026/04/12/ 11:40:49 PM) [Round: 2 client23] accuracy: 0.862305  loss: 0.415200 | LIT_attack
+[INFO](2026/04/12/ 11:40:50 PM) [Round: 2 client24] accuracy: 0.903320  loss: 0.324964 | LIT_attack
+[INFO](2026/04/12/ 11:40:50 PM) [Round: 2 client25] accuracy: 0.895215  loss: 0.353610 | LIT_attack
+[INFO](2026/04/12/ 11:40:51 PM) [Round: 2 client26] accuracy: 0.879102  loss: 0.384157 | LIT_attack
+[INFO](2026/04/12/ 11:40:52 PM) [Round: 2 client27] accuracy: 0.895606  loss: 0.353661 | LIT_attack
+[INFO](2026/04/12/ 11:40:53 PM) [Round: 2 client28] accuracy: 0.863379  loss: 0.434828 | LIT_attack
+[INFO](2026/04/12/ 11:40:54 PM) [Round: 2 client29] accuracy: 0.873340  loss: 0.404433 | LIT_attack
+[INFO](2026/04/12/ 11:40:55 PM) [Round: 2 client30] accuracy: 0.903125  loss: 0.339751 | LIT_attack
+[INFO](2026/04/12/ 11:40:56 PM) [Round: 2 client31] accuracy: 0.899707  loss: 0.347107 | LIT_attack
+[INFO](2026/04/12/ 11:40:57 PM) [Round: 2 client32] accuracy: 0.881641  loss: 0.383868 | LIT_attack
+[INFO](2026/04/12/ 11:40:58 PM) [Round: 2 client33] accuracy: 0.900000  loss: 0.327922 | LIT_attack
+[INFO](2026/04/12/ 11:40:59 PM) [Round: 2 client34] accuracy: 0.887402  loss: 0.365802 | LIT_attack
+[INFO](2026/04/12/ 11:41:00 PM) [Round: 2 client35] accuracy: 0.886328  loss: 0.363357 | LIT_attack
+[INFO](2026/04/12/ 11:41:01 PM) [Round: 2 client36] accuracy: 0.900391  loss: 0.333483 | LIT_attack
+[INFO](2026/04/12/ 11:41:02 PM) [Round: 2 client37] accuracy: 0.895801  loss: 0.347259 | LIT_attack
+[INFO](2026/04/12/ 11:41:03 PM) [Round: 2 client38] accuracy: 0.890332  loss: 0.372121 | LIT_attack
+[INFO](2026/04/12/ 11:41:04 PM) [Round: 2 client39] accuracy: 0.893555  loss: 0.352881 | LIT_attack
+[INFO](2026/04/12/ 11:41:05 PM) [Round: 2 client40] accuracy: 0.892383  loss: 0.357712 | LIT_attack
+[INFO](2026/04/12/ 11:41:05 PM) [Round: 2 client41] accuracy: 0.896191  loss: 0.346777 | LIT_attack
+[INFO](2026/04/12/ 11:41:06 PM) [Round: 2 client42] accuracy: 0.904395  loss: 0.328394 | LIT_attack
+[INFO](2026/04/12/ 11:41:07 PM) [Round: 2 client43] accuracy: 0.888672  loss: 0.358502 | LIT_attack
+[INFO](2026/04/12/ 11:41:08 PM) [Round: 2 client44] accuracy: 0.893750  loss: 0.345188 | LIT_attack
+[INFO](2026/04/12/ 11:41:09 PM) [Round: 2 client45] accuracy: 0.896875  loss: 0.344024 | LIT_attack
+[INFO](2026/04/12/ 11:41:10 PM) [Round: 2 client46] accuracy: 0.885449  loss: 0.379910 | LIT_attack
+[INFO](2026/04/12/ 11:41:11 PM) [Round: 2 client47] accuracy: 0.898535  loss: 0.343299 | LIT_attack
+[INFO](2026/04/12/ 11:41:12 PM) [Round: 2 client48] accuracy: 0.886035  loss: 0.355954 | LIT_attack
+[INFO](2026/04/12/ 11:41:13 PM) [Round: 2 client49] accuracy: 0.879004  loss: 0.394317 | LIT_attack
+[INFO](2026/04/12/ 11:41:14 PM) [Round: 2 client50] accuracy: 0.896875  loss: 0.350728 | LIT_attack
+[INFO](2026/04/12/ 11:41:15 PM) [Round: 2 client51] accuracy: 0.890137  loss: 0.371240 | LIT_attack
+[INFO](2026/04/12/ 11:41:16 PM) [Round: 2 client52] accuracy: 0.878711  loss: 0.387078 | LIT_attack
+[INFO](2026/04/12/ 11:41:17 PM) [Round: 2 client53] accuracy: 0.896289  loss: 0.355511 | LIT_attack
+[INFO](2026/04/12/ 11:41:18 PM) [Round: 2 client54] accuracy: 0.896484  loss: 0.345329 | LIT_attack
+[INFO](2026/04/12/ 11:41:18 PM) [Round: 2 client55] accuracy: 0.900391  loss: 0.346943 | LIT_attack
+[INFO](2026/04/12/ 11:41:19 PM) [Round: 2 client56] accuracy: 0.895703  loss: 0.333937 | LIT_attack
+[INFO](2026/04/12/ 11:41:20 PM) [Round: 2 client57] accuracy: 0.902539  loss: 0.325290 | LIT_attack
+[INFO](2026/04/12/ 11:41:21 PM) [Round: 2 client58] accuracy: 0.903711  loss: 0.326036 | LIT_attack
+[INFO](2026/04/12/ 11:41:22 PM) [Round: 2 client59] accuracy: 0.893262  loss: 0.355526 | LIT_attack
+[INFO](2026/04/12/ 11:41:22 PM) [Round: 2 client60] accuracy: 0.885059  loss: 0.358906 | LIT_attack
+[INFO](2026/04/12/ 11:41:23 PM) [Round: 2 client61] accuracy: 0.898730  loss: 0.334965 | LIT_attack
+[INFO](2026/04/12/ 11:41:24 PM) [Round: 2 client62] accuracy: 0.897461  loss: 0.340143 | LIT_attack
+[INFO](2026/04/12/ 11:41:25 PM) [Round: 2 client63] accuracy: 0.900781  loss: 0.335475 | LIT_attack
+[INFO](2026/04/12/ 11:41:26 PM) [Round: 2 client64] accuracy: 0.892285  loss: 0.361969 | LIT_attack
+[INFO](2026/04/12/ 11:41:27 PM) [Round: 2 client65] accuracy: 0.888770  loss: 0.360929 | LIT_attack
+[INFO](2026/04/12/ 11:41:28 PM) [Round: 2 client66] accuracy: 0.867969  loss: 0.409382 | LIT_attack
+[INFO](2026/04/12/ 11:41:29 PM) [Round: 2 client67] accuracy: 0.903027  loss: 0.339755 | LIT_attack
+[INFO](2026/04/12/ 11:41:30 PM) [Round: 2 client68] accuracy: 0.871777  loss: 0.403112 | LIT_attack
+[INFO](2026/04/12/ 11:41:31 PM) [Round: 2 client69] accuracy: 0.879785  loss: 0.395554 | LIT_attack
+[INFO](2026/04/12/ 11:41:31 PM) [Round: 2 client70] accuracy: 0.804395  loss: 0.552340 | LIT_attack
+[INFO](2026/04/12/ 11:41:32 PM) [Round: 2 client71] accuracy: 0.886426  loss: 0.362697 | LIT_attack
+[INFO](2026/04/12/ 11:41:33 PM) [Round: 2 client72] accuracy: 0.896191  loss: 0.341230 | LIT_attack
+[INFO](2026/04/12/ 11:41:34 PM) [Round: 2 client73] accuracy: 0.896777  loss: 0.351606 | LIT_attack
+[INFO](2026/04/12/ 11:41:35 PM) [Round: 2 client74] accuracy: 0.887207  loss: 0.371589 | LIT_attack
+[INFO](2026/04/12/ 11:41:36 PM) [Round: 2 client75] accuracy: 0.890820  loss: 0.364269 | LIT_attack
+[INFO](2026/04/12/ 11:41:37 PM) [Round: 2 client76] accuracy: 0.896289  loss: 0.348982 | LIT_attack
+[INFO](2026/04/12/ 11:41:38 PM) [Round: 2 client77] accuracy: 0.897266  loss: 0.335584 | LIT_attack
+[INFO](2026/04/12/ 11:41:39 PM) [Round: 2 client78] accuracy: 0.889746  loss: 0.363055 | LIT_attack
+[INFO](2026/04/12/ 11:41:40 PM) [Round: 2 client79] accuracy: 0.902734  loss: 0.329094 | LIT_attack
+[INFO](2026/04/12/ 11:41:41 PM) [Round: 2 client80] accuracy: 0.875488  loss: 0.391103 | LIT_attack
+[INFO](2026/04/12/ 11:41:42 PM) [Round: 2 client81] accuracy: 0.882129  loss: 0.378833 | LIT_attack
+[INFO](2026/04/12/ 11:41:43 PM) [Round: 2 client82] accuracy: 0.897852  loss: 0.345632 | LIT_attack
+[INFO](2026/04/12/ 11:41:43 PM) [Round: 2 client83] accuracy: 0.905176  loss: 0.319897 | LIT_attack
+[INFO](2026/04/12/ 11:41:44 PM) [Round: 2 client84] accuracy: 0.870215  loss: 0.405701 | LIT_attack
+[INFO](2026/04/12/ 11:41:45 PM) [Round: 2 client85] accuracy: 0.898242  loss: 0.347681 | LIT_attack
+[INFO](2026/04/12/ 11:41:46 PM) [Round: 2 client86] accuracy: 0.870313  loss: 0.403454 | LIT_attack
+[INFO](2026/04/12/ 11:41:47 PM) [Round: 2 client87] accuracy: 0.880566  loss: 0.385709 | LIT_attack
+[INFO](2026/04/12/ 11:41:48 PM) [Round: 2 client88] accuracy: 0.875293  loss: 0.386758 | LIT_attack
+[INFO](2026/04/12/ 11:41:49 PM) [Round: 2 client89] accuracy: 0.900293  loss: 0.331373 | LIT_attack
+[INFO](2026/04/12/ 11:41:50 PM) [Round: 2 client90] accuracy: 0.896680  loss: 0.341898 | LIT_attack
+[INFO](2026/04/12/ 11:41:51 PM) [Round: 2 client91] accuracy: 0.886230  loss: 0.362555 | LIT_attack
+[INFO](2026/04/12/ 11:41:52 PM) [Round: 2 client92] accuracy: 0.884082  loss: 0.373470 | LIT_attack
+[INFO](2026/04/12/ 11:41:53 PM) [Round: 2 client93] accuracy: 0.885547  loss: 0.379439 | LIT_attack
+[INFO](2026/04/12/ 11:41:54 PM) [Round: 2 client94] accuracy: 0.890625  loss: 0.368628 | LIT_attack
+[INFO](2026/04/12/ 11:41:55 PM) [Round: 2 client95] accuracy: 0.876367  loss: 0.390519 | LIT_attack
+[INFO](2026/04/12/ 11:41:56 PM) [Round: 2 client96] accuracy: 0.890723  loss: 0.358139 | LIT_attack
+[INFO](2026/04/12/ 11:41:57 PM) [Round: 2 client97] accuracy: 0.893555  loss: 0.359034 | LIT_attack
+[INFO](2026/04/12/ 11:41:58 PM) [Round: 2 client98] accuracy: 0.892773  loss: 0.358961 | LIT_attack
+[INFO](2026/04/12/ 11:41:59 PM) [Round: 2 client99] accuracy: 0.900586  loss: 0.330479 | LIT_attack
+[INFO](2026/04/12/ 11:42:03 PM) [LIT_attack client17] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:04 PM) [LIT_attack client72] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:05 PM) [LIT_attack client97] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:06 PM) [LIT_attack client8] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:07 PM) [LIT_attack client32] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:08 PM) [LIT_attack client15] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:09 PM) [LIT_attack client63] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:10 PM) [LIT_attack client57] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:11 PM) [LIT_attack client60] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:11 PM) [LIT_attack client83] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:12 PM) [LIT_attack client48] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:13 PM) [LIT_attack client26] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:14 PM) [LIT_attack client12] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:15 PM) [LIT_attack client62] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:16 PM) [LIT_attack client3] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:17 PM) [LIT_attack client49] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:18 PM) [LIT_attack client55] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:19 PM) [LIT_attack client77] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:20 PM) [LIT_attack client0] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:21 PM) [LIT_attack client92] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:21 PM) [LIT_attack client34] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:22 PM) [LIT_attack client29] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:23 PM) [LIT_attack client75] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:24 PM) [LIT_attack client13] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:25 PM) [LIT_attack client40] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:25 PM) [LIT_attack client85] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:26 PM) [LIT_attack client2] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:27 PM) [LIT_attack client74] accuracy: 0.892480  loss: 0.379496 
+[INFO](2026/04/12/ 11:42:27 PM) agg_type: multi_krum
+[INFO](2026/04/12/ 11:42:27 PM) [Round: 2] >> Detect_malicious_client: ['client39', 'client28', 'client68', 'client53', 'client69', 'client44', 'client41', 'client99', 'client11', 'client96', 'client54', 'client27', 'client81', 'client95', 'client80', 'client4', 'client93', 'client94', 'client87', 'client86', 'client89', 'client71', 'client84', 'client70', 'client91', 'client90', 'client88', 'client1']
+[INFO](2026/04/12/ 11:42:27 PM) [Round: 2] >> Number_malicious_client: 28
+[INFO](2026/04/12/ 11:42:27 PM) [Round: 2] >> Server Defense accuracy: 0.440000
+[INFO](2026/04/12/ 11:42:27 PM) [Round: 2] >> Server Detect malicious Precision: 0.000000
+[INFO](2026/04/12/ 11:42:27 PM) [Round: 2] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/04/12/ 11:42:27 PM) [Round: 2] >> Time of aggregation: 0.143663 s
+[INFO](2026/04/12/ 11:42:34 PM) [Round: 2] >> Global ASR: 0.017800
+[INFO](2026/04/12/ 11:42:34 PM) [Round: 2] >> Global Model Test accuracy: 0.912500
+[INFO](2026/04/12/ 11:42:34 PM) [Round: 2] >> Global Model Test loss: 0.307887
+[INFO](2026/04/12/ 11:42:34 PM) **COMMON ROUND:3
+[INFO](2026/04/12/ 11:42:35 PM) [Round: 3 client0] accuracy: 0.861328  loss: 0.455181 | LIT_attack
+[INFO](2026/04/12/ 11:42:36 PM) [Round: 3 client1] accuracy: 0.879785  loss: 0.394080 | LIT_attack
+[INFO](2026/04/12/ 11:42:37 PM) [Round: 3 client2] accuracy: 0.903711  loss: 0.316675 | LIT_attack
+[INFO](2026/04/12/ 11:42:38 PM) [Round: 3 client3] accuracy: 0.887109  loss: 0.346264 | LIT_attack
+[INFO](2026/04/12/ 11:42:39 PM) [Round: 3 client4] accuracy: 0.897949  loss: 0.334646 | LIT_attack
+[INFO](2026/04/12/ 11:42:40 PM) [Round: 3 client5] accuracy: 0.904980  loss: 0.313852 | LIT_attack
+[INFO](2026/04/12/ 11:42:41 PM) [Round: 3 client6] accuracy: 0.904199  loss: 0.311222 | LIT_attack
+[INFO](2026/04/12/ 11:42:42 PM) [Round: 3 client7] accuracy: 0.904785  loss: 0.306879 | LIT_attack
+[INFO](2026/04/12/ 11:42:43 PM) [Round: 3 client8] accuracy: 0.910937  loss: 0.297586 | LIT_attack
+[INFO](2026/04/12/ 11:42:44 PM) [Round: 3 client9] accuracy: 0.906152  loss: 0.303176 | LIT_attack
+[INFO](2026/04/12/ 11:42:45 PM) [Round: 3 client10] accuracy: 0.908984  loss: 0.302977 | LIT_attack
+[INFO](2026/04/12/ 11:42:45 PM) [Round: 3 client11] accuracy: 0.907324  loss: 0.301329 | LIT_attack
+[INFO](2026/04/12/ 11:42:46 PM) [Round: 3 client12] accuracy: 0.895020  loss: 0.335866 | LIT_attack
+[INFO](2026/04/12/ 11:42:47 PM) [Round: 3 client13] accuracy: 0.894043  loss: 0.346568 | LIT_attack
+[INFO](2026/04/12/ 11:42:48 PM) [Round: 3 client14] accuracy: 0.892383  loss: 0.345265 | LIT_attack
+[INFO](2026/04/12/ 11:42:49 PM) [Round: 3 client15] accuracy: 0.894043  loss: 0.350734 | LIT_attack
+[INFO](2026/04/12/ 11:42:51 PM) [Round: 3 client16] accuracy: 0.889160  loss: 0.354668 | LIT_attack
+[INFO](2026/04/12/ 11:42:52 PM) [Round: 3 client17] accuracy: 0.906445  loss: 0.314909 | LIT_attack
+[INFO](2026/04/12/ 11:42:53 PM) [Round: 3 client18] accuracy: 0.902832  loss: 0.313063 | LIT_attack
+[INFO](2026/04/12/ 11:42:54 PM) [Round: 3 client19] accuracy: 0.913184  loss: 0.299738 | LIT_attack
+[INFO](2026/04/12/ 11:42:55 PM) [Round: 3 client20] accuracy: 0.906055  loss: 0.310911 | LIT_attack
+[INFO](2026/04/12/ 11:42:56 PM) [Round: 3 client21] accuracy: 0.895312  loss: 0.330871 | LIT_attack
+[INFO](2026/04/12/ 11:42:57 PM) [Round: 3 client22] accuracy: 0.876660  loss: 0.375909 | LIT_attack
+[INFO](2026/04/12/ 11:42:58 PM) [Round: 3 client23] accuracy: 0.901074  loss: 0.324219 | LIT_attack
+[INFO](2026/04/12/ 11:42:58 PM) [Round: 3 client24] accuracy: 0.892090  loss: 0.363358 | LIT_attack
+[INFO](2026/04/12/ 11:42:59 PM) [Round: 3 client25] accuracy: 0.888867  loss: 0.349859 | LIT_attack
+[INFO](2026/04/12/ 11:43:00 PM) [Round: 3 client26] accuracy: 0.876367  loss: 0.383946 | LIT_attack
+[INFO](2026/04/12/ 11:43:01 PM) [Round: 3 client27] accuracy: 0.910840  loss: 0.300925 | LIT_attack
+[INFO](2026/04/12/ 11:43:02 PM) [Round: 3 client28] accuracy: 0.900781  loss: 0.320482 | LIT_attack
+[INFO](2026/04/12/ 11:43:03 PM) [Round: 3 client29] accuracy: 0.899316  loss: 0.323026 | LIT_attack
+[INFO](2026/04/12/ 11:43:04 PM) [Round: 3 client30] accuracy: 0.906543  loss: 0.313217 | LIT_attack
+[INFO](2026/04/12/ 11:43:05 PM) [Round: 3 client31] accuracy: 0.904004  loss: 0.324773 | LIT_attack
+[INFO](2026/04/12/ 11:43:06 PM) [Round: 3 client32] accuracy: 0.909961  loss: 0.300730 | LIT_attack
+[INFO](2026/04/12/ 11:43:07 PM) [Round: 3 client33] accuracy: 0.906250  loss: 0.295943 | LIT_attack
+[INFO](2026/04/12/ 11:43:08 PM) [Round: 3 client34] accuracy: 0.890820  loss: 0.349072 | LIT_attack
+[INFO](2026/04/12/ 11:43:09 PM) [Round: 3 client35] accuracy: 0.911035  loss: 0.312699 | LIT_attack
+[INFO](2026/04/12/ 11:43:10 PM) [Round: 3 client36] accuracy: 0.906348  loss: 0.309824 | LIT_attack
+[INFO](2026/04/12/ 11:43:11 PM) [Round: 3 client37] accuracy: 0.903320  loss: 0.316524 | LIT_attack
+[INFO](2026/04/12/ 11:43:12 PM) [Round: 3 client38] accuracy: 0.903809  loss: 0.314714 | LIT_attack
+[INFO](2026/04/12/ 11:43:13 PM) [Round: 3 client39] accuracy: 0.906445  loss: 0.307244 | LIT_attack
+[INFO](2026/04/12/ 11:43:14 PM) [Round: 3 client40] accuracy: 0.849707  loss: 0.435117 | LIT_attack
+[INFO](2026/04/12/ 11:43:15 PM) [Round: 3 client41] accuracy: 0.855664  loss: 0.408676 | LIT_attack
+[INFO](2026/04/12/ 11:43:16 PM) [Round: 3 client42] accuracy: 0.896191  loss: 0.335711 | LIT_attack
+[INFO](2026/04/12/ 11:43:17 PM) [Round: 3 client43] accuracy: 0.890039  loss: 0.337378 | LIT_attack
+[INFO](2026/04/12/ 11:43:18 PM) [Round: 3 client44] accuracy: 0.883789  loss: 0.369829 | LIT_attack
+[INFO](2026/04/12/ 11:43:19 PM) [Round: 3 client45] accuracy: 0.907227  loss: 0.306975 | LIT_attack
+[INFO](2026/04/12/ 11:43:20 PM) [Round: 3 client46] accuracy: 0.903418  loss: 0.312778 | LIT_attack
+[INFO](2026/04/12/ 11:43:21 PM) [Round: 3 client47] accuracy: 0.901270  loss: 0.325036 | LIT_attack
+[INFO](2026/04/12/ 11:43:22 PM) [Round: 3 client48] accuracy: 0.898828  loss: 0.331047 | LIT_attack
+[INFO](2026/04/12/ 11:43:23 PM) [Round: 3 client49] accuracy: 0.891113  loss: 0.353938 | LIT_attack
+[INFO](2026/04/12/ 11:43:24 PM) [Round: 3 client50] accuracy: 0.896289  loss: 0.331965 | LIT_attack
+[INFO](2026/04/12/ 11:43:25 PM) [Round: 3 client51] accuracy: 0.902344  loss: 0.322340 | LIT_attack
+[INFO](2026/04/12/ 11:43:26 PM) [Round: 3 client52] accuracy: 0.900977  loss: 0.321850 | LIT_attack
+[INFO](2026/04/12/ 11:43:27 PM) [Round: 3 client53] accuracy: 0.893066  loss: 0.351473 | LIT_attack
+[INFO](2026/04/12/ 11:43:28 PM) [Round: 3 client54] accuracy: 0.882324  loss: 0.384941 | LIT_attack
+[INFO](2026/04/12/ 11:43:29 PM) [Round: 3 client55] accuracy: 0.890918  loss: 0.343397 | LIT_attack
+[INFO](2026/04/12/ 11:43:30 PM) [Round: 3 client56] accuracy: 0.901367  loss: 0.315213 | LIT_attack
+[INFO](2026/04/12/ 11:43:31 PM) [Round: 3 client57] accuracy: 0.903320  loss: 0.318398 | LIT_attack
+[INFO](2026/04/12/ 11:43:31 PM) [Round: 3 client58] accuracy: 0.907813  loss: 0.305527 | LIT_attack
+[INFO](2026/04/12/ 11:43:32 PM) [Round: 3 client59] accuracy: 0.907715  loss: 0.304194 | LIT_attack
+[INFO](2026/04/12/ 11:43:33 PM) [Round: 3 client60] accuracy: 0.903223  loss: 0.312107 | LIT_attack
+[INFO](2026/04/12/ 11:43:34 PM) [Round: 3 client61] accuracy: 0.901563  loss: 0.319458 | LIT_attack
+[INFO](2026/04/12/ 11:43:35 PM) [Round: 3 client62] accuracy: 0.885352  loss: 0.360831 | LIT_attack
+[INFO](2026/04/12/ 11:43:36 PM) [Round: 3 client63] accuracy: 0.894727  loss: 0.349779 | LIT_attack
+[INFO](2026/04/12/ 11:43:37 PM) [Round: 3 client64] accuracy: 0.892676  loss: 0.337056 | LIT_attack
+[INFO](2026/04/12/ 11:43:38 PM) [Round: 3 client65] accuracy: 0.905566  loss: 0.327320 | LIT_attack
+[INFO](2026/04/12/ 11:43:39 PM) [Round: 3 client66] accuracy: 0.911035  loss: 0.294538 | LIT_attack
+[INFO](2026/04/12/ 11:43:39 PM) [Round: 3 client67] accuracy: 0.898047  loss: 0.327514 | LIT_attack
+[INFO](2026/04/12/ 11:43:40 PM) [Round: 3 client68] accuracy: 0.898340  loss: 0.331214 | LIT_attack
+[INFO](2026/04/12/ 11:43:41 PM) [Round: 3 client69] accuracy: 0.912305  loss: 0.292371 | LIT_attack
+[INFO](2026/04/12/ 11:43:42 PM) [Round: 3 client70] accuracy: 0.900684  loss: 0.322853 | LIT_attack
+[INFO](2026/04/12/ 11:43:43 PM) [Round: 3 client71] accuracy: 0.892090  loss: 0.344025 | LIT_attack
+[INFO](2026/04/12/ 11:43:44 PM) [Round: 3 client72] accuracy: 0.898145  loss: 0.321783 | LIT_attack
+[INFO](2026/04/12/ 11:43:45 PM) [Round: 3 client73] accuracy: 0.907031  loss: 0.306976 | LIT_attack
+[INFO](2026/04/12/ 11:43:46 PM) [Round: 3 client74] accuracy: 0.913965  loss: 0.292164 | LIT_attack
+[INFO](2026/04/12/ 11:43:47 PM) [Round: 3 client75] accuracy: 0.902441  loss: 0.318091 | LIT_attack
+[INFO](2026/04/12/ 11:43:48 PM) [Round: 3 client76] accuracy: 0.882324  loss: 0.363476 | LIT_attack
+[INFO](2026/04/12/ 11:43:49 PM) [Round: 3 client77] accuracy: 0.880078  loss: 0.355644 | LIT_attack
+[INFO](2026/04/12/ 11:43:50 PM) [Round: 3 client78] accuracy: 0.895606  loss: 0.335787 | LIT_attack
+[INFO](2026/04/12/ 11:43:51 PM) [Round: 3 client79] accuracy: 0.897461  loss: 0.331969 | LIT_attack
+[INFO](2026/04/12/ 11:43:52 PM) [Round: 3 client80] accuracy: 0.899121  loss: 0.325981 | LIT_attack
+[INFO](2026/04/12/ 11:43:53 PM) [Round: 3 client81] accuracy: 0.910547  loss: 0.296857 | LIT_attack
+[INFO](2026/04/12/ 11:43:54 PM) [Round: 3 client82] accuracy: 0.904590  loss: 0.319570 | LIT_attack
+[INFO](2026/04/12/ 11:43:55 PM) [Round: 3 client83] accuracy: 0.908984  loss: 0.296660 | LIT_attack
+[INFO](2026/04/12/ 11:43:56 PM) [Round: 3 client84] accuracy: 0.901270  loss: 0.311330 | LIT_attack
+[INFO](2026/04/12/ 11:43:57 PM) [Round: 3 client85] accuracy: 0.905762  loss: 0.309711 | LIT_attack
+[INFO](2026/04/12/ 11:43:57 PM) [Round: 3 client86] accuracy: 0.909766  loss: 0.297304 | LIT_attack
+[INFO](2026/04/12/ 11:43:58 PM) [Round: 3 client87] accuracy: 0.892773  loss: 0.328795 | LIT_attack
+[INFO](2026/04/12/ 11:43:59 PM) [Round: 3 client88] accuracy: 0.879004  loss: 0.375464 | LIT_attack
+[INFO](2026/04/12/ 11:44:00 PM) [Round: 3 client89] accuracy: 0.896289  loss: 0.327754 | LIT_attack
+[INFO](2026/04/12/ 11:44:01 PM) [Round: 3 client90] accuracy: 0.907910  loss: 0.310174 | LIT_attack
+[INFO](2026/04/12/ 11:44:02 PM) [Round: 3 client91] accuracy: 0.884766  loss: 0.363435 | LIT_attack
+[INFO](2026/04/12/ 11:44:03 PM) [Round: 3 client92] accuracy: 0.903125  loss: 0.307537 | LIT_attack
+[INFO](2026/04/12/ 11:44:03 PM) [Round: 3 client93] accuracy: 0.872266  loss: 0.384842 | LIT_attack
+[INFO](2026/04/12/ 11:44:04 PM) [Round: 3 client94] accuracy: 0.908301  loss: 0.307184 | LIT_attack
+[INFO](2026/04/12/ 11:44:05 PM) [Round: 3 client95] accuracy: 0.867285  loss: 0.413242 | LIT_attack
+[INFO](2026/04/12/ 11:44:06 PM) [Round: 3 client96] accuracy: 0.891309  loss: 0.345589 | LIT_attack
+[INFO](2026/04/12/ 11:44:07 PM) [Round: 3 client97] accuracy: 0.882715  loss: 0.374736 | LIT_attack
+[INFO](2026/04/12/ 11:44:08 PM) [Round: 3 client98] accuracy: 0.885254  loss: 0.370075 | LIT_attack
+[INFO](2026/04/12/ 11:44:09 PM) [Round: 3 client99] accuracy: 0.876367  loss: 0.382928 | LIT_attack
+[INFO](2026/04/12/ 11:44:14 PM) [LIT_attack client17] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:15 PM) [LIT_attack client72] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:16 PM) [LIT_attack client97] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:17 PM) [LIT_attack client8] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:17 PM) [LIT_attack client32] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:18 PM) [LIT_attack client15] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:19 PM) [LIT_attack client63] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:20 PM) [LIT_attack client57] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:21 PM) [LIT_attack client60] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:22 PM) [LIT_attack client83] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:23 PM) [LIT_attack client48] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:24 PM) [LIT_attack client26] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:25 PM) [LIT_attack client12] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:26 PM) [LIT_attack client62] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:27 PM) [LIT_attack client3] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:27 PM) [LIT_attack client49] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:28 PM) [LIT_attack client55] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:29 PM) [LIT_attack client77] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:30 PM) [LIT_attack client0] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:31 PM) [LIT_attack client92] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:31 PM) [LIT_attack client34] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:32 PM) [LIT_attack client29] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:33 PM) [LIT_attack client75] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:35 PM) [LIT_attack client13] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:35 PM) [LIT_attack client40] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:36 PM) [LIT_attack client85] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:37 PM) [LIT_attack client2] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:38 PM) [LIT_attack client74] accuracy: 0.920117  loss: 0.283696 
+[INFO](2026/04/12/ 11:44:38 PM) agg_type: multi_krum
+[INFO](2026/04/12/ 11:44:38 PM) [Round: 3] >> Detect_malicious_client: ['client71', 'client50', 'client51', 'client70', 'client80', 'client94', 'client87', 'client45', 'client66', 'client43', 'client91', 'client76', 'client96', 'client98', 'client35', 'client90', 'client84', 'client36', 'client93', 'client95', 'client89', 'client88', 'client99', 'client44', 'client25', 'client54', 'client24', 'client1']
+[INFO](2026/04/12/ 11:44:38 PM) [Round: 3] >> Number_malicious_client: 28
+[INFO](2026/04/12/ 11:44:38 PM) [Round: 3] >> Server Defense accuracy: 0.440000
+[INFO](2026/04/12/ 11:44:38 PM) [Round: 3] >> Server Detect malicious Precision: 0.000000
+[INFO](2026/04/12/ 11:44:38 PM) [Round: 3] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/04/12/ 11:44:38 PM) [Round: 3] >> Time of aggregation: 0.152386 s
+[INFO](2026/04/12/ 11:44:44 PM) [Round: 3] >> Global ASR: 0.005800
+[INFO](2026/04/12/ 11:44:44 PM) [Round: 3] >> Global Model Test accuracy: 0.924512
+[INFO](2026/04/12/ 11:44:44 PM) [Round: 3] >> Global Model Test loss: 0.259997
+[INFO](2026/04/12/ 11:44:44 PM) **COMMON ROUND:4
+[INFO](2026/04/12/ 11:44:45 PM) [Round: 4 client0] accuracy: 0.854785  loss: 0.473724 | LIT_attack
+[INFO](2026/04/12/ 11:44:46 PM) [Round: 4 client1] accuracy: 0.901367  loss: 0.334796 | LIT_attack
+[INFO](2026/04/12/ 11:44:48 PM) [Round: 4 client2] accuracy: 0.906543  loss: 0.306199 | LIT_attack
+[INFO](2026/04/12/ 11:44:49 PM) [Round: 4 client3] accuracy: 0.898340  loss: 0.326738 | LIT_attack
+[INFO](2026/04/12/ 11:44:49 PM) [Round: 4 client4] accuracy: 0.916309  loss: 0.273877 | LIT_attack
+[INFO](2026/04/12/ 11:44:50 PM) [Round: 4 client5] accuracy: 0.908984  loss: 0.307362 | LIT_attack
+[INFO](2026/04/12/ 11:44:51 PM) [Round: 4 client6] accuracy: 0.910059  loss: 0.287924 | LIT_attack
+[INFO](2026/04/12/ 11:44:52 PM) [Round: 4 client7] accuracy: 0.918262  loss: 0.276107 | LIT_attack
+[INFO](2026/04/12/ 11:44:53 PM) [Round: 4 client8] accuracy: 0.913477  loss: 0.290433 | LIT_attack
+[INFO](2026/04/12/ 11:44:54 PM) [Round: 4 client9] accuracy: 0.915332  loss: 0.274880 | LIT_attack
+[INFO](2026/04/12/ 11:44:55 PM) [Round: 4 client10] accuracy: 0.906250  loss: 0.300980 | LIT_attack
+[INFO](2026/04/12/ 11:44:56 PM) [Round: 4 client11] accuracy: 0.908691  loss: 0.298955 | LIT_attack
+[INFO](2026/04/12/ 11:44:57 PM) [Round: 4 client12] accuracy: 0.913379  loss: 0.303162 | LIT_attack
+[INFO](2026/04/12/ 11:44:58 PM) [Round: 4 client13] accuracy: 0.914648  loss: 0.283430 | LIT_attack
+[INFO](2026/04/12/ 11:44:59 PM) [Round: 4 client14] accuracy: 0.912500  loss: 0.283775 | LIT_attack
+[INFO](2026/04/12/ 11:45:00 PM) [Round: 4 client15] accuracy: 0.901367  loss: 0.311909 | LIT_attack
+[INFO](2026/04/12/ 11:45:01 PM) [Round: 4 client16] accuracy: 0.908008  loss: 0.303903 | LIT_attack
+[INFO](2026/04/12/ 11:45:02 PM) [Round: 4 client17] accuracy: 0.911719  loss: 0.306490 | LIT_attack
+[INFO](2026/04/12/ 11:45:02 PM) [Round: 4 client18] accuracy: 0.920215  loss: 0.272106 | LIT_attack
+[INFO](2026/04/12/ 11:45:03 PM) [Round: 4 client19] accuracy: 0.919727  loss: 0.276333 | LIT_attack
+[INFO](2026/04/12/ 11:45:04 PM) [Round: 4 client20] accuracy: 0.913379  loss: 0.282387 | LIT_attack
+[INFO](2026/04/12/ 11:45:05 PM) [Round: 4 client21] accuracy: 0.890234  loss: 0.347366 | LIT_attack
+[INFO](2026/04/12/ 11:45:06 PM) [Round: 4 client22] accuracy: 0.913281  loss: 0.278562 | LIT_attack
+[INFO](2026/04/12/ 11:45:07 PM) [Round: 4 client23] accuracy: 0.916113  loss: 0.276815 | LIT_attack
+[INFO](2026/04/12/ 11:45:08 PM) [Round: 4 client24] accuracy: 0.921289  loss: 0.269746 | LIT_attack
+[INFO](2026/04/12/ 11:45:09 PM) [Round: 4 client25] accuracy: 0.897070  loss: 0.319133 | LIT_attack
+[INFO](2026/04/12/ 11:45:10 PM) [Round: 4 client26] accuracy: 0.899316  loss: 0.330924 | LIT_attack
+[INFO](2026/04/12/ 11:45:11 PM) [Round: 4 client27] accuracy: 0.920020  loss: 0.268280 | LIT_attack
+[INFO](2026/04/12/ 11:45:12 PM) [Round: 4 client28] accuracy: 0.918848  loss: 0.277955 | LIT_attack
+[INFO](2026/04/12/ 11:45:13 PM) [Round: 4 client29] accuracy: 0.917480  loss: 0.273963 | LIT_attack
+[INFO](2026/04/12/ 11:45:14 PM) [Round: 4 client30] accuracy: 0.916309  loss: 0.284190 | LIT_attack
+[INFO](2026/04/12/ 11:45:14 PM) [Round: 4 client31] accuracy: 0.913184  loss: 0.290953 | LIT_attack
+[INFO](2026/04/12/ 11:45:15 PM) [Round: 4 client32] accuracy: 0.919531  loss: 0.265976 | LIT_attack
+[INFO](2026/04/12/ 11:45:16 PM) [Round: 4 client33] accuracy: 0.914746  loss: 0.272991 | LIT_attack
+[INFO](2026/04/12/ 11:45:17 PM) [Round: 4 client34] accuracy: 0.903418  loss: 0.300289 | LIT_attack
+[INFO](2026/04/12/ 11:45:18 PM) [Round: 4 client35] accuracy: 0.916992  loss: 0.285854 | LIT_attack
+[INFO](2026/04/12/ 11:45:19 PM) [Round: 4 client36] accuracy: 0.916406  loss: 0.283368 | LIT_attack
+[INFO](2026/04/12/ 11:45:20 PM) [Round: 4 client37] accuracy: 0.911816  loss: 0.294593 | LIT_attack
+[INFO](2026/04/12/ 11:45:21 PM) [Round: 4 client38] accuracy: 0.908008  loss: 0.311115 | LIT_attack
+[INFO](2026/04/12/ 11:45:22 PM) [Round: 4 client39] accuracy: 0.900098  loss: 0.317728 | LIT_attack
+[INFO](2026/04/12/ 11:45:23 PM) [Round: 4 client40] accuracy: 0.900586  loss: 0.322752 | LIT_attack
+[INFO](2026/04/12/ 11:45:24 PM) [Round: 4 client41] accuracy: 0.914355  loss: 0.281425 | LIT_attack
+[INFO](2026/04/12/ 11:45:25 PM) [Round: 4 client42] accuracy: 0.910449  loss: 0.288475 | LIT_attack
+[INFO](2026/04/12/ 11:45:26 PM) [Round: 4 client43] accuracy: 0.916602  loss: 0.290652 | LIT_attack
+[INFO](2026/04/12/ 11:45:26 PM) [Round: 4 client44] accuracy: 0.896875  loss: 0.314630 | LIT_attack
+[INFO](2026/04/12/ 11:45:27 PM) [Round: 4 client45] accuracy: 0.891895  loss: 0.336987 | LIT_attack
+[INFO](2026/04/12/ 11:45:28 PM) [Round: 4 client46] accuracy: 0.917480  loss: 0.280374 | LIT_attack
+[INFO](2026/04/12/ 11:45:29 PM) [Round: 4 client47] accuracy: 0.917578  loss: 0.278937 | LIT_attack
+[INFO](2026/04/12/ 11:45:30 PM) [Round: 4 client48] accuracy: 0.913672  loss: 0.280420 | LIT_attack
+[INFO](2026/04/12/ 11:45:31 PM) [Round: 4 client49] accuracy: 0.904688  loss: 0.315680 | LIT_attack
+[INFO](2026/04/12/ 11:45:32 PM) [Round: 4 client50] accuracy: 0.913965  loss: 0.284669 | LIT_attack
+[INFO](2026/04/12/ 11:45:34 PM) [Round: 4 client51] accuracy: 0.904297  loss: 0.315637 | LIT_attack
+[INFO](2026/04/12/ 11:45:34 PM) [Round: 4 client52] accuracy: 0.904980  loss: 0.311678 | LIT_attack
+[INFO](2026/04/12/ 11:45:35 PM) [Round: 4 client53] accuracy: 0.898438  loss: 0.331266 | LIT_attack
+[INFO](2026/04/12/ 11:45:36 PM) [Round: 4 client54] accuracy: 0.915527  loss: 0.281927 | LIT_attack
+[INFO](2026/04/12/ 11:45:37 PM) [Round: 4 client55] accuracy: 0.894141  loss: 0.348047 | LIT_attack
+[INFO](2026/04/12/ 11:45:38 PM) [Round: 4 client56] accuracy: 0.900684  loss: 0.307868 | LIT_attack
+[INFO](2026/04/12/ 11:45:38 PM) [Round: 4 client57] accuracy: 0.882422  loss: 0.364702 | LIT_attack
+[INFO](2026/04/12/ 11:45:39 PM) [Round: 4 client58] accuracy: 0.915527  loss: 0.289256 | LIT_attack
+[INFO](2026/04/12/ 11:45:40 PM) [Round: 4 client59] accuracy: 0.909082  loss: 0.302991 | LIT_attack
+[INFO](2026/04/12/ 11:45:41 PM) [Round: 4 client60] accuracy: 0.904883  loss: 0.315623 | LIT_attack
+[INFO](2026/04/12/ 11:45:42 PM) [Round: 4 client61] accuracy: 0.918945  loss: 0.274888 | LIT_attack
+[INFO](2026/04/12/ 11:45:43 PM) [Round: 4 client62] accuracy: 0.916602  loss: 0.277831 | LIT_attack
+[INFO](2026/04/12/ 11:45:44 PM) [Round: 4 client63] accuracy: 0.904883  loss: 0.302239 | LIT_attack
+[INFO](2026/04/12/ 11:45:44 PM) [Round: 4 client64] accuracy: 0.907031  loss: 0.317714 | LIT_attack
+[INFO](2026/04/12/ 11:45:45 PM) [Round: 4 client65] accuracy: 0.921289  loss: 0.277732 | LIT_attack
+[INFO](2026/04/12/ 11:45:46 PM) [Round: 4 client66] accuracy: 0.917578  loss: 0.266795 | LIT_attack
+[INFO](2026/04/12/ 11:45:47 PM) [Round: 4 client67] accuracy: 0.908496  loss: 0.312679 | LIT_attack
+[INFO](2026/04/12/ 11:45:48 PM) [Round: 4 client68] accuracy: 0.917285  loss: 0.280355 | LIT_attack
+[INFO](2026/04/12/ 11:45:49 PM) [Round: 4 client69] accuracy: 0.917383  loss: 0.273257 | LIT_attack
+[INFO](2026/04/12/ 11:45:50 PM) [Round: 4 client70] accuracy: 0.904980  loss: 0.296635 | LIT_attack
+[INFO](2026/04/12/ 11:45:51 PM) [Round: 4 client71] accuracy: 0.891699  loss: 0.328022 | LIT_attack
+[INFO](2026/04/12/ 11:45:52 PM) [Round: 4 client72] accuracy: 0.912598  loss: 0.292845 | LIT_attack
+[INFO](2026/04/12/ 11:45:53 PM) [Round: 4 client73] accuracy: 0.916211  loss: 0.291934 | LIT_attack
+[INFO](2026/04/12/ 11:45:54 PM) [Round: 4 client74] accuracy: 0.920313  loss: 0.275474 | LIT_attack
+[INFO](2026/04/12/ 11:45:55 PM) [Round: 4 client75] accuracy: 0.916699  loss: 0.283179 | LIT_attack
+[INFO](2026/04/12/ 11:45:56 PM) [Round: 4 client76] accuracy: 0.908008  loss: 0.298944 | LIT_attack
+[INFO](2026/04/12/ 11:45:57 PM) [Round: 4 client77] accuracy: 0.915234  loss: 0.278550 | LIT_attack
+[INFO](2026/04/12/ 11:45:58 PM) [Round: 4 client78] accuracy: 0.911231  loss: 0.297595 | LIT_attack
+[INFO](2026/04/12/ 11:45:58 PM) [Round: 4 client79] accuracy: 0.904980  loss: 0.303032 | LIT_attack
+[INFO](2026/04/12/ 11:46:00 PM) [Round: 4 client80] accuracy: 0.914453  loss: 0.276313 | LIT_attack
+[INFO](2026/04/12/ 11:46:00 PM) [Round: 4 client81] accuracy: 0.898828  loss: 0.331548 | LIT_attack
+[INFO](2026/04/12/ 11:46:01 PM) [Round: 4 client82] accuracy: 0.914844  loss: 0.290220 | LIT_attack
+[INFO](2026/04/12/ 11:46:02 PM) [Round: 4 client83] accuracy: 0.918066  loss: 0.274093 | LIT_attack
+[INFO](2026/04/12/ 11:46:03 PM) [Round: 4 client84] accuracy: 0.911523  loss: 0.285166 | LIT_attack
+[INFO](2026/04/12/ 11:46:04 PM) [Round: 4 client85] accuracy: 0.915625  loss: 0.300459 | LIT_attack
+[INFO](2026/04/12/ 11:46:05 PM) [Round: 4 client86] accuracy: 0.916406  loss: 0.282825 | LIT_attack
+[INFO](2026/04/12/ 11:46:06 PM) [Round: 4 client87] accuracy: 0.911719  loss: 0.285082 | LIT_attack
+[INFO](2026/04/12/ 11:46:07 PM) [Round: 4 client88] accuracy: 0.906445  loss: 0.300654 | LIT_attack
+[INFO](2026/04/12/ 11:46:08 PM) [Round: 4 client89] accuracy: 0.905469  loss: 0.303633 | LIT_attack
+[INFO](2026/04/12/ 11:46:09 PM) [Round: 4 client90] accuracy: 0.895606  loss: 0.320172 | LIT_attack
+[INFO](2026/04/12/ 11:46:10 PM) [Round: 4 client91] accuracy: 0.888379  loss: 0.348176 | LIT_attack
+[INFO](2026/04/12/ 11:46:11 PM) [Round: 4 client92] accuracy: 0.909277  loss: 0.299513 | LIT_attack
+[INFO](2026/04/12/ 11:46:12 PM) [Round: 4 client93] accuracy: 0.886523  loss: 0.360812 | LIT_attack
+[INFO](2026/04/12/ 11:46:13 PM) [Round: 4 client94] accuracy: 0.913965  loss: 0.288689 | LIT_attack
+[INFO](2026/04/12/ 11:46:14 PM) [Round: 4 client95] accuracy: 0.924707  loss: 0.269607 | LIT_attack
+[INFO](2026/04/12/ 11:46:15 PM) [Round: 4 client96] accuracy: 0.904688  loss: 0.310070 | LIT_attack
+[INFO](2026/04/12/ 11:46:16 PM) [Round: 4 client97] accuracy: 0.902441  loss: 0.316167 | LIT_attack
+[INFO](2026/04/12/ 11:46:16 PM) [Round: 4 client98] accuracy: 0.877148  loss: 0.383805 | LIT_attack
+[INFO](2026/04/12/ 11:46:17 PM) [Round: 4 client99] accuracy: 0.902637  loss: 0.307301 | LIT_attack
+[INFO](2026/04/12/ 11:46:22 PM) [LIT_attack client17] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:23 PM) [LIT_attack client72] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:24 PM) [LIT_attack client97] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:25 PM) [LIT_attack client8] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:26 PM) [LIT_attack client32] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:26 PM) [LIT_attack client15] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:27 PM) [LIT_attack client63] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:28 PM) [LIT_attack client57] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:29 PM) [LIT_attack client60] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:30 PM) [LIT_attack client83] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:31 PM) [LIT_attack client48] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:31 PM) [LIT_attack client26] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:32 PM) [LIT_attack client12] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:33 PM) [LIT_attack client62] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:34 PM) [LIT_attack client3] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:35 PM) [LIT_attack client49] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:36 PM) [LIT_attack client55] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:37 PM) [LIT_attack client77] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:38 PM) [LIT_attack client0] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:38 PM) [LIT_attack client92] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:39 PM) [LIT_attack client34] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:40 PM) [LIT_attack client29] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:41 PM) [LIT_attack client75] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:42 PM) [LIT_attack client13] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:42 PM) [LIT_attack client40] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:43 PM) [LIT_attack client85] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:44 PM) [LIT_attack client2] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:45 PM) [LIT_attack client74] accuracy: 0.916992  loss: 0.294461 
+[INFO](2026/04/12/ 11:46:45 PM) agg_type: multi_krum
+[INFO](2026/04/12/ 11:46:45 PM) [Round: 4] >> Detect_malicious_client: ['client68', 'client73', 'client78', 'client31', 'client44', 'client84', 'client82', 'client76', 'client56', 'client67', 'client11', 'client95', 'client54', 'client94', 'client80', 'client99', 'client93', 'client98', 'client81', 'client71', 'client91', 'client86', 'client96', 'client90', 'client87', 'client89', 'client88', 'client1']
+[INFO](2026/04/12/ 11:46:45 PM) [Round: 4] >> Number_malicious_client: 28
+[INFO](2026/04/12/ 11:46:45 PM) [Round: 4] >> Server Defense accuracy: 0.440000
+[INFO](2026/04/12/ 11:46:45 PM) [Round: 4] >> Server Detect malicious Precision: 0.000000
+[INFO](2026/04/12/ 11:46:45 PM) [Round: 4] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/04/12/ 11:46:45 PM) [Round: 4] >> Time of aggregation: 0.145270 s
+[INFO](2026/04/12/ 11:46:51 PM) [Round: 4] >> Global ASR: 0.012900
+[INFO](2026/04/12/ 11:46:51 PM) [Round: 4] >> Global Model Test accuracy: 0.928516
+[INFO](2026/04/12/ 11:46:51 PM) [Round: 4] >> Global Model Test loss: 0.247079
+[INFO](2026/04/12/ 11:46:51 PM) **COMMON ROUND:5
+[INFO](2026/04/12/ 11:46:52 PM) [Round: 5 client0] accuracy: 0.891602  loss: 0.393464 | LIT_attack
+[INFO](2026/04/12/ 11:46:53 PM) [Round: 5 client1] accuracy: 0.877734  loss: 0.378348 | LIT_attack
+[INFO](2026/04/12/ 11:46:54 PM) [Round: 5 client2] accuracy: 0.903516  loss: 0.305079 | LIT_attack
+[INFO](2026/04/12/ 11:46:55 PM) [Round: 5 client3] accuracy: 0.908203  loss: 0.290891 | LIT_attack
+[INFO](2026/04/12/ 11:46:56 PM) [Round: 5 client4] accuracy: 0.911523  loss: 0.279419 | LIT_attack
+[INFO](2026/04/12/ 11:46:57 PM) [Round: 5 client5] accuracy: 0.916309  loss: 0.279201 | LIT_attack
+[INFO](2026/04/12/ 11:46:58 PM) [Round: 5 client6] accuracy: 0.918750  loss: 0.266814 | LIT_attack
+[INFO](2026/04/12/ 11:46:59 PM) [Round: 5 client7] accuracy: 0.923145  loss: 0.252731 | LIT_attack
+[INFO](2026/04/12/ 11:47:00 PM) [Round: 5 client8] accuracy: 0.922559  loss: 0.256524 | LIT_attack
+[INFO](2026/04/12/ 11:47:01 PM) [Round: 5 client9] accuracy: 0.920605  loss: 0.259963 | LIT_attack
+[INFO](2026/04/12/ 11:47:02 PM) [Round: 5 client10] accuracy: 0.905273  loss: 0.297866 | LIT_attack
+[INFO](2026/04/12/ 11:47:03 PM) [Round: 5 client11] accuracy: 0.909375  loss: 0.285869 | LIT_attack
+[INFO](2026/04/12/ 11:47:04 PM) [Round: 5 client12] accuracy: 0.926074  loss: 0.260606 | LIT_attack
+[INFO](2026/04/12/ 11:47:05 PM) [Round: 5 client13] accuracy: 0.922656  loss: 0.258578 | LIT_attack
+[INFO](2026/04/12/ 11:47:06 PM) [Round: 5 client14] accuracy: 0.915918  loss: 0.273949 | LIT_attack
+[INFO](2026/04/12/ 11:47:07 PM) [Round: 5 client15] accuracy: 0.923926  loss: 0.254492 | LIT_attack
+[INFO](2026/04/12/ 11:47:08 PM) [Round: 5 client16] accuracy: 0.921387  loss: 0.272803 | LIT_attack
+[INFO](2026/04/12/ 11:47:08 PM) [Round: 5 client17] accuracy: 0.923535  loss: 0.261811 | LIT_attack
+[INFO](2026/04/12/ 11:47:09 PM) [Round: 5 client18] accuracy: 0.924902  loss: 0.248811 | LIT_attack
+[INFO](2026/04/12/ 11:47:10 PM) [Round: 5 client19] accuracy: 0.918750  loss: 0.267814 | LIT_attack
+[INFO](2026/04/12/ 11:47:11 PM) [Round: 5 client20] accuracy: 0.915430  loss: 0.272523 | LIT_attack
+[INFO](2026/04/12/ 11:47:12 PM) [Round: 5 client21] accuracy: 0.897754  loss: 0.319916 | LIT_attack
+[INFO](2026/04/12/ 11:47:12 PM) [Round: 5 client22] accuracy: 0.923828  loss: 0.259826 | LIT_attack
+[INFO](2026/04/12/ 11:47:14 PM) [Round: 5 client23] accuracy: 0.919043  loss: 0.266905 | LIT_attack
+[INFO](2026/04/12/ 11:47:15 PM) [Round: 5 client24] accuracy: 0.924707  loss: 0.249831 | LIT_attack
+[INFO](2026/04/12/ 11:47:16 PM) [Round: 5 client25] accuracy: 0.920703  loss: 0.256989 | LIT_attack
+[INFO](2026/04/12/ 11:47:17 PM) [Round: 5 client26] accuracy: 0.907520  loss: 0.303487 | LIT_attack
+[INFO](2026/04/12/ 11:47:18 PM) [Round: 5 client27] accuracy: 0.915332  loss: 0.278738 | LIT_attack
+[INFO](2026/04/12/ 11:47:19 PM) [Round: 5 client28] accuracy: 0.922168  loss: 0.256765 | LIT_attack
+[INFO](2026/04/12/ 11:47:19 PM) [Round: 5 client29] accuracy: 0.913281  loss: 0.274236 | LIT_attack
+[INFO](2026/04/12/ 11:47:20 PM) [Round: 5 client30] accuracy: 0.923438  loss: 0.259227 | LIT_attack
+[INFO](2026/04/12/ 11:47:21 PM) [Round: 5 client31] accuracy: 0.932227  loss: 0.246907 | LIT_attack
+[INFO](2026/04/12/ 11:47:22 PM) [Round: 5 client32] accuracy: 0.911816  loss: 0.285709 | LIT_attack
+[INFO](2026/04/12/ 11:47:23 PM) [Round: 5 client33] accuracy: 0.911719  loss: 0.272363 | LIT_attack
+[INFO](2026/04/12/ 11:47:24 PM) [Round: 5 client34] accuracy: 0.919824  loss: 0.259338 | LIT_attack
+[INFO](2026/04/12/ 11:47:24 PM) [Round: 5 client35] accuracy: 0.919727  loss: 0.274613 | LIT_attack
+[INFO](2026/04/12/ 11:47:25 PM) [Round: 5 client36] accuracy: 0.923145  loss: 0.250720 | LIT_attack
+[INFO](2026/04/12/ 11:47:26 PM) [Round: 5 client37] accuracy: 0.912012  loss: 0.280240 | LIT_attack
+[INFO](2026/04/12/ 11:47:27 PM) [Round: 5 client38] accuracy: 0.913379  loss: 0.286654 | LIT_attack
+[INFO](2026/04/12/ 11:47:27 PM) [Round: 5 client39] accuracy: 0.909863  loss: 0.294208 | LIT_attack
+[INFO](2026/04/12/ 11:47:28 PM) [Round: 5 client40] accuracy: 0.909277  loss: 0.293775 | LIT_attack
+[INFO](2026/04/12/ 11:47:29 PM) [Round: 5 client41] accuracy: 0.923145  loss: 0.259546 | LIT_attack
+[INFO](2026/04/12/ 11:47:30 PM) [Round: 5 client42] accuracy: 0.919238  loss: 0.253638 | LIT_attack
+[INFO](2026/04/12/ 11:47:30 PM) [Round: 5 client43] accuracy: 0.886914  loss: 0.330185 | LIT_attack
+[INFO](2026/04/12/ 11:47:31 PM) [Round: 5 client44] accuracy: 0.921680  loss: 0.254062 | LIT_attack
+[INFO](2026/04/12/ 11:47:32 PM) [Round: 5 client45] accuracy: 0.921289  loss: 0.257675 | LIT_attack
+[INFO](2026/04/12/ 11:47:33 PM) [Round: 5 client46] accuracy: 0.919336  loss: 0.266543 | LIT_attack
+[INFO](2026/04/12/ 11:47:33 PM) [Round: 5 client47] accuracy: 0.896582  loss: 0.323376 | LIT_attack
+[INFO](2026/04/12/ 11:47:34 PM) [Round: 5 client48] accuracy: 0.915918  loss: 0.279504 | LIT_attack
+[INFO](2026/04/12/ 11:47:35 PM) [Round: 5 client49] accuracy: 0.913086  loss: 0.282051 | LIT_attack
+[INFO](2026/04/12/ 11:47:36 PM) [Round: 5 client50] accuracy: 0.922559  loss: 0.254864 | LIT_attack
+[INFO](2026/04/12/ 11:47:36 PM) [Round: 5 client51] accuracy: 0.920508  loss: 0.259042 | LIT_attack
+[INFO](2026/04/12/ 11:47:37 PM) [Round: 5 client52] accuracy: 0.922852  loss: 0.263357 | LIT_attack
+[INFO](2026/04/12/ 11:47:38 PM) [Round: 5 client53] accuracy: 0.902344  loss: 0.306932 | LIT_attack
+[INFO](2026/04/12/ 11:47:39 PM) [Round: 5 client54] accuracy: 0.914746  loss: 0.282304 | LIT_attack
+[INFO](2026/04/12/ 11:47:39 PM) [Round: 5 client55] accuracy: 0.915820  loss: 0.276417 | LIT_attack
+[INFO](2026/04/12/ 11:47:40 PM) [Round: 5 client56] accuracy: 0.908691  loss: 0.289594 | LIT_attack
+[INFO](2026/04/12/ 11:47:41 PM) [Round: 5 client57] accuracy: 0.923828  loss: 0.251335 | LIT_attack
+[INFO](2026/04/12/ 11:47:42 PM) [Round: 5 client58] accuracy: 0.920020  loss: 0.262823 | LIT_attack
+[INFO](2026/04/12/ 11:47:42 PM) [Round: 5 client59] accuracy: 0.902051  loss: 0.305932 | LIT_attack
+[INFO](2026/04/12/ 11:47:43 PM) [Round: 5 client60] accuracy: 0.915234  loss: 0.282491 | LIT_attack
+[INFO](2026/04/12/ 11:47:44 PM) [Round: 5 client61] accuracy: 0.915234  loss: 0.272402 | LIT_attack
+[INFO](2026/04/12/ 11:47:44 PM) [Round: 5 client62] accuracy: 0.923242  loss: 0.252423 | LIT_attack
+[INFO](2026/04/12/ 11:47:45 PM) [Round: 5 client63] accuracy: 0.901953  loss: 0.313736 | LIT_attack
+[INFO](2026/04/12/ 11:47:46 PM) [Round: 5 client64] accuracy: 0.920605  loss: 0.260032 | LIT_attack
+[INFO](2026/04/12/ 11:47:47 PM) [Round: 5 client65] accuracy: 0.912988  loss: 0.287751 | LIT_attack
+[INFO](2026/04/12/ 11:47:47 PM) [Round: 5 client66] accuracy: 0.914258  loss: 0.277788 | LIT_attack
+[INFO](2026/04/12/ 11:47:48 PM) [Round: 5 client67] accuracy: 0.908594  loss: 0.298547 | LIT_attack
+[INFO](2026/04/12/ 11:47:49 PM) [Round: 5 client68] accuracy: 0.913477  loss: 0.279642 | LIT_attack
+[INFO](2026/04/12/ 11:47:50 PM) [Round: 5 client69] accuracy: 0.924609  loss: 0.249563 | LIT_attack
+[INFO](2026/04/12/ 11:47:50 PM) [Round: 5 client70] accuracy: 0.908203  loss: 0.290085 | LIT_attack
+[INFO](2026/04/12/ 11:47:51 PM) [Round: 5 client71] accuracy: 0.919727  loss: 0.254844 | LIT_attack
+[INFO](2026/04/12/ 11:47:52 PM) [Round: 5 client72] accuracy: 0.912695  loss: 0.280181 | LIT_attack
+[INFO](2026/04/12/ 11:47:53 PM) [Round: 5 client73] accuracy: 0.919531  loss: 0.263176 | LIT_attack
+[INFO](2026/04/12/ 11:47:54 PM) [Round: 5 client74] accuracy: 0.928711  loss: 0.235050 | LIT_attack
+[INFO](2026/04/12/ 11:47:54 PM) [Round: 5 client75] accuracy: 0.924414  loss: 0.249390 | LIT_attack
+[INFO](2026/04/12/ 11:47:55 PM) [Round: 5 client76] accuracy: 0.929102  loss: 0.245344 | LIT_attack
+[INFO](2026/04/12/ 11:47:56 PM) [Round: 5 client77] accuracy: 0.914648  loss: 0.274107 | LIT_attack
+[INFO](2026/04/12/ 11:47:57 PM) [Round: 5 client78] accuracy: 0.925293  loss: 0.257384 | LIT_attack
+[INFO](2026/04/12/ 11:47:57 PM) [Round: 5 client79] accuracy: 0.918262  loss: 0.264769 | LIT_attack
+[INFO](2026/04/12/ 11:47:58 PM) [Round: 5 client80] accuracy: 0.922949  loss: 0.259870 | LIT_attack
+[INFO](2026/04/12/ 11:47:59 PM) [Round: 5 client81] accuracy: 0.920020  loss: 0.260010 | LIT_attack
+[INFO](2026/04/12/ 11:48:00 PM) [Round: 5 client82] accuracy: 0.921387  loss: 0.260141 | LIT_attack
+[INFO](2026/04/12/ 11:48:00 PM) [Round: 5 client83] accuracy: 0.916113  loss: 0.267473 | LIT_attack
+[INFO](2026/04/12/ 11:48:01 PM) [Round: 5 client84] accuracy: 0.900293  loss: 0.307171 | LIT_attack
+[INFO](2026/04/12/ 11:48:02 PM) [Round: 5 client85] accuracy: 0.901953  loss: 0.296528 | LIT_attack
+[INFO](2026/04/12/ 11:48:03 PM) [Round: 5 client86] accuracy: 0.920020  loss: 0.263311 | LIT_attack
+[INFO](2026/04/12/ 11:48:03 PM) [Round: 5 client87] accuracy: 0.923926  loss: 0.252170 | LIT_attack
+[INFO](2026/04/12/ 11:48:04 PM) [Round: 5 client88] accuracy: 0.902344  loss: 0.301017 | LIT_attack
+[INFO](2026/04/12/ 11:48:05 PM) [Round: 5 client89] accuracy: 0.922266  loss: 0.254137 | LIT_attack
+[INFO](2026/04/12/ 11:48:06 PM) [Round: 5 client90] accuracy: 0.918652  loss: 0.271479 | LIT_attack
+[INFO](2026/04/12/ 11:48:06 PM) [Round: 5 client91] accuracy: 0.906934  loss: 0.293690 | LIT_attack
+[INFO](2026/04/12/ 11:48:07 PM) [Round: 5 client92] accuracy: 0.898926  loss: 0.308618 | LIT_attack
+[INFO](2026/04/12/ 11:48:08 PM) [Round: 5 client93] accuracy: 0.888477  loss: 0.345489 | LIT_attack
+[INFO](2026/04/12/ 11:48:09 PM) [Round: 5 client94] accuracy: 0.911328  loss: 0.285312 | LIT_attack
+[INFO](2026/04/12/ 11:48:09 PM) [Round: 5 client95] accuracy: 0.913086  loss: 0.280744 | LIT_attack
+[INFO](2026/04/12/ 11:48:10 PM) [Round: 5 client96] accuracy: 0.924023  loss: 0.261366 | LIT_attack
+[INFO](2026/04/12/ 11:48:11 PM) [Round: 5 client97] accuracy: 0.915723  loss: 0.280486 | LIT_attack
+[INFO](2026/04/12/ 11:48:11 PM) [Round: 5 client98] accuracy: 0.915918  loss: 0.276726 | LIT_attack
+[INFO](2026/04/12/ 11:48:12 PM) [Round: 5 client99] accuracy: 0.932227  loss: 0.241954 | LIT_attack
+[INFO](2026/04/12/ 11:48:17 PM) [LIT_attack client17] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:17 PM) [LIT_attack client72] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:18 PM) [LIT_attack client97] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:19 PM) [LIT_attack client8] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:20 PM) [LIT_attack client32] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:20 PM) [LIT_attack client15] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:21 PM) [LIT_attack client63] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:22 PM) [LIT_attack client57] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:22 PM) [LIT_attack client60] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:23 PM) [LIT_attack client83] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:24 PM) [LIT_attack client48] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:25 PM) [LIT_attack client26] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:25 PM) [LIT_attack client12] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:26 PM) [LIT_attack client62] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:27 PM) [LIT_attack client3] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:27 PM) [LIT_attack client49] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:28 PM) [LIT_attack client55] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:29 PM) [LIT_attack client77] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:29 PM) [LIT_attack client0] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:30 PM) [LIT_attack client92] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:31 PM) [LIT_attack client34] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:32 PM) [LIT_attack client29] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:32 PM) [LIT_attack client75] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:33 PM) [LIT_attack client13] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:34 PM) [LIT_attack client40] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:34 PM) [LIT_attack client85] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:35 PM) [LIT_attack client2] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:36 PM) [LIT_attack client74] accuracy: 0.930078  loss: 0.242476 
+[INFO](2026/04/12/ 11:48:36 PM) agg_type: multi_krum
+[INFO](2026/04/12/ 11:48:36 PM) [Round: 5] >> Detect_malicious_client: ['client86', 'client95', 'client69', 'client66', 'client21', 'client44', 'client98', 'client54', 'client67', 'client47', 'client73', 'client81', 'client84', 'client51', 'client39', 'client52', 'client70', 'client90', 'client88', 'client94', 'client4', 'client76', 'client91', 'client50', 'client68', 'client93', 'client89', 'client1']
+[INFO](2026/04/12/ 11:48:36 PM) [Round: 5] >> Number_malicious_client: 28
+[INFO](2026/04/12/ 11:48:36 PM) [Round: 5] >> Server Defense accuracy: 0.440000
+[INFO](2026/04/12/ 11:48:36 PM) [Round: 5] >> Server Detect malicious Precision: 0.000000
+[INFO](2026/04/12/ 11:48:36 PM) [Round: 5] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/04/12/ 11:48:36 PM) [Round: 5] >> Time of aggregation: 0.128914 s
+[INFO](2026/04/12/ 11:48:41 PM) [Round: 5] >> Global ASR: 0.006000
+[INFO](2026/04/12/ 11:48:41 PM) [Round: 5] >> Global Model Test accuracy: 0.935352
+[INFO](2026/04/12/ 11:48:41 PM) [Round: 5] >> Global Model Test loss: 0.218464
+[INFO](2026/04/12/ 11:48:41 PM) **COMMON ROUND:6
+[INFO](2026/04/12/ 11:48:42 PM) [Round: 6 client0] accuracy: 0.902441  loss: 0.378297 | LIT_attack
+[INFO](2026/04/12/ 11:48:43 PM) [Round: 6 client1] accuracy: 0.898730  loss: 0.317195 | LIT_attack
+[INFO](2026/04/12/ 11:48:43 PM) [Round: 6 client2] accuracy: 0.906543  loss: 0.295957 | LIT_attack
+[INFO](2026/04/12/ 11:48:44 PM) [Round: 6 client3] accuracy: 0.904883  loss: 0.298292 | LIT_attack
+[INFO](2026/04/12/ 11:48:45 PM) [Round: 6 client4] accuracy: 0.925977  loss: 0.238755 | LIT_attack
+[INFO](2026/04/12/ 11:48:46 PM) [Round: 6 client5] accuracy: 0.924316  loss: 0.255705 | LIT_attack
+[INFO](2026/04/12/ 11:48:46 PM) [Round: 6 client6] accuracy: 0.928906  loss: 0.230216 | LIT_attack
+[INFO](2026/04/12/ 11:48:47 PM) [Round: 6 client7] accuracy: 0.911816  loss: 0.281771 | LIT_attack
+[INFO](2026/04/12/ 11:48:48 PM) [Round: 6 client8] accuracy: 0.924023  loss: 0.245177 | LIT_attack
+[INFO](2026/04/12/ 11:48:49 PM) [Round: 6 client9] accuracy: 0.912793  loss: 0.272072 | LIT_attack
+[INFO](2026/04/12/ 11:48:49 PM) [Round: 6 client10] accuracy: 0.913770  loss: 0.273495 | LIT_attack
+[INFO](2026/04/12/ 11:48:50 PM) [Round: 6 client11] accuracy: 0.920605  loss: 0.252434 | LIT_attack
+[INFO](2026/04/12/ 11:48:51 PM) [Round: 6 client12] accuracy: 0.917676  loss: 0.269595 | LIT_attack
+[INFO](2026/04/12/ 11:48:52 PM) [Round: 6 client13] accuracy: 0.906543  loss: 0.295487 | LIT_attack
+[INFO](2026/04/12/ 11:48:52 PM) [Round: 6 client14] accuracy: 0.924902  loss: 0.245136 | LIT_attack
+[INFO](2026/04/12/ 11:48:53 PM) [Round: 6 client15] accuracy: 0.920410  loss: 0.255115 | LIT_attack
+[INFO](2026/04/12/ 11:48:54 PM) [Round: 6 client16] accuracy: 0.927832  loss: 0.248631 | LIT_attack
+[INFO](2026/04/12/ 11:48:54 PM) [Round: 6 client17] accuracy: 0.922461  loss: 0.259998 | LIT_attack
+[INFO](2026/04/12/ 11:48:55 PM) [Round: 6 client18] accuracy: 0.930469  loss: 0.231994 | LIT_attack
+[INFO](2026/04/12/ 11:48:56 PM) [Round: 6 client19] accuracy: 0.921191  loss: 0.260832 | LIT_attack
+[INFO](2026/04/12/ 11:48:57 PM) [Round: 6 client20] accuracy: 0.932031  loss: 0.229554 | LIT_attack
+[INFO](2026/04/12/ 11:48:57 PM) [Round: 6 client21] accuracy: 0.921777  loss: 0.249662 | LIT_attack
+[INFO](2026/04/12/ 11:48:58 PM) [Round: 6 client22] accuracy: 0.927734  loss: 0.242206 | LIT_attack
+[INFO](2026/04/12/ 11:48:59 PM) [Round: 6 client23] accuracy: 0.925684  loss: 0.236034 | LIT_attack
+[INFO](2026/04/12/ 11:49:00 PM) [Round: 6 client24] accuracy: 0.933887  loss: 0.233317 | LIT_attack
+[INFO](2026/04/12/ 11:49:00 PM) [Round: 6 client25] accuracy: 0.924512  loss: 0.252137 | LIT_attack
+[INFO](2026/04/12/ 11:49:01 PM) [Round: 6 client26] accuracy: 0.924316  loss: 0.248537 | LIT_attack
+[INFO](2026/04/12/ 11:49:02 PM) [Round: 6 client27] accuracy: 0.928711  loss: 0.243629 | LIT_attack
+[INFO](2026/04/12/ 11:49:03 PM) [Round: 6 client28] accuracy: 0.929297  loss: 0.242248 | LIT_attack
+[INFO](2026/04/12/ 11:49:03 PM) [Round: 6 client29] accuracy: 0.924219  loss: 0.248883 | LIT_attack
+[INFO](2026/04/12/ 11:49:04 PM) [Round: 6 client30] accuracy: 0.927246  loss: 0.244603 | LIT_attack
+[INFO](2026/04/12/ 11:49:05 PM) [Round: 6 client31] accuracy: 0.932617  loss: 0.246598 | LIT_attack
+[INFO](2026/04/12/ 11:49:06 PM) [Round: 6 client32] accuracy: 0.926074  loss: 0.238052 | LIT_attack
+[INFO](2026/04/12/ 11:49:06 PM) [Round: 6 client33] accuracy: 0.919727  loss: 0.253112 | LIT_attack
+[INFO](2026/04/12/ 11:49:07 PM) [Round: 6 client34] accuracy: 0.916406  loss: 0.263592 | LIT_attack
+[INFO](2026/04/12/ 11:49:08 PM) [Round: 6 client35] accuracy: 0.925391  loss: 0.253392 | LIT_attack
+[INFO](2026/04/12/ 11:49:09 PM) [Round: 6 client36] accuracy: 0.925195  loss: 0.243478 | LIT_attack
+[INFO](2026/04/12/ 11:49:09 PM) [Round: 6 client37] accuracy: 0.922266  loss: 0.259880 | LIT_attack
+[INFO](2026/04/12/ 11:49:10 PM) [Round: 6 client38] accuracy: 0.920313  loss: 0.261860 | LIT_attack
+[INFO](2026/04/12/ 11:49:11 PM) [Round: 6 client39] accuracy: 0.909473  loss: 0.295721 | LIT_attack
+[INFO](2026/04/12/ 11:49:12 PM) [Round: 6 client40] accuracy: 0.916406  loss: 0.268901 | LIT_attack
+[INFO](2026/04/12/ 11:49:13 PM) [Round: 6 client41] accuracy: 0.921875  loss: 0.264081 | LIT_attack
+[INFO](2026/04/12/ 11:49:14 PM) [Round: 6 client42] accuracy: 0.926367  loss: 0.240746 | LIT_attack
+[INFO](2026/04/12/ 11:49:14 PM) [Round: 6 client43] accuracy: 0.912891  loss: 0.289840 | LIT_attack
+[INFO](2026/04/12/ 11:49:15 PM) [Round: 6 client44] accuracy: 0.923535  loss: 0.245033 | LIT_attack
+[INFO](2026/04/12/ 11:49:16 PM) [Round: 6 client45] accuracy: 0.924902  loss: 0.247240 | LIT_attack
+[INFO](2026/04/12/ 11:49:17 PM) [Round: 6 client46] accuracy: 0.922949  loss: 0.251419 | LIT_attack
+[INFO](2026/04/12/ 11:49:17 PM) [Round: 6 client47] accuracy: 0.930664  loss: 0.229140 | LIT_attack
+[INFO](2026/04/12/ 11:49:18 PM) [Round: 6 client48] accuracy: 0.921777  loss: 0.249847 | LIT_attack
+[INFO](2026/04/12/ 11:49:19 PM) [Round: 6 client49] accuracy: 0.920020  loss: 0.257268 | LIT_attack
+[INFO](2026/04/12/ 11:49:20 PM) [Round: 6 client50] accuracy: 0.921582  loss: 0.264895 | LIT_attack
+[INFO](2026/04/12/ 11:49:21 PM) [Round: 6 client51] accuracy: 0.920313  loss: 0.267628 | LIT_attack
+[INFO](2026/04/12/ 11:49:21 PM) [Round: 6 client52] accuracy: 0.924219  loss: 0.248312 | LIT_attack
+[INFO](2026/04/12/ 11:49:22 PM) [Round: 6 client53] accuracy: 0.925391  loss: 0.243949 | LIT_attack
+[INFO](2026/04/12/ 11:49:23 PM) [Round: 6 client54] accuracy: 0.922363  loss: 0.268772 | LIT_attack
+[INFO](2026/04/12/ 11:49:24 PM) [Round: 6 client55] accuracy: 0.908398  loss: 0.297823 | LIT_attack
+[INFO](2026/04/12/ 11:49:24 PM) [Round: 6 client56] accuracy: 0.917969  loss: 0.265168 | LIT_attack
+[INFO](2026/04/12/ 11:49:25 PM) [Round: 6 client57] accuracy: 0.926562  loss: 0.243252 | LIT_attack
+[INFO](2026/04/12/ 11:49:26 PM) [Round: 6 client58] accuracy: 0.914746  loss: 0.271084 | LIT_attack
+[INFO](2026/04/12/ 11:49:27 PM) [Round: 6 client59] accuracy: 0.924023  loss: 0.258278 | LIT_attack
+[INFO](2026/04/12/ 11:49:27 PM) [Round: 6 client60] accuracy: 0.925488  loss: 0.252657 | LIT_attack
+[INFO](2026/04/12/ 11:49:28 PM) [Round: 6 client61] accuracy: 0.920117  loss: 0.259865 | LIT_attack
+[INFO](2026/04/12/ 11:49:29 PM) [Round: 6 client62] accuracy: 0.928027  loss: 0.238069 | LIT_attack
+[INFO](2026/04/12/ 11:49:30 PM) [Round: 6 client63] accuracy: 0.927246  loss: 0.238106 | LIT_attack
+[INFO](2026/04/12/ 11:49:31 PM) [Round: 6 client64] accuracy: 0.909766  loss: 0.302390 | LIT_attack
+[INFO](2026/04/12/ 11:49:31 PM) [Round: 6 client65] accuracy: 0.930566  loss: 0.238075 | LIT_attack
+[INFO](2026/04/12/ 11:49:32 PM) [Round: 6 client66] accuracy: 0.924707  loss: 0.243412 | LIT_attack
+[INFO](2026/04/12/ 11:49:33 PM) [Round: 6 client67] accuracy: 0.933008  loss: 0.227963 | LIT_attack
+[INFO](2026/04/12/ 11:49:34 PM) [Round: 6 client68] accuracy: 0.925586  loss: 0.252464 | LIT_attack
+[INFO](2026/04/12/ 11:49:34 PM) [Round: 6 client69] accuracy: 0.923926  loss: 0.247427 | LIT_attack
+[INFO](2026/04/12/ 11:49:35 PM) [Round: 6 client70] accuracy: 0.925293  loss: 0.255426 | LIT_attack
+[INFO](2026/04/12/ 11:49:36 PM) [Round: 6 client71] accuracy: 0.924805  loss: 0.239363 | LIT_attack
+[INFO](2026/04/12/ 11:49:37 PM) [Round: 6 client72] accuracy: 0.910156  loss: 0.292513 | LIT_attack
+[INFO](2026/04/12/ 11:49:37 PM) [Round: 6 client73] accuracy: 0.902441  loss: 0.297910 | LIT_attack
+[INFO](2026/04/12/ 11:49:38 PM) [Round: 6 client74] accuracy: 0.926172  loss: 0.245956 | LIT_attack
+[INFO](2026/04/12/ 11:49:39 PM) [Round: 6 client75] accuracy: 0.925195  loss: 0.248926 | LIT_attack
+[INFO](2026/04/12/ 11:49:40 PM) [Round: 6 client76] accuracy: 0.929883  loss: 0.241801 | LIT_attack
+[INFO](2026/04/12/ 11:49:40 PM) [Round: 6 client77] accuracy: 0.920410  loss: 0.252481 | LIT_attack
+[INFO](2026/04/12/ 11:49:41 PM) [Round: 6 client78] accuracy: 0.922070  loss: 0.260384 | LIT_attack
+[INFO](2026/04/12/ 11:49:42 PM) [Round: 6 client79] accuracy: 0.930664  loss: 0.234075 | LIT_attack
+[INFO](2026/04/12/ 11:49:42 PM) [Round: 6 client80] accuracy: 0.922754  loss: 0.249300 | LIT_attack
+[INFO](2026/04/12/ 11:49:43 PM) [Round: 6 client81] accuracy: 0.927246  loss: 0.241391 | LIT_attack
+[INFO](2026/04/12/ 11:49:44 PM) [Round: 6 client82] accuracy: 0.916406  loss: 0.274263 | LIT_attack
+[INFO](2026/04/12/ 11:49:45 PM) [Round: 6 client83] accuracy: 0.934668  loss: 0.225020 | LIT_attack
+[INFO](2026/04/12/ 11:49:45 PM) [Round: 6 client84] accuracy: 0.918066  loss: 0.255476 | LIT_attack
+[INFO](2026/04/12/ 11:49:46 PM) [Round: 6 client85] accuracy: 0.921387  loss: 0.260656 | LIT_attack
+[INFO](2026/04/12/ 11:49:47 PM) [Round: 6 client86] accuracy: 0.927441  loss: 0.237760 | LIT_attack
+[INFO](2026/04/12/ 11:49:48 PM) [Round: 6 client87] accuracy: 0.916309  loss: 0.274589 | LIT_attack
+[INFO](2026/04/12/ 11:49:48 PM) [Round: 6 client88] accuracy: 0.918945  loss: 0.256574 | LIT_attack
+[INFO](2026/04/12/ 11:49:49 PM) [Round: 6 client89] accuracy: 0.926562  loss: 0.242488 | LIT_attack
+[INFO](2026/04/12/ 11:49:50 PM) [Round: 6 client90] accuracy: 0.925195  loss: 0.248730 | LIT_attack
+[INFO](2026/04/12/ 11:49:51 PM) [Round: 6 client91] accuracy: 0.925488  loss: 0.242068 | LIT_attack
+[INFO](2026/04/12/ 11:49:51 PM) [Round: 6 client92] accuracy: 0.919238  loss: 0.255959 | LIT_attack
+[INFO](2026/04/12/ 11:49:52 PM) [Round: 6 client93] accuracy: 0.915039  loss: 0.280336 | LIT_attack
+[INFO](2026/04/12/ 11:49:53 PM) [Round: 6 client94] accuracy: 0.917871  loss: 0.274836 | LIT_attack
+[INFO](2026/04/12/ 11:49:54 PM) [Round: 6 client95] accuracy: 0.918457  loss: 0.273514 | LIT_attack
+[INFO](2026/04/12/ 11:49:54 PM) [Round: 6 client96] accuracy: 0.921875  loss: 0.259779 | LIT_attack
+[INFO](2026/04/12/ 11:49:55 PM) [Round: 6 client97] accuracy: 0.921777  loss: 0.262777 | LIT_attack
+[INFO](2026/04/12/ 11:49:56 PM) [Round: 6 client98] accuracy: 0.901074  loss: 0.308975 | LIT_attack
+[INFO](2026/04/12/ 11:49:57 PM) [Round: 6 client99] accuracy: 0.904883  loss: 0.307086 | LIT_attack
+[INFO](2026/04/12/ 11:50:01 PM) [LIT_attack client17] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:02 PM) [LIT_attack client72] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:02 PM) [LIT_attack client97] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:03 PM) [LIT_attack client8] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:04 PM) [LIT_attack client32] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:05 PM) [LIT_attack client15] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:05 PM) [LIT_attack client63] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:06 PM) [LIT_attack client57] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:07 PM) [LIT_attack client60] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:07 PM) [LIT_attack client83] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:08 PM) [LIT_attack client48] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:09 PM) [LIT_attack client26] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:10 PM) [LIT_attack client12] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:10 PM) [LIT_attack client62] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:11 PM) [LIT_attack client3] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:12 PM) [LIT_attack client49] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:12 PM) [LIT_attack client55] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:13 PM) [LIT_attack client77] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:14 PM) [LIT_attack client0] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:15 PM) [LIT_attack client92] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:15 PM) [LIT_attack client34] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:16 PM) [LIT_attack client29] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:17 PM) [LIT_attack client75] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:18 PM) [LIT_attack client13] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:19 PM) [LIT_attack client40] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:19 PM) [LIT_attack client85] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:20 PM) [LIT_attack client2] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:21 PM) [LIT_attack client74] accuracy: 0.930469  loss: 0.242841 
+[INFO](2026/04/12/ 11:50:21 PM) agg_type: multi_krum
+[INFO](2026/04/12/ 11:50:21 PM) [Round: 6] >> Detect_malicious_client: ['client45', 'client43', 'client94', 'client44', 'client64', 'client61', 'client95', 'client73', 'client41', 'client76', 'client81', 'client4', 'client68', 'client87', 'client39', 'client96', 'client56', 'client90', 'client98', 'client93', 'client91', 'client84', 'client99', 'client89', 'client59', 'client88', 'client54', 'client1']
+[INFO](2026/04/12/ 11:50:21 PM) [Round: 6] >> Number_malicious_client: 28
+[INFO](2026/04/12/ 11:50:21 PM) [Round: 6] >> Server Defense accuracy: 0.440000
+[INFO](2026/04/12/ 11:50:21 PM) [Round: 6] >> Server Detect malicious Precision: 0.000000
+[INFO](2026/04/12/ 11:50:21 PM) [Round: 6] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/04/12/ 11:50:21 PM) [Round: 6] >> Time of aggregation: 0.135961 s
+[INFO](2026/04/12/ 11:50:26 PM) [Round: 6] >> Global ASR: 0.010500
+[INFO](2026/04/12/ 11:50:26 PM) [Round: 6] >> Global Model Test accuracy: 0.937695
+[INFO](2026/04/12/ 11:50:26 PM) [Round: 6] >> Global Model Test loss: 0.208546
+[INFO](2026/04/12/ 11:50:26 PM) **COMMON ROUND:7
+[INFO](2026/04/12/ 11:50:27 PM) [Round: 7 client0] accuracy: 0.880762  loss: 0.423165 | LIT_attack
+[INFO](2026/04/12/ 11:50:28 PM) [Round: 7 client1] accuracy: 0.907910  loss: 0.293249 | LIT_attack
+[INFO](2026/04/12/ 11:50:28 PM) [Round: 7 client2] accuracy: 0.919531  loss: 0.253834 | LIT_attack
+[INFO](2026/04/12/ 11:50:29 PM) [Round: 7 client3] accuracy: 0.923926  loss: 0.244273 | LIT_attack
+[INFO](2026/04/12/ 11:50:30 PM) [Round: 7 client4] accuracy: 0.923047  loss: 0.251881 | LIT_attack
+[INFO](2026/04/12/ 11:50:30 PM) [Round: 7 client5] accuracy: 0.921582  loss: 0.255514 | LIT_attack
+[INFO](2026/04/12/ 11:50:31 PM) [Round: 7 client6] accuracy: 0.926074  loss: 0.232255 | LIT_attack
+[INFO](2026/04/12/ 11:50:32 PM) [Round: 7 client7] accuracy: 0.934570  loss: 0.221510 | LIT_attack
+[INFO](2026/04/12/ 11:50:33 PM) [Round: 7 client8] accuracy: 0.921875  loss: 0.247589 | LIT_attack
+[INFO](2026/04/12/ 11:50:33 PM) [Round: 7 client9] accuracy: 0.929980  loss: 0.225256 | LIT_attack
+[INFO](2026/04/12/ 11:50:34 PM) [Round: 7 client10] accuracy: 0.929395  loss: 0.224287 | LIT_attack
+[INFO](2026/04/12/ 11:50:35 PM) [Round: 7 client11] accuracy: 0.929980  loss: 0.222579 | LIT_attack
+[INFO](2026/04/12/ 11:50:36 PM) [Round: 7 client12] accuracy: 0.936230  loss: 0.220031 | LIT_attack
+[INFO](2026/04/12/ 11:50:36 PM) [Round: 7 client13] accuracy: 0.932227  loss: 0.223098 | LIT_attack
+[INFO](2026/04/12/ 11:50:37 PM) [Round: 7 client14] accuracy: 0.926465  loss: 0.229873 | LIT_attack
+[INFO](2026/04/12/ 11:50:38 PM) [Round: 7 client15] accuracy: 0.934961  loss: 0.218815 | LIT_attack
+[INFO](2026/04/12/ 11:50:39 PM) [Round: 7 client16] accuracy: 0.923340  loss: 0.262275 | LIT_attack
+[INFO](2026/04/12/ 11:50:39 PM) [Round: 7 client17] accuracy: 0.926172  loss: 0.247888 | LIT_attack
+[INFO](2026/04/12/ 11:50:40 PM) [Round: 7 client18] accuracy: 0.930566  loss: 0.237253 | LIT_attack
+[INFO](2026/04/12/ 11:50:41 PM) [Round: 7 client19] accuracy: 0.935840  loss: 0.224787 | LIT_attack
+[INFO](2026/04/12/ 11:50:42 PM) [Round: 7 client20] accuracy: 0.923730  loss: 0.248198 | LIT_attack
+[INFO](2026/04/12/ 11:50:43 PM) [Round: 7 client21] accuracy: 0.923242  loss: 0.244611 | LIT_attack
+[INFO](2026/04/12/ 11:50:43 PM) [Round: 7 client22] accuracy: 0.927637  loss: 0.236788 | LIT_attack
+[INFO](2026/04/12/ 11:50:44 PM) [Round: 7 client23] accuracy: 0.915625  loss: 0.257068 | LIT_attack
+[INFO](2026/04/12/ 11:50:45 PM) [Round: 7 client24] accuracy: 0.928320  loss: 0.245783 | LIT_attack
+[INFO](2026/04/12/ 11:50:46 PM) [Round: 7 client25] accuracy: 0.919727  loss: 0.250787 | LIT_attack
+[INFO](2026/04/12/ 11:50:47 PM) [Round: 7 client26] accuracy: 0.924414  loss: 0.250731 | LIT_attack
+[INFO](2026/04/12/ 11:50:47 PM) [Round: 7 client27] accuracy: 0.931738  loss: 0.225863 | LIT_attack
+[INFO](2026/04/12/ 11:50:48 PM) [Round: 7 client28] accuracy: 0.927832  loss: 0.240923 | LIT_attack
+[INFO](2026/04/12/ 11:50:49 PM) [Round: 7 client29] accuracy: 0.922168  loss: 0.249657 | LIT_attack
+[INFO](2026/04/12/ 11:50:50 PM) [Round: 7 client30] accuracy: 0.934180  loss: 0.219693 | LIT_attack
+[INFO](2026/04/12/ 11:50:50 PM) [Round: 7 client31] accuracy: 0.924414  loss: 0.254651 | LIT_attack
+[INFO](2026/04/12/ 11:50:51 PM) [Round: 7 client32] accuracy: 0.922754  loss: 0.249458 | LIT_attack
+[INFO](2026/04/12/ 11:50:52 PM) [Round: 7 client33] accuracy: 0.929395  loss: 0.224420 | LIT_attack
+[INFO](2026/04/12/ 11:50:53 PM) [Round: 7 client34] accuracy: 0.932617  loss: 0.219717 | LIT_attack
+[INFO](2026/04/12/ 11:50:53 PM) [Round: 7 client35] accuracy: 0.933984  loss: 0.214540 | LIT_attack
+[INFO](2026/04/12/ 11:50:54 PM) [Round: 7 client36] accuracy: 0.935254  loss: 0.216914 | LIT_attack
+[INFO](2026/04/12/ 11:50:55 PM) [Round: 7 client37] accuracy: 0.921289  loss: 0.245378 | LIT_attack
+[INFO](2026/04/12/ 11:50:56 PM) [Round: 7 client38] accuracy: 0.932617  loss: 0.223127 | LIT_attack
+[INFO](2026/04/12/ 11:50:56 PM) [Round: 7 client39] accuracy: 0.924707  loss: 0.244613 | LIT_attack
+[INFO](2026/04/12/ 11:50:57 PM) [Round: 7 client40] accuracy: 0.923926  loss: 0.251432 | LIT_attack
+[INFO](2026/04/12/ 11:50:58 PM) [Round: 7 client41] accuracy: 0.926465  loss: 0.238941 | LIT_attack
+[INFO](2026/04/12/ 11:50:59 PM) [Round: 7 client42] accuracy: 0.930957  loss: 0.225598 | LIT_attack
+[INFO](2026/04/12/ 11:50:59 PM) [Round: 7 client43] accuracy: 0.925195  loss: 0.241928 | LIT_attack
+[INFO](2026/04/12/ 11:51:00 PM) [Round: 7 client44] accuracy: 0.923926  loss: 0.243585 | LIT_attack
+[INFO](2026/04/12/ 11:51:01 PM) [Round: 7 client45] accuracy: 0.922070  loss: 0.244389 | LIT_attack
+[INFO](2026/04/12/ 11:51:02 PM) [Round: 7 client46] accuracy: 0.930273  loss: 0.229382 | LIT_attack
+[INFO](2026/04/12/ 11:51:03 PM) [Round: 7 client47] accuracy: 0.918359  loss: 0.254211 | LIT_attack
+[INFO](2026/04/12/ 11:51:03 PM) [Round: 7 client48] accuracy: 0.916602  loss: 0.258144 | LIT_attack
+[INFO](2026/04/12/ 11:51:04 PM) [Round: 7 client49] accuracy: 0.914648  loss: 0.256323 | LIT_attack
+[INFO](2026/04/12/ 11:51:05 PM) [Round: 7 client50] accuracy: 0.937012  loss: 0.214249 | LIT_attack
+[INFO](2026/04/12/ 11:51:06 PM) [Round: 7 client51] accuracy: 0.917871  loss: 0.260327 | LIT_attack
+[INFO](2026/04/12/ 11:51:07 PM) [Round: 7 client52] accuracy: 0.932031  loss: 0.227743 | LIT_attack
+[INFO](2026/04/12/ 11:51:08 PM) [Round: 7 client53] accuracy: 0.920410  loss: 0.256708 | LIT_attack
+[INFO](2026/04/12/ 11:51:08 PM) [Round: 7 client54] accuracy: 0.929492  loss: 0.240074 | LIT_attack
+[INFO](2026/04/12/ 11:51:09 PM) [Round: 7 client55] accuracy: 0.913770  loss: 0.278151 | LIT_attack
+[INFO](2026/04/12/ 11:51:10 PM) [Round: 7 client56] accuracy: 0.915039  loss: 0.267938 | LIT_attack
+[INFO](2026/04/12/ 11:51:11 PM) [Round: 7 client57] accuracy: 0.926660  loss: 0.243785 | LIT_attack
+[INFO](2026/04/12/ 11:51:11 PM) [Round: 7 client58] accuracy: 0.920703  loss: 0.257975 | LIT_attack
+[INFO](2026/04/12/ 11:51:12 PM) [Round: 7 client59] accuracy: 0.929395  loss: 0.234389 | LIT_attack
+[INFO](2026/04/12/ 11:51:13 PM) [Round: 7 client60] accuracy: 0.928320  loss: 0.236922 | LIT_attack
+[INFO](2026/04/12/ 11:51:14 PM) [Round: 7 client61] accuracy: 0.916113  loss: 0.260392 | LIT_attack
+[INFO](2026/04/12/ 11:51:14 PM) [Round: 7 client62] accuracy: 0.933887  loss: 0.217862 | LIT_attack
+[INFO](2026/04/12/ 11:51:15 PM) [Round: 7 client63] accuracy: 0.924707  loss: 0.242600 | LIT_attack
+[INFO](2026/04/12/ 11:51:16 PM) [Round: 7 client64] accuracy: 0.930371  loss: 0.232581 | LIT_attack
+[INFO](2026/04/12/ 11:51:17 PM) [Round: 7 client65] accuracy: 0.914453  loss: 0.284230 | LIT_attack
+[INFO](2026/04/12/ 11:51:17 PM) [Round: 7 client66] accuracy: 0.933594  loss: 0.220348 | LIT_attack
+[INFO](2026/04/12/ 11:51:18 PM) [Round: 7 client67] accuracy: 0.921289  loss: 0.246922 | LIT_attack
+[INFO](2026/04/12/ 11:51:19 PM) [Round: 7 client68] accuracy: 0.929688  loss: 0.234844 | LIT_attack
+[INFO](2026/04/12/ 11:51:20 PM) [Round: 7 client69] accuracy: 0.931250  loss: 0.221221 | LIT_attack
+[INFO](2026/04/12/ 11:51:20 PM) [Round: 7 client70] accuracy: 0.927539  loss: 0.234706 | LIT_attack
+[INFO](2026/04/12/ 11:51:21 PM) [Round: 7 client71] accuracy: 0.922461  loss: 0.243085 | LIT_attack
+[INFO](2026/04/12/ 11:51:22 PM) [Round: 7 client72] accuracy: 0.925293  loss: 0.244496 | LIT_attack
+[INFO](2026/04/12/ 11:51:23 PM) [Round: 7 client73] accuracy: 0.927148  loss: 0.248671 | LIT_attack
+[INFO](2026/04/12/ 11:51:23 PM) [Round: 7 client74] accuracy: 0.931543  loss: 0.227959 | LIT_attack
+[INFO](2026/04/12/ 11:51:24 PM) [Round: 7 client75] accuracy: 0.903809  loss: 0.294108 | LIT_attack
+[INFO](2026/04/12/ 11:51:25 PM) [Round: 7 client76] accuracy: 0.919629  loss: 0.260226 | LIT_attack
+[INFO](2026/04/12/ 11:51:26 PM) [Round: 7 client77] accuracy: 0.899902  loss: 0.290336 | LIT_attack
+[INFO](2026/04/12/ 11:51:26 PM) [Round: 7 client78] accuracy: 0.924707  loss: 0.235691 | LIT_attack
+[INFO](2026/04/12/ 11:51:27 PM) [Round: 7 client79] accuracy: 0.929102  loss: 0.232001 | LIT_attack
+[INFO](2026/04/12/ 11:51:28 PM) [Round: 7 client80] accuracy: 0.917285  loss: 0.255938 | LIT_attack
+[INFO](2026/04/12/ 11:51:28 PM) [Round: 7 client81] accuracy: 0.912207  loss: 0.273327 | LIT_attack
+[INFO](2026/04/12/ 11:51:29 PM) [Round: 7 client82] accuracy: 0.926660  loss: 0.242260 | LIT_attack
+[INFO](2026/04/12/ 11:51:30 PM) [Round: 7 client83] accuracy: 0.923340  loss: 0.244376 | LIT_attack
+[INFO](2026/04/12/ 11:51:31 PM) [Round: 7 client84] accuracy: 0.928418  loss: 0.233424 | LIT_attack
+[INFO](2026/04/12/ 11:51:31 PM) [Round: 7 client85] accuracy: 0.929199  loss: 0.236774 | LIT_attack
+[INFO](2026/04/12/ 11:51:32 PM) [Round: 7 client86] accuracy: 0.927148  loss: 0.239889 | LIT_attack
+[INFO](2026/04/12/ 11:51:33 PM) [Round: 7 client87] accuracy: 0.917188  loss: 0.257592 | LIT_attack
+[INFO](2026/04/12/ 11:51:34 PM) [Round: 7 client88] accuracy: 0.923730  loss: 0.245914 | LIT_attack
+[INFO](2026/04/12/ 11:51:35 PM) [Round: 7 client89] accuracy: 0.927930  loss: 0.233489 | LIT_attack
+[INFO](2026/04/12/ 11:51:35 PM) [Round: 7 client90] accuracy: 0.937012  loss: 0.217877 | LIT_attack
+[INFO](2026/04/12/ 11:51:36 PM) [Round: 7 client91] accuracy: 0.920703  loss: 0.253925 | LIT_attack
+[INFO](2026/04/12/ 11:51:37 PM) [Round: 7 client92] accuracy: 0.918457  loss: 0.254915 | LIT_attack
+[INFO](2026/04/12/ 11:51:38 PM) [Round: 7 client93] accuracy: 0.914258  loss: 0.269971 | LIT_attack
+[INFO](2026/04/12/ 11:51:38 PM) [Round: 7 client94] accuracy: 0.923438  loss: 0.252770 | LIT_attack
+[INFO](2026/04/12/ 11:51:39 PM) [Round: 7 client95] accuracy: 0.930078  loss: 0.229874 | LIT_attack
+[INFO](2026/04/12/ 11:51:40 PM) [Round: 7 client96] accuracy: 0.924805  loss: 0.240220 | LIT_attack
+[INFO](2026/04/12/ 11:51:41 PM) [Round: 7 client97] accuracy: 0.912012  loss: 0.276790 | LIT_attack
+[INFO](2026/04/12/ 11:51:41 PM) [Round: 7 client98] accuracy: 0.934473  loss: 0.221246 | LIT_attack
+[INFO](2026/04/12/ 11:51:42 PM) [Round: 7 client99] accuracy: 0.914746  loss: 0.266242 | LIT_attack
+[INFO](2026/04/12/ 11:51:46 PM) [LIT_attack client17] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:47 PM) [LIT_attack client72] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:47 PM) [LIT_attack client97] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:48 PM) [LIT_attack client8] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:49 PM) [LIT_attack client32] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:49 PM) [LIT_attack client15] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:50 PM) [LIT_attack client63] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:51 PM) [LIT_attack client57] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:51 PM) [LIT_attack client60] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:52 PM) [LIT_attack client83] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:53 PM) [LIT_attack client48] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:53 PM) [LIT_attack client26] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:54 PM) [LIT_attack client12] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:55 PM) [LIT_attack client62] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:56 PM) [LIT_attack client3] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:56 PM) [LIT_attack client49] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:57 PM) [LIT_attack client55] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:58 PM) [LIT_attack client77] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:58 PM) [LIT_attack client0] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:51:59 PM) [LIT_attack client92] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:52:00 PM) [LIT_attack client34] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:52:00 PM) [LIT_attack client29] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:52:01 PM) [LIT_attack client75] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:52:02 PM) [LIT_attack client13] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:52:03 PM) [LIT_attack client40] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:52:03 PM) [LIT_attack client85] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:52:04 PM) [LIT_attack client2] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:52:05 PM) [LIT_attack client74] accuracy: 0.939551  loss: 0.212396 
+[INFO](2026/04/12/ 11:52:05 PM) agg_type: multi_krum
+[INFO](2026/04/12/ 11:52:05 PM) [Round: 7] >> Detect_malicious_client: ['client59', 'client98', 'client67', 'client69', 'client76', 'client86', 'client68', 'client51', 'client54', 'client90', 'client44', 'client53', 'client82', 'client91', 'client47', 'client61', 'client4', 'client93', 'client80', 'client95', 'client88', 'client89', 'client87', 'client94', 'client81', 'client96', 'client84', 'client1']
+[INFO](2026/04/12/ 11:52:05 PM) [Round: 7] >> Number_malicious_client: 28
+[INFO](2026/04/12/ 11:52:05 PM) [Round: 7] >> Server Defense accuracy: 0.440000
+[INFO](2026/04/12/ 11:52:05 PM) [Round: 7] >> Server Detect malicious Precision: 0.000000
+[INFO](2026/04/12/ 11:52:05 PM) [Round: 7] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/04/12/ 11:52:05 PM) [Round: 7] >> Time of aggregation: 0.133790 s
+[INFO](2026/04/12/ 11:52:10 PM) [Round: 7] >> Global ASR: 0.006600
+[INFO](2026/04/12/ 11:52:10 PM) [Round: 7] >> Global Model Test accuracy: 0.943652
+[INFO](2026/04/12/ 11:52:10 PM) [Round: 7] >> Global Model Test loss: 0.189890
+[INFO](2026/04/12/ 11:52:10 PM) **COMMON ROUND:8
+[INFO](2026/04/12/ 11:52:11 PM) [Round: 8 client0] accuracy: 0.910254  loss: 0.349951 | LIT_attack
+[INFO](2026/04/12/ 11:52:12 PM) [Round: 8 client1] accuracy: 0.919824  loss: 0.270947 | LIT_attack
+[INFO](2026/04/12/ 11:52:13 PM) [Round: 8 client2] accuracy: 0.917871  loss: 0.267630 | LIT_attack
+[INFO](2026/04/12/ 11:52:13 PM) [Round: 8 client3] accuracy: 0.922656  loss: 0.248887 | LIT_attack
+[INFO](2026/04/12/ 11:52:14 PM) [Round: 8 client4] accuracy: 0.927637  loss: 0.226263 | LIT_attack
+[INFO](2026/04/12/ 11:52:15 PM) [Round: 8 client5] accuracy: 0.921484  loss: 0.259065 | LIT_attack
+[INFO](2026/04/12/ 11:52:16 PM) [Round: 8 client6] accuracy: 0.931836  loss: 0.225634 | LIT_attack
+[INFO](2026/04/12/ 11:52:16 PM) [Round: 8 client7] accuracy: 0.926074  loss: 0.232729 | LIT_attack
+[INFO](2026/04/12/ 11:52:17 PM) [Round: 8 client8] accuracy: 0.939355  loss: 0.198525 | LIT_attack
+[INFO](2026/04/12/ 11:52:18 PM) [Round: 8 client9] accuracy: 0.924707  loss: 0.237584 | LIT_attack
+[INFO](2026/04/12/ 11:52:19 PM) [Round: 8 client10] accuracy: 0.933496  loss: 0.217017 | LIT_attack
+[INFO](2026/04/12/ 11:52:20 PM) [Round: 8 client11] accuracy: 0.934473  loss: 0.212094 | LIT_attack
+[INFO](2026/04/12/ 11:52:20 PM) [Round: 8 client12] accuracy: 0.936426  loss: 0.214041 | LIT_attack
+[INFO](2026/04/12/ 11:52:21 PM) [Round: 8 client13] accuracy: 0.928906  loss: 0.225111 | LIT_attack
+[INFO](2026/04/12/ 11:52:22 PM) [Round: 8 client14] accuracy: 0.935742  loss: 0.210907 | LIT_attack
+[INFO](2026/04/12/ 11:52:23 PM) [Round: 8 client15] accuracy: 0.935742  loss: 0.215779 | LIT_attack
+[INFO](2026/04/12/ 11:52:23 PM) [Round: 8 client16] accuracy: 0.923242  loss: 0.258676 | LIT_attack
+[INFO](2026/04/12/ 11:52:24 PM) [Round: 8 client17] accuracy: 0.927539  loss: 0.239597 | LIT_attack
+[INFO](2026/04/12/ 11:52:25 PM) [Round: 8 client18] accuracy: 0.930957  loss: 0.226792 | LIT_attack
+[INFO](2026/04/12/ 11:52:26 PM) [Round: 8 client19] accuracy: 0.926172  loss: 0.243638 | LIT_attack
+[INFO](2026/04/12/ 11:52:27 PM) [Round: 8 client20] accuracy: 0.939453  loss: 0.202967 | LIT_attack
+[INFO](2026/04/12/ 11:52:27 PM) [Round: 8 client21] accuracy: 0.926172  loss: 0.237945 | LIT_attack
+[INFO](2026/04/12/ 11:52:28 PM) [Round: 8 client22] accuracy: 0.933984  loss: 0.212949 | LIT_attack
+[INFO](2026/04/12/ 11:52:29 PM) [Round: 8 client23] accuracy: 0.936816  loss: 0.205784 | LIT_attack
+[INFO](2026/04/12/ 11:52:30 PM) [Round: 8 client24] accuracy: 0.936328  loss: 0.225272 | LIT_attack
+[INFO](2026/04/12/ 11:52:30 PM) [Round: 8 client25] accuracy: 0.929980  loss: 0.216660 | LIT_attack
+[INFO](2026/04/12/ 11:52:31 PM) [Round: 8 client26] accuracy: 0.931250  loss: 0.238408 | LIT_attack
+[INFO](2026/04/12/ 11:52:32 PM) [Round: 8 client27] accuracy: 0.941504  loss: 0.200946 | LIT_attack
+[INFO](2026/04/12/ 11:52:32 PM) [Round: 8 client28] accuracy: 0.938770  loss: 0.208772 | LIT_attack
+[INFO](2026/04/12/ 11:52:33 PM) [Round: 8 client29] accuracy: 0.931152  loss: 0.221479 | LIT_attack
+[INFO](2026/04/12/ 11:52:34 PM) [Round: 8 client30] accuracy: 0.937793  loss: 0.208402 | LIT_attack
+[INFO](2026/04/12/ 11:52:35 PM) [Round: 8 client31] accuracy: 0.937207  loss: 0.217386 | LIT_attack
+[INFO](2026/04/12/ 11:52:35 PM) [Round: 8 client32] accuracy: 0.939063  loss: 0.211970 | LIT_attack
+[INFO](2026/04/12/ 11:52:36 PM) [Round: 8 client33] accuracy: 0.927051  loss: 0.237255 | LIT_attack
+[INFO](2026/04/12/ 11:52:37 PM) [Round: 8 client34] accuracy: 0.930078  loss: 0.221283 | LIT_attack
+[INFO](2026/04/12/ 11:52:38 PM) [Round: 8 client35] accuracy: 0.935254  loss: 0.217159 | LIT_attack
+[INFO](2026/04/12/ 11:52:38 PM) [Round: 8 client36] accuracy: 0.935840  loss: 0.209902 | LIT_attack
+[INFO](2026/04/12/ 11:52:39 PM) [Round: 8 client37] accuracy: 0.930859  loss: 0.222414 | LIT_attack
+[INFO](2026/04/12/ 11:52:40 PM) [Round: 8 client38] accuracy: 0.927051  loss: 0.231757 | LIT_attack
+[INFO](2026/04/12/ 11:52:41 PM) [Round: 8 client39] accuracy: 0.927148  loss: 0.234295 | LIT_attack
+[INFO](2026/04/12/ 11:52:42 PM) [Round: 8 client40] accuracy: 0.925977  loss: 0.239851 | LIT_attack
+[INFO](2026/04/12/ 11:52:42 PM) [Round: 8 client41] accuracy: 0.938086  loss: 0.216300 | LIT_attack
+[INFO](2026/04/12/ 11:52:43 PM) [Round: 8 client42] accuracy: 0.934863  loss: 0.208095 | LIT_attack
+[INFO](2026/04/12/ 11:52:44 PM) [Round: 8 client43] accuracy: 0.926953  loss: 0.235398 | LIT_attack
+[INFO](2026/04/12/ 11:52:45 PM) [Round: 8 client44] accuracy: 0.929883  loss: 0.223036 | LIT_attack
+[INFO](2026/04/12/ 11:52:45 PM) [Round: 8 client45] accuracy: 0.938184  loss: 0.208314 | LIT_attack
+[INFO](2026/04/12/ 11:52:46 PM) [Round: 8 client46] accuracy: 0.942090  loss: 0.201503 | LIT_attack
+[INFO](2026/04/12/ 11:52:47 PM) [Round: 8 client47] accuracy: 0.934277  loss: 0.218877 | LIT_attack
+[INFO](2026/04/12/ 11:52:48 PM) [Round: 8 client48] accuracy: 0.930176  loss: 0.235928 | LIT_attack
+[INFO](2026/04/12/ 11:52:48 PM) [Round: 8 client49] accuracy: 0.913770  loss: 0.263031 | LIT_attack
+[INFO](2026/04/12/ 11:52:49 PM) [Round: 8 client50] accuracy: 0.933301  loss: 0.227273 | LIT_attack
+[INFO](2026/04/12/ 11:52:50 PM) [Round: 8 client51] accuracy: 0.926758  loss: 0.243536 | LIT_attack
+[INFO](2026/04/12/ 11:52:51 PM) [Round: 8 client52] accuracy: 0.917090  loss: 0.265405 | LIT_attack
+[INFO](2026/04/12/ 11:52:51 PM) [Round: 8 client53] accuracy: 0.931836  loss: 0.219419 | LIT_attack
+[INFO](2026/04/12/ 11:52:52 PM) [Round: 8 client54] accuracy: 0.931152  loss: 0.226751 | LIT_attack
+[INFO](2026/04/12/ 11:52:53 PM) [Round: 8 client55] accuracy: 0.929297  loss: 0.230929 | LIT_attack
+[INFO](2026/04/12/ 11:52:54 PM) [Round: 8 client56] accuracy: 0.927051  loss: 0.236814 | LIT_attack
+[INFO](2026/04/12/ 11:52:55 PM) [Round: 8 client57] accuracy: 0.925488  loss: 0.246850 | LIT_attack
+[INFO](2026/04/12/ 11:52:55 PM) [Round: 8 client58] accuracy: 0.928711  loss: 0.230740 | LIT_attack
+[INFO](2026/04/12/ 11:52:56 PM) [Round: 8 client59] accuracy: 0.931543  loss: 0.228940 | LIT_attack
+[INFO](2026/04/12/ 11:52:57 PM) [Round: 8 client60] accuracy: 0.923242  loss: 0.241777 | LIT_attack
+[INFO](2026/04/12/ 11:52:58 PM) [Round: 8 client61] accuracy: 0.929785  loss: 0.221070 | LIT_attack
+[INFO](2026/04/12/ 11:52:58 PM) [Round: 8 client62] accuracy: 0.937207  loss: 0.203222 | LIT_attack

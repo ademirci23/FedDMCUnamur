@@ -1,0 +1,409 @@
+[INFO](2026/03/29/ 08:36:38 PM) ***<host>***
+[INFO](2026/03/29/ 08:36:41 PM) **Basic Setting...
+[INFO](2026/03/29/ 08:36:41 PM) {'debug': False, 'byz_type': 'no_attack', 'agg_type': 'average', 'dataset': 'mnist', 'epoch': 1, 'pca_d': 10, 'IID': True, 'beta': 9, 'num_of_clients': 20, 'num_malicious_client': 0, 'cfraction': 1, 'learning_rate': 0.01, 'logdir': './logs/', 'datadir': './data/', 'load_model_file': None, 'load_model_round': 0}
+[INFO](2026/03/29/ 08:36:41 PM) **Initializing clients data...
+[INFO](2026/03/29/ 08:36:46 PM) {'client0': [290, 338, 334, 300, 293, 285, 282, 313, 277, 288], 'client1': [300, 345, 294, 286, 306, 259, 291, 327, 302, 290], 'client2': [302, 353, 291, 300, 276, 267, 289, 312, 306, 304], 'client3': [297, 332, 331, 297, 304, 269, 289, 302, 292, 287], 'client4': [305, 358, 308, 298, 278, 269, 302, 307, 287, 288], 'client5': [302, 305, 303, 310, 304, 281, 262, 312, 307, 314], 'client6': [309, 328, 301, 324, 306, 251, 306, 299, 296, 280], 'client7': [292, 350, 293, 309, 270, 273, 313, 295, 320, 285], 'client8': [281, 325, 274, 290, 307, 298, 280, 301, 315, 329], 'client9': [302, 336, 272, 347, 270, 267, 310, 298, 294, 304], 'client10': [293, 328, 278, 319, 279, 260, 326, 299, 305, 313], 'client11': [300, 357, 303, 303, 261, 261, 277, 353, 294, 291], 'client12': [291, 301, 315, 299, 332, 272, 312, 336, 260, 282], 'client13': [292, 325, 284, 331, 307, 298, 269, 299, 276, 319], 'client14': [279, 376, 307, 315, 282, 238, 297, 325, 269, 312], 'client15': [291, 335, 303, 317, 296, 270, 288, 300, 273, 327], 'client16': [302, 367, 288, 303, 268, 249, 298, 343, 287, 295], 'client17': [296, 327, 303, 316, 297, 277, 290, 313, 318, 263], 'client18': [326, 331, 265, 290, 295, 329, 311, 302, 259, 292], 'client19': [273, 325, 311, 277, 311, 248, 326, 329, 314, 286]}
+[INFO](2026/03/29/ 08:36:46 PM) **Initializing nets
+[INFO](2026/03/29/ 08:36:46 PM) **Completed...
+[INFO](2026/03/29/ 08:36:46 PM) ----------------------------------------------------------------------------------------------------  Start Training  ----------------------------------------------------------------------------------------------------
+[INFO](2026/03/29/ 08:36:46 PM) **COMMON ROUND:0
+[INFO](2026/03/29/ 08:36:47 PM) [Round: 0 client0] accuracy: 0.869434  loss: 0.429610 | no_attack
+[INFO](2026/03/29/ 08:36:48 PM) [Round: 0 client1] accuracy: 0.886035  loss: 0.359283 | no_attack
+[INFO](2026/03/29/ 08:36:49 PM) [Round: 0 client2] accuracy: 0.864453  loss: 0.437249 | no_attack
+[INFO](2026/03/29/ 08:36:50 PM) [Round: 0 client3] accuracy: 0.900195  loss: 0.333606 | no_attack
+[INFO](2026/03/29/ 08:36:51 PM) [Round: 0 client4] accuracy: 0.897266  loss: 0.338256 | no_attack
+[INFO](2026/03/29/ 08:36:53 PM) [Round: 0 client5] accuracy: 0.904883  loss: 0.336699 | no_attack
+[INFO](2026/03/29/ 08:36:54 PM) [Round: 0 client6] accuracy: 0.875781  loss: 0.401504 | no_attack
+[INFO](2026/03/29/ 08:36:55 PM) [Round: 0 client7] accuracy: 0.888672  loss: 0.367846 | no_attack
+[INFO](2026/03/29/ 08:36:56 PM) [Round: 0 client8] accuracy: 0.866016  loss: 0.414533 | no_attack
+[INFO](2026/03/29/ 08:36:57 PM) [Round: 0 client9] accuracy: 0.871387  loss: 0.400826 | no_attack
+[INFO](2026/03/29/ 08:36:58 PM) [Round: 0 client10] accuracy: 0.869824  loss: 0.420126 | no_attack
+[INFO](2026/03/29/ 08:36:59 PM) [Round: 0 client11] accuracy: 0.879102  loss: 0.380891 | no_attack
+[INFO](2026/03/29/ 08:37:00 PM) [Round: 0 client12] accuracy: 0.891699  loss: 0.374266 | no_attack
+[INFO](2026/03/29/ 08:37:01 PM) [Round: 0 client13] accuracy: 0.877246  loss: 0.398721 | no_attack
+[INFO](2026/03/29/ 08:37:02 PM) [Round: 0 client14] accuracy: 0.904297  loss: 0.316437 | no_attack
+[INFO](2026/03/29/ 08:37:03 PM) [Round: 0 client15] accuracy: 0.879883  loss: 0.366194 | no_attack
+[INFO](2026/03/29/ 08:37:04 PM) [Round: 0 client16] accuracy: 0.884473  loss: 0.362555 | no_attack
+[INFO](2026/03/29/ 08:37:05 PM) [Round: 0 client17] accuracy: 0.884277  loss: 0.363457 | no_attack
+[INFO](2026/03/29/ 08:37:06 PM) [Round: 0 client18] accuracy: 0.901953  loss: 0.315733 | no_attack
+[INFO](2026/03/29/ 08:37:07 PM) [Round: 0 client19] accuracy: 0.892871  loss: 0.349509 | no_attack
+[INFO](2026/03/29/ 08:37:07 PM) agg_type: average
+[INFO](2026/03/29/ 08:37:07 PM) [Round: 0] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:37:07 PM) [Round: 0] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:37:07 PM) [Round: 0] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:37:07 PM) [Round: 0] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:37:07 PM) [Round: 0] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:37:07 PM) [Round: 0] >> Time of aggregation: 0.007089 s
+[INFO](2026/03/29/ 08:37:07 PM) [Round: 0] >> Global Model Test accuracy: 0.901855
+[INFO](2026/03/29/ 08:37:07 PM) [Round: 0] >> Global Model Test loss: 0.357366
+[INFO](2026/03/29/ 08:37:07 PM) **COMMON ROUND:1
+[INFO](2026/03/29/ 08:37:08 PM) [Round: 1 client0] accuracy: 0.914258  loss: 0.269178 | no_attack
+[INFO](2026/03/29/ 08:37:09 PM) [Round: 1 client1] accuracy: 0.919629  loss: 0.257782 | no_attack
+[INFO](2026/03/29/ 08:37:10 PM) [Round: 1 client2] accuracy: 0.911426  loss: 0.278003 | no_attack
+[INFO](2026/03/29/ 08:37:11 PM) [Round: 1 client3] accuracy: 0.920898  loss: 0.262992 | no_attack
+[INFO](2026/03/29/ 08:37:12 PM) [Round: 1 client4] accuracy: 0.919336  loss: 0.270726 | no_attack
+[INFO](2026/03/29/ 08:37:13 PM) [Round: 1 client5] accuracy: 0.918555  loss: 0.266574 | no_attack
+[INFO](2026/03/29/ 08:37:15 PM) [Round: 1 client6] accuracy: 0.892285  loss: 0.327491 | no_attack
+[INFO](2026/03/29/ 08:37:16 PM) [Round: 1 client7] accuracy: 0.905273  loss: 0.300297 | no_attack
+[INFO](2026/03/29/ 08:37:17 PM) [Round: 1 client8] accuracy: 0.905566  loss: 0.300510 | no_attack
+[INFO](2026/03/29/ 08:37:18 PM) [Round: 1 client9] accuracy: 0.905957  loss: 0.295694 | no_attack
+[INFO](2026/03/29/ 08:37:19 PM) [Round: 1 client10] accuracy: 0.900000  loss: 0.321637 | no_attack
+[INFO](2026/03/29/ 08:37:20 PM) [Round: 1 client11] accuracy: 0.904980  loss: 0.301542 | no_attack
+[INFO](2026/03/29/ 08:37:21 PM) [Round: 1 client12] accuracy: 0.911523  loss: 0.285589 | no_attack
+[INFO](2026/03/29/ 08:37:23 PM) [Round: 1 client13] accuracy: 0.901855  loss: 0.307417 | no_attack
+[INFO](2026/03/29/ 08:37:24 PM) [Round: 1 client14] accuracy: 0.895020  loss: 0.341810 | no_attack
+[INFO](2026/03/29/ 08:37:25 PM) [Round: 1 client15] accuracy: 0.906250  loss: 0.294405 | no_attack
+[INFO](2026/03/29/ 08:37:26 PM) [Round: 1 client16] accuracy: 0.909473  loss: 0.284930 | no_attack
+[INFO](2026/03/29/ 08:37:27 PM) [Round: 1 client17] accuracy: 0.902441  loss: 0.311388 | no_attack
+[INFO](2026/03/29/ 08:37:28 PM) [Round: 1 client18] accuracy: 0.907324  loss: 0.288547 | no_attack
+[INFO](2026/03/29/ 08:37:29 PM) [Round: 1 client19] accuracy: 0.910449  loss: 0.290966 | no_attack
+[INFO](2026/03/29/ 08:37:29 PM) agg_type: average
+[INFO](2026/03/29/ 08:37:29 PM) [Round: 1] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:37:29 PM) [Round: 1] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:37:29 PM) [Round: 1] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:37:29 PM) [Round: 1] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:37:29 PM) [Round: 1] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:37:29 PM) [Round: 1] >> Time of aggregation: 0.005573 s
+[INFO](2026/03/29/ 08:37:30 PM) [Round: 1] >> Global Model Test accuracy: 0.940039
+[INFO](2026/03/29/ 08:37:30 PM) [Round: 1] >> Global Model Test loss: 0.198044
+[INFO](2026/03/29/ 08:37:30 PM) **COMMON ROUND:2
+[INFO](2026/03/29/ 08:37:31 PM) [Round: 2 client0] accuracy: 0.919336  loss: 0.259542 | no_attack
+[INFO](2026/03/29/ 08:37:32 PM) [Round: 2 client1] accuracy: 0.906152  loss: 0.297651 | no_attack
+[INFO](2026/03/29/ 08:37:33 PM) [Round: 2 client2] accuracy: 0.921191  loss: 0.253603 | no_attack
+[INFO](2026/03/29/ 08:37:34 PM) [Round: 2 client3] accuracy: 0.919434  loss: 0.263672 | no_attack
+[INFO](2026/03/29/ 08:37:36 PM) [Round: 2 client4] accuracy: 0.922168  loss: 0.261110 | no_attack
+[INFO](2026/03/29/ 08:37:37 PM) [Round: 2 client5] accuracy: 0.905273  loss: 0.291041 | no_attack
+[INFO](2026/03/29/ 08:37:38 PM) [Round: 2 client6] accuracy: 0.925586  loss: 0.246261 | no_attack
+[INFO](2026/03/29/ 08:37:39 PM) [Round: 2 client7] accuracy: 0.890723  loss: 0.332801 | no_attack
+[INFO](2026/03/29/ 08:37:40 PM) [Round: 2 client8] accuracy: 0.914453  loss: 0.264158 | no_attack
+[INFO](2026/03/29/ 08:37:41 PM) [Round: 2 client9] accuracy: 0.918848  loss: 0.265355 | no_attack
+[INFO](2026/03/29/ 08:37:42 PM) [Round: 2 client10] accuracy: 0.911816  loss: 0.268166 | no_attack
+[INFO](2026/03/29/ 08:37:43 PM) [Round: 2 client11] accuracy: 0.926270  loss: 0.249119 | no_attack
+[INFO](2026/03/29/ 08:37:44 PM) [Round: 2 client12] accuracy: 0.919727  loss: 0.253863 | no_attack
+[INFO](2026/03/29/ 08:37:45 PM) [Round: 2 client13] accuracy: 0.919043  loss: 0.256126 | no_attack
+[INFO](2026/03/29/ 08:37:46 PM) [Round: 2 client14] accuracy: 0.904102  loss: 0.316841 | no_attack
+[INFO](2026/03/29/ 08:37:47 PM) [Round: 2 client15] accuracy: 0.908887  loss: 0.273881 | no_attack
+[INFO](2026/03/29/ 08:37:48 PM) [Round: 2 client16] accuracy: 0.926758  loss: 0.238358 | no_attack
+[INFO](2026/03/29/ 08:37:49 PM) [Round: 2 client17] accuracy: 0.915430  loss: 0.280612 | no_attack
+[INFO](2026/03/29/ 08:37:51 PM) [Round: 2 client18] accuracy: 0.926367  loss: 0.240910 | no_attack
+[INFO](2026/03/29/ 08:37:52 PM) [Round: 2 client19] accuracy: 0.893262  loss: 0.313418 | no_attack
+[INFO](2026/03/29/ 08:37:52 PM) agg_type: average
+[INFO](2026/03/29/ 08:37:52 PM) [Round: 2] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:37:52 PM) [Round: 2] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:37:52 PM) [Round: 2] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:37:52 PM) [Round: 2] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:37:52 PM) [Round: 2] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:37:52 PM) [Round: 2] >> Time of aggregation: 0.003053 s
+[INFO](2026/03/29/ 08:37:52 PM) [Round: 2] >> Global Model Test accuracy: 0.947461
+[INFO](2026/03/29/ 08:37:52 PM) [Round: 2] >> Global Model Test loss: 0.163698
+[INFO](2026/03/29/ 08:37:52 PM) **COMMON ROUND:3
+[INFO](2026/03/29/ 08:37:53 PM) [Round: 3 client0] accuracy: 0.926855  loss: 0.225397 | no_attack
+[INFO](2026/03/29/ 08:37:55 PM) [Round: 3 client1] accuracy: 0.925586  loss: 0.244116 | no_attack
+[INFO](2026/03/29/ 08:37:56 PM) [Round: 3 client2] accuracy: 0.917871  loss: 0.267727 | no_attack
+[INFO](2026/03/29/ 08:37:57 PM) [Round: 3 client3] accuracy: 0.912891  loss: 0.290651 | no_attack
+[INFO](2026/03/29/ 08:37:58 PM) [Round: 3 client4] accuracy: 0.923828  loss: 0.251467 | no_attack
+[INFO](2026/03/29/ 08:37:59 PM) [Round: 3 client5] accuracy: 0.916309  loss: 0.255967 | no_attack
+[INFO](2026/03/29/ 08:38:00 PM) [Round: 3 client6] accuracy: 0.937988  loss: 0.198999 | no_attack
+[INFO](2026/03/29/ 08:38:01 PM) [Round: 3 client7] accuracy: 0.911523  loss: 0.277544 | no_attack
+[INFO](2026/03/29/ 08:38:02 PM) [Round: 3 client8] accuracy: 0.907617  loss: 0.287896 | no_attack
+[INFO](2026/03/29/ 08:38:03 PM) [Round: 3 client9] accuracy: 0.891992  loss: 0.340580 | no_attack
+[INFO](2026/03/29/ 08:38:04 PM) [Round: 3 client10] accuracy: 0.912988  loss: 0.280164 | no_attack
+[INFO](2026/03/29/ 08:38:05 PM) [Round: 3 client11] accuracy: 0.914160  loss: 0.288017 | no_attack
+[INFO](2026/03/29/ 08:38:06 PM) [Round: 3 client12] accuracy: 0.912500  loss: 0.281392 | no_attack
+[INFO](2026/03/29/ 08:38:07 PM) [Round: 3 client13] accuracy: 0.920117  loss: 0.254590 | no_attack
+[INFO](2026/03/29/ 08:38:09 PM) [Round: 3 client14] accuracy: 0.909082  loss: 0.311302 | no_attack
+[INFO](2026/03/29/ 08:38:10 PM) [Round: 3 client15] accuracy: 0.917090  loss: 0.259013 | no_attack
+[INFO](2026/03/29/ 08:38:11 PM) [Round: 3 client16] accuracy: 0.917383  loss: 0.252874 | no_attack
+[INFO](2026/03/29/ 08:38:12 PM) [Round: 3 client17] accuracy: 0.926855  loss: 0.235192 | no_attack
+[INFO](2026/03/29/ 08:38:14 PM) [Round: 3 client18] accuracy: 0.912988  loss: 0.282140 | no_attack
+[INFO](2026/03/29/ 08:38:15 PM) [Round: 3 client19] accuracy: 0.926074  loss: 0.246357 | no_attack
+[INFO](2026/03/29/ 08:38:15 PM) agg_type: average
+[INFO](2026/03/29/ 08:38:15 PM) [Round: 3] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:38:15 PM) [Round: 3] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:38:15 PM) [Round: 3] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:38:15 PM) [Round: 3] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:38:15 PM) [Round: 3] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:38:15 PM) [Round: 3] >> Time of aggregation: 0.002051 s
+[INFO](2026/03/29/ 08:38:16 PM) [Round: 3] >> Global Model Test accuracy: 0.957520
+[INFO](2026/03/29/ 08:38:16 PM) [Round: 3] >> Global Model Test loss: 0.140525
+[INFO](2026/03/29/ 08:38:16 PM) **COMMON ROUND:4
+[INFO](2026/03/29/ 08:38:17 PM) [Round: 4 client0] accuracy: 0.933496  loss: 0.230394 | no_attack
+[INFO](2026/03/29/ 08:38:18 PM) [Round: 4 client1] accuracy: 0.916211  loss: 0.284369 | no_attack
+[INFO](2026/03/29/ 08:38:19 PM) [Round: 4 client2] accuracy: 0.939453  loss: 0.203072 | no_attack
+[INFO](2026/03/29/ 08:38:21 PM) [Round: 4 client3] accuracy: 0.933496  loss: 0.224120 | no_attack
+[INFO](2026/03/29/ 08:38:22 PM) [Round: 4 client4] accuracy: 0.923047  loss: 0.262204 | no_attack
+[INFO](2026/03/29/ 08:38:23 PM) [Round: 4 client5] accuracy: 0.921289  loss: 0.256187 | no_attack
+[INFO](2026/03/29/ 08:38:24 PM) [Round: 4 client6] accuracy: 0.915723  loss: 0.276617 | no_attack
+[INFO](2026/03/29/ 08:38:25 PM) [Round: 4 client7] accuracy: 0.922559  loss: 0.251379 | no_attack
+[INFO](2026/03/29/ 08:38:26 PM) [Round: 4 client8] accuracy: 0.915820  loss: 0.280255 | no_attack
+[INFO](2026/03/29/ 08:38:28 PM) [Round: 4 client9] accuracy: 0.929004  loss: 0.242686 | no_attack
+[INFO](2026/03/29/ 08:38:29 PM) [Round: 4 client10] accuracy: 0.924219  loss: 0.243848 | no_attack
+[INFO](2026/03/29/ 08:38:30 PM) [Round: 4 client11] accuracy: 0.927832  loss: 0.239296 | no_attack
+[INFO](2026/03/29/ 08:38:31 PM) [Round: 4 client12] accuracy: 0.894727  loss: 0.325047 | no_attack
+[INFO](2026/03/29/ 08:38:32 PM) [Round: 4 client13] accuracy: 0.925879  loss: 0.242573 | no_attack
+[INFO](2026/03/29/ 08:38:33 PM) [Round: 4 client14] accuracy: 0.915234  loss: 0.289294 | no_attack
+[INFO](2026/03/29/ 08:38:34 PM) [Round: 4 client15] accuracy: 0.918164  loss: 0.259510 | no_attack
+[INFO](2026/03/29/ 08:38:35 PM) [Round: 4 client16] accuracy: 0.915723  loss: 0.265097 | no_attack
+[INFO](2026/03/29/ 08:38:36 PM) [Round: 4 client17] accuracy: 0.918359  loss: 0.275007 | no_attack
+[INFO](2026/03/29/ 08:38:37 PM) [Round: 4 client18] accuracy: 0.919727  loss: 0.247236 | no_attack
+[INFO](2026/03/29/ 08:38:38 PM) [Round: 4 client19] accuracy: 0.920020  loss: 0.273745 | no_attack
+[INFO](2026/03/29/ 08:38:38 PM) agg_type: average
+[INFO](2026/03/29/ 08:38:38 PM) [Round: 4] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:38:38 PM) [Round: 4] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:38:38 PM) [Round: 4] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:38:38 PM) [Round: 4] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:38:38 PM) [Round: 4] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:38:38 PM) [Round: 4] >> Time of aggregation: 0.003005 s
+[INFO](2026/03/29/ 08:38:39 PM) [Round: 4] >> Global Model Test accuracy: 0.960449
+[INFO](2026/03/29/ 08:38:39 PM) [Round: 4] >> Global Model Test loss: 0.127831
+[INFO](2026/03/29/ 08:38:39 PM) **COMMON ROUND:5
+[INFO](2026/03/29/ 08:38:40 PM) [Round: 5 client0] accuracy: 0.923242  loss: 0.246703 | no_attack
+[INFO](2026/03/29/ 08:38:42 PM) [Round: 5 client1] accuracy: 0.940332  loss: 0.214955 | no_attack
+[INFO](2026/03/29/ 08:38:43 PM) [Round: 5 client2] accuracy: 0.934180  loss: 0.214093 | no_attack
+[INFO](2026/03/29/ 08:38:44 PM) [Round: 5 client3] accuracy: 0.898242  loss: 0.330488 | no_attack
+[INFO](2026/03/29/ 08:38:45 PM) [Round: 5 client4] accuracy: 0.925098  loss: 0.252858 | no_attack
+[INFO](2026/03/29/ 08:38:46 PM) [Round: 5 client5] accuracy: 0.933008  loss: 0.221599 | no_attack
+[INFO](2026/03/29/ 08:38:47 PM) [Round: 5 client6] accuracy: 0.928906  loss: 0.244923 | no_attack
+[INFO](2026/03/29/ 08:38:48 PM) [Round: 5 client7] accuracy: 0.928906  loss: 0.230671 | no_attack
+[INFO](2026/03/29/ 08:38:49 PM) [Round: 5 client8] accuracy: 0.934766  loss: 0.220274 | no_attack
+[INFO](2026/03/29/ 08:38:51 PM) [Round: 5 client9] accuracy: 0.911719  loss: 0.288910 | no_attack
+[INFO](2026/03/29/ 08:38:52 PM) [Round: 5 client10] accuracy: 0.924219  loss: 0.246647 | no_attack
+[INFO](2026/03/29/ 08:38:53 PM) [Round: 5 client11] accuracy: 0.936914  loss: 0.216292 | no_attack
+[INFO](2026/03/29/ 08:38:55 PM) [Round: 5 client12] accuracy: 0.915527  loss: 0.255543 | no_attack
+[INFO](2026/03/29/ 08:38:56 PM) [Round: 5 client13] accuracy: 0.934277  loss: 0.223522 | no_attack
+[INFO](2026/03/29/ 08:38:57 PM) [Round: 5 client14] accuracy: 0.923926  loss: 0.259349 | no_attack
+[INFO](2026/03/29/ 08:38:58 PM) [Round: 5 client15] accuracy: 0.925781  loss: 0.252605 | no_attack
+[INFO](2026/03/29/ 08:38:59 PM) [Round: 5 client16] accuracy: 0.929688  loss: 0.236454 | no_attack
+[INFO](2026/03/29/ 08:39:00 PM) [Round: 5 client17] accuracy: 0.920215  loss: 0.247937 | no_attack
+[INFO](2026/03/29/ 08:39:01 PM) [Round: 5 client18] accuracy: 0.919434  loss: 0.268037 | no_attack
+[INFO](2026/03/29/ 08:39:03 PM) [Round: 5 client19] accuracy: 0.883691  loss: 0.423946 | no_attack
+[INFO](2026/03/29/ 08:39:03 PM) agg_type: average
+[INFO](2026/03/29/ 08:39:03 PM) [Round: 5] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:39:03 PM) [Round: 5] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:39:03 PM) [Round: 5] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:39:03 PM) [Round: 5] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:39:03 PM) [Round: 5] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:39:03 PM) [Round: 5] >> Time of aggregation: 0.004212 s
+[INFO](2026/03/29/ 08:39:04 PM) [Round: 5] >> Global Model Test accuracy: 0.961133
+[INFO](2026/03/29/ 08:39:04 PM) [Round: 5] >> Global Model Test loss: 0.127305
+[INFO](2026/03/29/ 08:39:04 PM) **COMMON ROUND:6
+[INFO](2026/03/29/ 08:39:05 PM) [Round: 6 client0] accuracy: 0.943750  loss: 0.188687 | no_attack
+[INFO](2026/03/29/ 08:39:06 PM) [Round: 6 client1] accuracy: 0.925879  loss: 0.245292 | no_attack
+[INFO](2026/03/29/ 08:39:07 PM) [Round: 6 client2] accuracy: 0.906738  loss: 0.310977 | no_attack
+[INFO](2026/03/29/ 08:39:08 PM) [Round: 6 client3] accuracy: 0.937500  loss: 0.206971 | no_attack
+[INFO](2026/03/29/ 08:39:09 PM) [Round: 6 client4] accuracy: 0.913867  loss: 0.286011 | no_attack
+[INFO](2026/03/29/ 08:39:11 PM) [Round: 6 client5] accuracy: 0.916797  loss: 0.275400 | no_attack
+[INFO](2026/03/29/ 08:39:12 PM) [Round: 6 client6] accuracy: 0.913965  loss: 0.291086 | no_attack
+[INFO](2026/03/29/ 08:39:13 PM) [Round: 6 client7] accuracy: 0.940918  loss: 0.189303 | no_attack
+[INFO](2026/03/29/ 08:39:14 PM) [Round: 6 client8] accuracy: 0.930371  loss: 0.237193 | no_attack
+[INFO](2026/03/29/ 08:39:15 PM) [Round: 6 client9] accuracy: 0.921094  loss: 0.246210 | no_attack
+[INFO](2026/03/29/ 08:39:16 PM) [Round: 6 client10] accuracy: 0.929688  loss: 0.240357 | no_attack
+[INFO](2026/03/29/ 08:39:17 PM) [Round: 6 client11] accuracy: 0.925000  loss: 0.251783 | no_attack
+[INFO](2026/03/29/ 08:39:19 PM) [Round: 6 client12] accuracy: 0.927246  loss: 0.234445 | no_attack
+[INFO](2026/03/29/ 08:39:20 PM) [Round: 6 client13] accuracy: 0.930859  loss: 0.218925 | no_attack
+[INFO](2026/03/29/ 08:39:21 PM) [Round: 6 client14] accuracy: 0.944043  loss: 0.196777 | no_attack
+[INFO](2026/03/29/ 08:39:22 PM) [Round: 6 client15] accuracy: 0.939258  loss: 0.213742 | no_attack
+[INFO](2026/03/29/ 08:39:23 PM) [Round: 6 client16] accuracy: 0.925000  loss: 0.252420 | no_attack
+[INFO](2026/03/29/ 08:39:24 PM) [Round: 6 client17] accuracy: 0.941016  loss: 0.193241 | no_attack
+[INFO](2026/03/29/ 08:39:25 PM) [Round: 6 client18] accuracy: 0.936816  loss: 0.225494 | no_attack
+[INFO](2026/03/29/ 08:39:26 PM) [Round: 6 client19] accuracy: 0.933789  loss: 0.241135 | no_attack
+[INFO](2026/03/29/ 08:39:26 PM) agg_type: average
+[INFO](2026/03/29/ 08:39:26 PM) [Round: 6] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:39:26 PM) [Round: 6] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:39:26 PM) [Round: 6] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:39:26 PM) [Round: 6] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:39:26 PM) [Round: 6] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:39:26 PM) [Round: 6] >> Time of aggregation: 0.003032 s
+[INFO](2026/03/29/ 08:39:27 PM) [Round: 6] >> Global Model Test accuracy: 0.966992
+[INFO](2026/03/29/ 08:39:27 PM) [Round: 6] >> Global Model Test loss: 0.113755
+[INFO](2026/03/29/ 08:39:27 PM) **COMMON ROUND:7
+[INFO](2026/03/29/ 08:39:28 PM) [Round: 7 client0] accuracy: 0.930176  loss: 0.246146 | no_attack
+[INFO](2026/03/29/ 08:39:29 PM) [Round: 7 client1] accuracy: 0.914648  loss: 0.317851 | no_attack
+[INFO](2026/03/29/ 08:39:30 PM) [Round: 7 client2] accuracy: 0.934961  loss: 0.228047 | no_attack
+[INFO](2026/03/29/ 08:39:31 PM) [Round: 7 client3] accuracy: 0.914648  loss: 0.277132 | no_attack
+[INFO](2026/03/29/ 08:39:33 PM) [Round: 7 client4] accuracy: 0.935742  loss: 0.207751 | no_attack
+[INFO](2026/03/29/ 08:39:34 PM) [Round: 7 client5] accuracy: 0.929980  loss: 0.243947 | no_attack
+[INFO](2026/03/29/ 08:39:35 PM) [Round: 7 client6] accuracy: 0.930371  loss: 0.233496 | no_attack
+[INFO](2026/03/29/ 08:39:36 PM) [Round: 7 client7] accuracy: 0.931055  loss: 0.245520 | no_attack
+[INFO](2026/03/29/ 08:39:37 PM) [Round: 7 client8] accuracy: 0.921582  loss: 0.256455 | no_attack
+[INFO](2026/03/29/ 08:39:38 PM) [Round: 7 client9] accuracy: 0.930371  loss: 0.229556 | no_attack
+[INFO](2026/03/29/ 08:39:39 PM) [Round: 7 client10] accuracy: 0.936133  loss: 0.221660 | no_attack
+[INFO](2026/03/29/ 08:39:40 PM) [Round: 7 client11] accuracy: 0.934375  loss: 0.216032 | no_attack
+[INFO](2026/03/29/ 08:39:41 PM) [Round: 7 client12] accuracy: 0.927539  loss: 0.253975 | no_attack
+[INFO](2026/03/29/ 08:39:42 PM) [Round: 7 client13] accuracy: 0.923047  loss: 0.248213 | no_attack
+[INFO](2026/03/29/ 08:39:43 PM) [Round: 7 client14] accuracy: 0.947949  loss: 0.192682 | no_attack
+[INFO](2026/03/29/ 08:39:44 PM) [Round: 7 client15] accuracy: 0.939453  loss: 0.218621 | no_attack
+[INFO](2026/03/29/ 08:39:45 PM) [Round: 7 client16] accuracy: 0.946484  loss: 0.185126 | no_attack
+[INFO](2026/03/29/ 08:39:46 PM) [Round: 7 client17] accuracy: 0.940527  loss: 0.192326 | no_attack
+[INFO](2026/03/29/ 08:39:48 PM) [Round: 7 client18] accuracy: 0.937793  loss: 0.216879 | no_attack
+[INFO](2026/03/29/ 08:39:49 PM) [Round: 7 client19] accuracy: 0.942383  loss: 0.192822 | no_attack
+[INFO](2026/03/29/ 08:39:49 PM) agg_type: average
+[INFO](2026/03/29/ 08:39:49 PM) [Round: 7] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:39:49 PM) [Round: 7] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:39:49 PM) [Round: 7] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:39:49 PM) [Round: 7] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:39:49 PM) [Round: 7] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:39:49 PM) [Round: 7] >> Time of aggregation: 0.003404 s
+[INFO](2026/03/29/ 08:39:50 PM) [Round: 7] >> Global Model Test accuracy: 0.967676
+[INFO](2026/03/29/ 08:39:50 PM) [Round: 7] >> Global Model Test loss: 0.110345
+[INFO](2026/03/29/ 08:39:50 PM) **COMMON ROUND:8
+[INFO](2026/03/29/ 08:39:51 PM) [Round: 8 client0] accuracy: 0.919727  loss: 0.294481 | no_attack
+[INFO](2026/03/29/ 08:39:52 PM) [Round: 8 client1] accuracy: 0.944727  loss: 0.188797 | no_attack
+[INFO](2026/03/29/ 08:39:53 PM) [Round: 8 client2] accuracy: 0.932324  loss: 0.238671 | no_attack
+[INFO](2026/03/29/ 08:39:54 PM) [Round: 8 client3] accuracy: 0.941895  loss: 0.203847 | no_attack
+[INFO](2026/03/29/ 08:39:55 PM) [Round: 8 client4] accuracy: 0.934375  loss: 0.237621 | no_attack
+[INFO](2026/03/29/ 08:39:56 PM) [Round: 8 client5] accuracy: 0.929980  loss: 0.228950 | no_attack
+[INFO](2026/03/29/ 08:39:58 PM) [Round: 8 client6] accuracy: 0.938379  loss: 0.196505 | no_attack
+[INFO](2026/03/29/ 08:39:59 PM) [Round: 8 client7] accuracy: 0.944531  loss: 0.187131 | no_attack
+[INFO](2026/03/29/ 08:40:00 PM) [Round: 8 client8] accuracy: 0.933887  loss: 0.224666 | no_attack
+[INFO](2026/03/29/ 08:40:01 PM) [Round: 8 client9] accuracy: 0.938184  loss: 0.227474 | no_attack
+[INFO](2026/03/29/ 08:40:02 PM) [Round: 8 client10] accuracy: 0.938086  loss: 0.219805 | no_attack
+[INFO](2026/03/29/ 08:40:03 PM) [Round: 8 client11] accuracy: 0.941016  loss: 0.203894 | no_attack
+[INFO](2026/03/29/ 08:40:04 PM) [Round: 8 client12] accuracy: 0.924219  loss: 0.257608 | no_attack
+[INFO](2026/03/29/ 08:40:05 PM) [Round: 8 client13] accuracy: 0.917188  loss: 0.251119 | no_attack
+[INFO](2026/03/29/ 08:40:06 PM) [Round: 8 client14] accuracy: 0.940527  loss: 0.206017 | no_attack
+[INFO](2026/03/29/ 08:40:08 PM) [Round: 8 client15] accuracy: 0.923926  loss: 0.262796 | no_attack
+[INFO](2026/03/29/ 08:40:09 PM) [Round: 8 client16] accuracy: 0.914746  loss: 0.288794 | no_attack
+[INFO](2026/03/29/ 08:40:10 PM) [Round: 8 client17] accuracy: 0.936914  loss: 0.204510 | no_attack
+[INFO](2026/03/29/ 08:40:11 PM) [Round: 8 client18] accuracy: 0.936523  loss: 0.217418 | no_attack
+[INFO](2026/03/29/ 08:40:12 PM) [Round: 8 client19] accuracy: 0.931738  loss: 0.234960 | no_attack
+[INFO](2026/03/29/ 08:40:12 PM) agg_type: average
+[INFO](2026/03/29/ 08:40:12 PM) [Round: 8] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:40:12 PM) [Round: 8] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:40:12 PM) [Round: 8] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:40:12 PM) [Round: 8] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:40:12 PM) [Round: 8] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:40:12 PM) [Round: 8] >> Time of aggregation: 0.004035 s
+[INFO](2026/03/29/ 08:40:13 PM) [Round: 8] >> Global Model Test accuracy: 0.967285
+[INFO](2026/03/29/ 08:40:13 PM) [Round: 8] >> Global Model Test loss: 0.108181
+[INFO](2026/03/29/ 08:40:13 PM) **COMMON ROUND:9
+[INFO](2026/03/29/ 08:40:14 PM) [Round: 9 client0] accuracy: 0.939062  loss: 0.193689 | no_attack
+[INFO](2026/03/29/ 08:40:15 PM) [Round: 9 client1] accuracy: 0.941406  loss: 0.224729 | no_attack
+[INFO](2026/03/29/ 08:40:16 PM) [Round: 9 client2] accuracy: 0.930176  loss: 0.246042 | no_attack
+[INFO](2026/03/29/ 08:40:17 PM) [Round: 9 client3] accuracy: 0.933105  loss: 0.228269 | no_attack
+[INFO](2026/03/29/ 08:40:19 PM) [Round: 9 client4] accuracy: 0.946191  loss: 0.182239 | no_attack
+[INFO](2026/03/29/ 08:40:20 PM) [Round: 9 client5] accuracy: 0.940234  loss: 0.204781 | no_attack
+[INFO](2026/03/29/ 08:40:21 PM) [Round: 9 client6] accuracy: 0.928418  loss: 0.247142 | no_attack
+[INFO](2026/03/29/ 08:40:22 PM) [Round: 9 client7] accuracy: 0.945605  loss: 0.175795 | no_attack
+[INFO](2026/03/29/ 08:40:23 PM) [Round: 9 client8] accuracy: 0.947168  loss: 0.175552 | no_attack
+[INFO](2026/03/29/ 08:40:24 PM) [Round: 9 client9] accuracy: 0.942187  loss: 0.199281 | no_attack
+[INFO](2026/03/29/ 08:40:25 PM) [Round: 9 client10] accuracy: 0.922363  loss: 0.245126 | no_attack
+[INFO](2026/03/29/ 08:40:26 PM) [Round: 9 client11] accuracy: 0.917578  loss: 0.295261 | no_attack
+[INFO](2026/03/29/ 08:40:27 PM) [Round: 9 client12] accuracy: 0.929004  loss: 0.252771 | no_attack
+[INFO](2026/03/29/ 08:40:28 PM) [Round: 9 client13] accuracy: 0.931152  loss: 0.242771 | no_attack
+[INFO](2026/03/29/ 08:40:29 PM) [Round: 9 client14] accuracy: 0.931250  loss: 0.260420 | no_attack
+[INFO](2026/03/29/ 08:40:30 PM) [Round: 9 client15] accuracy: 0.945215  loss: 0.187910 | no_attack
+[INFO](2026/03/29/ 08:40:31 PM) [Round: 9 client16] accuracy: 0.933887  loss: 0.222392 | no_attack
+[INFO](2026/03/29/ 08:40:32 PM) [Round: 9 client17] accuracy: 0.934668  loss: 0.230946 | no_attack
+[INFO](2026/03/29/ 08:40:33 PM) [Round: 9 client18] accuracy: 0.931641  loss: 0.238314 | no_attack
+[INFO](2026/03/29/ 08:40:34 PM) [Round: 9 client19] accuracy: 0.934961  loss: 0.230020 | no_attack
+[INFO](2026/03/29/ 08:40:34 PM) agg_type: average
+[INFO](2026/03/29/ 08:40:34 PM) [Round: 9] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:40:34 PM) [Round: 9] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:40:34 PM) [Round: 9] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:40:34 PM) [Round: 9] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:40:34 PM) [Round: 9] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:40:34 PM) [Round: 9] >> Time of aggregation: 0.005871 s
+[INFO](2026/03/29/ 08:40:34 PM) [Round: 9] >> Global Model Test accuracy: 0.968750
+[INFO](2026/03/29/ 08:40:34 PM) [Round: 9] >> Global Model Test loss: 0.107165
+[INFO](2026/03/29/ 08:40:34 PM) **COMMON ROUND:10
+[INFO](2026/03/29/ 08:40:36 PM) [Round: 10 client0] accuracy: 0.954004  loss: 0.165462 | no_attack
+[INFO](2026/03/29/ 08:40:36 PM) [Round: 10 client1] accuracy: 0.938770  loss: 0.213151 | no_attack
+[INFO](2026/03/29/ 08:40:38 PM) [Round: 10 client2] accuracy: 0.945703  loss: 0.199727 | no_attack
+[INFO](2026/03/29/ 08:40:39 PM) [Round: 10 client3] accuracy: 0.946680  loss: 0.190085 | no_attack
+[INFO](2026/03/29/ 08:40:40 PM) [Round: 10 client4] accuracy: 0.944824  loss: 0.202207 | no_attack
+[INFO](2026/03/29/ 08:40:41 PM) [Round: 10 client5] accuracy: 0.938672  loss: 0.212656 | no_attack
+[INFO](2026/03/29/ 08:40:41 PM) [Round: 10 client6] accuracy: 0.929199  loss: 0.248088 | no_attack
+[INFO](2026/03/29/ 08:40:42 PM) [Round: 10 client7] accuracy: 0.943066  loss: 0.203461 | no_attack
+[INFO](2026/03/29/ 08:40:43 PM) [Round: 10 client8] accuracy: 0.939551  loss: 0.198287 | no_attack
+[INFO](2026/03/29/ 08:40:44 PM) [Round: 10 client9] accuracy: 0.929688  loss: 0.240634 | no_attack
+[INFO](2026/03/29/ 08:40:45 PM) [Round: 10 client10] accuracy: 0.939648  loss: 0.210545 | no_attack
+[INFO](2026/03/29/ 08:40:46 PM) [Round: 10 client11] accuracy: 0.935449  loss: 0.220519 | no_attack
+[INFO](2026/03/29/ 08:40:47 PM) [Round: 10 client12] accuracy: 0.937891  loss: 0.214267 | no_attack
+[INFO](2026/03/29/ 08:40:48 PM) [Round: 10 client13] accuracy: 0.932324  loss: 0.232845 | no_attack
+[INFO](2026/03/29/ 08:40:49 PM) [Round: 10 client14] accuracy: 0.949707  loss: 0.179093 | no_attack
+[INFO](2026/03/29/ 08:40:50 PM) [Round: 10 client15] accuracy: 0.949609  loss: 0.200318 | no_attack
+[INFO](2026/03/29/ 08:40:51 PM) [Round: 10 client16] accuracy: 0.926953  loss: 0.242322 | no_attack
+[INFO](2026/03/29/ 08:40:52 PM) [Round: 10 client17] accuracy: 0.940234  loss: 0.210147 | no_attack
+[INFO](2026/03/29/ 08:40:53 PM) [Round: 10 client18] accuracy: 0.941797  loss: 0.186520 | no_attack
+[INFO](2026/03/29/ 08:40:54 PM) [Round: 10 client19] accuracy: 0.939746  loss: 0.210055 | no_attack
+[INFO](2026/03/29/ 08:40:54 PM) agg_type: average
+[INFO](2026/03/29/ 08:40:54 PM) [Round: 10] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:40:54 PM) [Round: 10] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:40:54 PM) [Round: 10] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:40:54 PM) [Round: 10] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:40:54 PM) [Round: 10] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:40:54 PM) [Round: 10] >> Time of aggregation: 0.002561 s
+[INFO](2026/03/29/ 08:40:55 PM) [Round: 10] >> Global Model Test accuracy: 0.970508
+[INFO](2026/03/29/ 08:40:55 PM) [Round: 10] >> Global Model Test loss: 0.102979
+[INFO](2026/03/29/ 08:40:55 PM) **COMMON ROUND:11
+[INFO](2026/03/29/ 08:40:56 PM) [Round: 11 client0] accuracy: 0.937988  loss: 0.207147 | no_attack
+[INFO](2026/03/29/ 08:40:57 PM) [Round: 11 client1] accuracy: 0.933789  loss: 0.278266 | no_attack
+[INFO](2026/03/29/ 08:40:58 PM) [Round: 11 client2] accuracy: 0.923633  loss: 0.283815 | no_attack
+[INFO](2026/03/29/ 08:40:59 PM) [Round: 11 client3] accuracy: 0.933691  loss: 0.238918 | no_attack
+[INFO](2026/03/29/ 08:41:00 PM) [Round: 11 client4] accuracy: 0.937012  loss: 0.216597 | no_attack
+[INFO](2026/03/29/ 08:41:01 PM) [Round: 11 client5] accuracy: 0.948633  loss: 0.175415 | no_attack
+[INFO](2026/03/29/ 08:41:02 PM) [Round: 11 client6] accuracy: 0.923926  loss: 0.247970 | no_attack
+[INFO](2026/03/29/ 08:41:03 PM) [Round: 11 client7] accuracy: 0.929590  loss: 0.261901 | no_attack
+[INFO](2026/03/29/ 08:41:04 PM) [Round: 11 client8] accuracy: 0.943945  loss: 0.196757 | no_attack
+[INFO](2026/03/29/ 08:41:05 PM) [Round: 11 client9] accuracy: 0.938672  loss: 0.222456 | no_attack
+[INFO](2026/03/29/ 08:41:06 PM) [Round: 11 client10] accuracy: 0.950586  loss: 0.167758 | no_attack
+[INFO](2026/03/29/ 08:41:07 PM) [Round: 11 client11] accuracy: 0.946973  loss: 0.165421 | no_attack
+[INFO](2026/03/29/ 08:41:08 PM) [Round: 11 client12] accuracy: 0.952148  loss: 0.164488 | no_attack
+[INFO](2026/03/29/ 08:41:09 PM) [Round: 11 client13] accuracy: 0.936133  loss: 0.211613 | no_attack
+[INFO](2026/03/29/ 08:41:10 PM) [Round: 11 client14] accuracy: 0.943555  loss: 0.196005 | no_attack
+[INFO](2026/03/29/ 08:41:11 PM) [Round: 11 client15] accuracy: 0.926465  loss: 0.249472 | no_attack
+[INFO](2026/03/29/ 08:41:12 PM) [Round: 11 client16] accuracy: 0.909570  loss: 0.304054 | no_attack
+[INFO](2026/03/29/ 08:41:13 PM) [Round: 11 client17] accuracy: 0.938379  loss: 0.234763 | no_attack
+[INFO](2026/03/29/ 08:41:15 PM) [Round: 11 client18] accuracy: 0.946582  loss: 0.186681 | no_attack
+[INFO](2026/03/29/ 08:41:16 PM) [Round: 11 client19] accuracy: 0.906543  loss: 0.305770 | no_attack
+[INFO](2026/03/29/ 08:41:16 PM) agg_type: average
+[INFO](2026/03/29/ 08:41:16 PM) [Round: 11] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:41:16 PM) [Round: 11] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:41:16 PM) [Round: 11] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:41:16 PM) [Round: 11] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:41:16 PM) [Round: 11] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:41:16 PM) [Round: 11] >> Time of aggregation: 0.003652 s
+[INFO](2026/03/29/ 08:41:16 PM) [Round: 11] >> Global Model Test accuracy: 0.970020
+[INFO](2026/03/29/ 08:41:16 PM) [Round: 11] >> Global Model Test loss: 0.101856
+[INFO](2026/03/29/ 08:41:16 PM) **COMMON ROUND:12
+[INFO](2026/03/29/ 08:41:17 PM) [Round: 12 client0] accuracy: 0.930469  loss: 0.228384 | no_attack
+[INFO](2026/03/29/ 08:41:18 PM) [Round: 12 client1] accuracy: 0.947363  loss: 0.195732 | no_attack
+[INFO](2026/03/29/ 08:41:19 PM) [Round: 12 client2] accuracy: 0.919922  loss: 0.299246 | no_attack
+[INFO](2026/03/29/ 08:41:20 PM) [Round: 12 client3] accuracy: 0.937305  loss: 0.209967 | no_attack
+[INFO](2026/03/29/ 08:41:22 PM) [Round: 12 client4] accuracy: 0.952441  loss: 0.159526 | no_attack
+[INFO](2026/03/29/ 08:41:23 PM) [Round: 12 client5] accuracy: 0.929004  loss: 0.248804 | no_attack
+[INFO](2026/03/29/ 08:41:24 PM) [Round: 12 client6] accuracy: 0.950586  loss: 0.174546 | no_attack
+[INFO](2026/03/29/ 08:41:25 PM) [Round: 12 client7] accuracy: 0.950098  loss: 0.166129 | no_attack
+[INFO](2026/03/29/ 08:41:26 PM) [Round: 12 client8] accuracy: 0.905078  loss: 0.324375 | no_attack
+[INFO](2026/03/29/ 08:41:27 PM) [Round: 12 client9] accuracy: 0.939160  loss: 0.217457 | no_attack
+[INFO](2026/03/29/ 08:41:28 PM) [Round: 12 client10] accuracy: 0.932715  loss: 0.225892 | no_attack
+[INFO](2026/03/29/ 08:41:29 PM) [Round: 12 client11] accuracy: 0.935742  loss: 0.238750 | no_attack
+[INFO](2026/03/29/ 08:41:30 PM) [Round: 12 client12] accuracy: 0.948535  loss: 0.198555 | no_attack
+[INFO](2026/03/29/ 08:41:31 PM) [Round: 12 client13] accuracy: 0.931250  loss: 0.259875 | no_attack
+[INFO](2026/03/29/ 08:41:32 PM) [Round: 12 client14] accuracy: 0.946875  loss: 0.193824 | no_attack
+[INFO](2026/03/29/ 08:41:33 PM) [Round: 12 client15] accuracy: 0.943848  loss: 0.199801 | no_attack
+[INFO](2026/03/29/ 08:41:34 PM) [Round: 12 client16] accuracy: 0.920703  loss: 0.289190 | no_attack
+[INFO](2026/03/29/ 08:41:35 PM) [Round: 12 client17] accuracy: 0.945020  loss: 0.190639 | no_attack
+[INFO](2026/03/29/ 08:41:36 PM) [Round: 12 client18] accuracy: 0.949023  loss: 0.174483 | no_attack
+[INFO](2026/03/29/ 08:41:37 PM) [Round: 12 client19] accuracy: 0.932617  loss: 0.249239 | no_attack
+[INFO](2026/03/29/ 08:41:37 PM) agg_type: average
+[INFO](2026/03/29/ 08:41:37 PM) [Round: 12] >> Detect_malicious_client: {}
+[INFO](2026/03/29/ 08:41:37 PM) [Round: 12] >> Number_malicious_client: 0
+[INFO](2026/03/29/ 08:41:37 PM) [Round: 12] >> Server Defense accuracy: 1.000000
+[INFO](2026/03/29/ 08:41:37 PM) [Round: 12] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/03/29/ 08:41:37 PM) [Round: 12] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/03/29/ 08:41:37 PM) [Round: 12] >> Time of aggregation: 0.003531 s
+[INFO](2026/03/29/ 08:41:37 PM) [Round: 12] >> Global Model Test accuracy: 0.970508
+[INFO](2026/03/29/ 08:41:37 PM) [Round: 12] >> Global Model Test loss: 0.098292
+[INFO](2026/03/29/ 08:41:37 PM) **COMMON ROUND:13
+[INFO](2026/03/29/ 08:41:38 PM) [Round: 13 client0] accuracy: 0.936719  loss: 0.217894 | no_attack
+[INFO](2026/03/29/ 08:41:39 PM) [Round: 13 client1] accuracy: 0.948438  loss: 0.223398 | no_attack
+[INFO](2026/03/29/ 08:41:40 PM) [Round: 13 client2] accuracy: 0.936816  loss: 0.212273 | no_attack
+[INFO](2026/03/29/ 08:41:41 PM) [Round: 13 client3] accuracy: 0.930664  loss: 0.259304 | no_attack
+[INFO](2026/03/29/ 08:41:42 PM) [Round: 13 client4] accuracy: 0.943848  loss: 0.195769 | no_attack
+[INFO](2026/03/29/ 08:41:43 PM) [Round: 13 client5] accuracy: 0.941992  loss: 0.198180 | no_attack
+[INFO](2026/03/29/ 08:41:44 PM) [Round: 13 client6] accuracy: 0.914551  loss: 0.332975 | no_attack
+[INFO](2026/03/29/ 08:41:45 PM) [Round: 13 client7] accuracy: 0.943945  loss: 0.207643 | no_attack
+[INFO](2026/03/29/ 08:41:46 PM) [Round: 13 client8] accuracy: 0.933301  loss: 0.250718 | no_attack
+[INFO](2026/03/29/ 08:41:47 PM) [Round: 13 client9] accuracy: 0.936719  loss: 0.233038 | no_attack
