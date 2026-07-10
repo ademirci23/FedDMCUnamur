@@ -1,6 +1,10 @@
+# Python
 .venv/
-pycache/
+__pycache__/
 *.py[cod]
+
+# Datasets: downloaded automatically by torchvision on first run (see README)
 data/
-logs/
-*.log
+
+# TensorBoard event files (hostname embedded in the filename)
+events.out.tfevents.*
