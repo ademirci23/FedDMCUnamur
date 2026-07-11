@@ -796,7 +796,7 @@ python main.py --dataset mnist --byz_type GS_attack       --agg_type average --e
 [INFO](2026/07/06/ 10:08:48 PM) [Round: 199] >> Global Model Test accuracy: 0.113770
 [INFO](2026/07/06/ 10:08:48 PM) [Round: 199] >> Global Model Test loss: 2.302547
 
-## to results
+
 python main.py --dataset mnist --byz_type LIT_attack      --agg_type average --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
 
 [INFO](2026/07/07/ 12:38:04 AM) agg_type: average
@@ -813,11 +813,280 @@ python main.py --dataset mnist --byz_type LIT_attack      --agg_type average --e
 
 python main.py --dataset mnist --byz_type Scaling_attack  --agg_type average --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
 
+[INFO](2026/07/07/ 06:16:57 AM) agg_type: average
+[INFO](2026/07/07/ 06:16:57 AM) [Round: 199] >> Detect_malicious_client: {}
+[INFO](2026/07/07/ 06:16:57 AM) [Round: 199] >> Number_malicious_client: 0
+[INFO](2026/07/07/ 06:16:57 AM) [Round: 199] >> Server Defense accuracy: 0.720000
+[INFO](2026/07/07/ 06:16:57 AM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/07/ 06:16:57 AM) [Round: 199] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/07/07/ 06:16:57 AM) [Round: 199] >> Time of aggregation: 0.140601 s
+[INFO](2026/07/07/ 06:17:02 AM) [Round: 199] >> Global ASR: 0.899200
+[INFO](2026/07/07/ 06:17:02 AM) [Round: 199] >> Global Model Test accuracy: 0.909961
+[INFO](2026/07/07/ 06:17:02 AM) [Round: 199] >> Global Model Test loss: 0.324779
 
 
 # run 2
 python main.py --dataset mnist --byz_type LIT_attack --agg_type multi_krum --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
 
+[INFO](2026/07/07/ 08:39:29 AM) agg_type: multi_krum
+[INFO](2026/07/07/ 08:39:29 AM) [Round: 199] >> Detect_malicious_client: ['client79', 'client99', 'client37', 'client35', 'client10', 'client66', 'client4', 'client20', 'client58', 'client80', 'client52', 'client43', 'client19', 'client67', 'client1', 'client82', 'client5', 'client45', 'client87', 'client14', 'client59', 'client6', 'client41', 'client36', 'client71', 'client38', 'client86', 'client21']
+[INFO](2026/07/07/ 08:39:29 AM) [Round: 199] >> Number_malicious_client: 28
+[INFO](2026/07/07/ 08:39:29 AM) [Round: 199] >> Server Defense accuracy: 0.440000
+[INFO](2026/07/07/ 08:39:29 AM) [Round: 199] >> Server Detect malicious Precision: 0.000000
+[INFO](2026/07/07/ 08:39:29 AM) [Round: 199] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/07/07/ 08:39:29 AM) [Round: 199] >> Time of aggregation: 0.143864 s
+[INFO](2026/07/07/ 08:39:33 AM) [Round: 199] >> Global ASR: 0.011400
+[INFO](2026/07/07/ 08:39:33 AM) [Round: 199] >> Global Model Test accuracy: 0.913672
+[INFO](2026/07/07/ 08:39:33 AM) [Round: 199] >> Global Model Test loss: 0.308451
 
 
 python main.py --dataset mnist --byz_type GS_attack --agg_type pca_agglomer_a --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/07/ 09:15:36 AM) agg_type: pca_agglomer_a
+[INFO](2026/07/07/ 09:15:37 AM) [Round: 199] >> Detect_malicious_client: ['client0', 'client2', 'client3', 'client8', 'client12', 'client13', 'client15', 'client17', 'client26', 'client29', 'client32', 'client34', 'client40', 'client48', 'client49', 'client55', 'client57', 'client60', 'client62', 'client63', 'client72', 'client74', 'client75', 'client77', 'client83', 'client85', 'client92', 'client97']
+[INFO](2026/07/07/ 09:15:37 AM) [Round: 199] >> Number_malicious_client: 28
+[INFO](2026/07/07/ 09:15:37 AM) [Round: 199] >> Server Defense accuracy: 1.000000
+[INFO](2026/07/07/ 09:15:37 AM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/07/ 09:15:37 AM) [Round: 199] >> Server Detect malicious Recall: 1.000000
+[INFO](2026/07/07/ 09:15:37 AM) [Round: 199] >> Time of aggregation: 0.256424 s
+[INFO](2026/07/07/ 09:15:38 AM) [Round: 199] >> Global Model Test accuracy: 0.912598
+[INFO](2026/07/07/ 09:15:38 AM) [Round: 199] >> Global Model Test loss: 0.307460
+
+
+# run 2
+python main.py --dataset mnist --byz_type Scaling_attack --agg_type pca_agglomer_a --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/07/ 11:10:20 AM) agg_type: pca_agglomer_a
+[INFO](2026/07/07/ 11:10:20 AM) [Round: 199] >> Detect_malicious_client: ['client0', 'client2', 'client3', 'client8', 'client12', 'client13', 'client15', 'client17', 'client26', 'client29', 'client32', 'client34', 'client40', 'client48', 'client49', 'client55', 'client57', 'client60', 'client62', 'client63', 'client72', 'client74', 'client75', 'client77', 'client83', 'client85', 'client92', 'client97']
+[INFO](2026/07/07/ 11:10:20 AM) [Round: 199] >> Number_malicious_client: 28
+[INFO](2026/07/07/ 11:10:20 AM) [Round: 199] >> Server Defense accuracy: 1.000000
+[INFO](2026/07/07/ 11:10:20 AM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/07/ 11:10:20 AM) [Round: 199] >> Server Detect malicious Recall: 1.000000
+[INFO](2026/07/07/ 11:10:20 AM) [Round: 199] >> Time of aggregation: 0.208666 s
+[INFO](2026/07/07/ 11:10:23 AM) [Round: 199] >> Global ASR: 0.007500
+[INFO](2026/07/07/ 11:10:23 AM) [Round: 199] >> Global Model Test accuracy: 0.911914
+[INFO](2026/07/07/ 11:10:23 AM) [Round: 199] >> Global Model Test loss: 0.306953
+
+
+python main.py --dataset mnist --byz_type Scaling_attack --agg_type pca_agglomer_a --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/07/ 08:41:43 PM) agg_type: pca_agglomer_a
+[INFO](2026/07/07/ 08:41:44 PM) [Round: 199] >> Detect_malicious_client: ['client0', 'client2', 'client3', 'client8', 'client12', 'client13', 'client15', 'client17', 'client26', 'client29', 'client32', 'client34', 'client40', 'client48', 'client49', 'client55', 'client57', 'client60', 'client62', 'client63', 'client72', 'client74', 'client75', 'client77', 'client83', 'client85', 'client92', 'client97']
+[INFO](2026/07/07/ 08:41:44 PM) [Round: 199] >> Number_malicious_client: 28
+[INFO](2026/07/07/ 08:41:44 PM) [Round: 199] >> Server Defense accuracy: 1.000000
+[INFO](2026/07/07/ 08:41:44 PM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/07/ 08:41:44 PM) [Round: 199] >> Server Detect malicious Recall: 1.000000
+[INFO](2026/07/07/ 08:41:44 PM) [Round: 199] >> Time of aggregation: 0.332868 s
+[INFO](2026/07/07/ 08:41:48 PM) [Round: 199] >> Global ASR: 0.007000
+[INFO](2026/07/07/ 08:41:48 PM) [Round: 199] >> Global Model Test accuracy: 0.911426
+[INFO](2026/07/07/ 08:41:48 PM) [Round: 199] >> Global Model Test loss: 0.308635
+
+
+python main.py --dataset mnist --byz_type GS_attack --agg_type multi_krum --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/07/ 09:23:28 PM) agg_type: multi_krum
+[INFO](2026/07/07/ 09:23:28 PM) [Round: 199] >> Detect_malicious_client: ['client49', 'client57', 'client8', 'client92', 'client55', 'client32', 'client34', 'client12', 'client77', 'client40', 'client29', 'client72', 'client26', 'client74', 'client17', 'client83', 'client0', 'client60', 'client97', 'client48', 'client13', 'client15', 'client75', 'client3', 'client85', 'client2', 'client63', 'client62']
+[INFO](2026/07/07/ 09:23:28 PM) [Round: 199] >> Number_malicious_client: 28
+[INFO](2026/07/07/ 09:23:28 PM) [Round: 199] >> Server Defense accuracy: 1.000000
+[INFO](2026/07/07/ 09:23:28 PM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/07/ 09:23:28 PM) [Round: 199] >> Server Detect malicious Recall: 1.000000
+[INFO](2026/07/07/ 09:23:28 PM) [Round: 199] >> Time of aggregation: 0.119557 s
+[INFO](2026/07/07/ 09:23:29 PM) [Round: 199] >> Global Model Test accuracy: 0.908398
+[INFO](2026/07/07/ 09:23:29 PM) [Round: 199] >> Global Model Test loss: 0.311767
+
+
+python main.py --dataset mnist --byz_type GS_attack --agg_type auror --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/07/ 09:25:03 PM) agg_type: auror
+[INFO](2026/07/07/ 09:25:03 PM) [Round: 199] >> Detect_malicious_client: ['client0', 'client2', 'client3', 'client8', 'client12', 'client13', 'client15', 'client17', 'client26', 'client29', 'client32', 'client34', 'client40', 'client48', 'client49', 'client55', 'client57', 'client60', 'client62', 'client63', 'client72', 'client74', 'client75', 'client77', 'client83', 'client85', 'client92', 'client97']
+[INFO](2026/07/07/ 09:25:03 PM) [Round: 199] >> Number_malicious_client: 28
+[INFO](2026/07/07/ 09:25:03 PM) [Round: 199] >> Server Defense accuracy: 1.000000
+[INFO](2026/07/07/ 09:25:03 PM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/07/ 09:25:03 PM) [Round: 199] >> Server Detect malicious Recall: 1.000000
+[INFO](2026/07/07/ 09:25:03 PM) [Round: 199] >> Time of aggregation: 0.209602 s
+[INFO](2026/07/07/ 09:25:04 PM) [Round: 199] >> Global Model Test accuracy: 0.911621
+[INFO](2026/07/07/ 09:25:04 PM) [Round: 199] >> Global Model Test loss: 0.307133
+
+
+
+python main.py --dataset mnist --byz_type GS_attack --agg_type foolsgold --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/08/ 05:21:14 AM) agg_type: foolsgold
+[INFO](2026/07/08/ 05:21:14 AM) [Round: 199] >> Detect_malicious_client: ['client1', 'client2', 'client3', 'client5', 'client7', 'client8', 'client9', 'client10', 'client11', 'client12', 'client13', 'client14', 'client16', 'client17', 'client18', 'client19', 'client20', 'client21', 'client22', 'client23', 'client24', 'client25', 'client26', 'client28', 'client30', 'client31', 'client32', 'client33', 'client37', 'client39', 'client40', 'client41', 'client42', 'client44', 'client45', 'client47', 'client49', 'client50', 'client51', 'client52', 'client53', 'client54', 'client56', 'client58', 'client59', 'client61', 'client62', 'client63', 'client64', 'client65', 'client66', 'client67', 'client69', 'client70', 'client71', 'client72', 'client73', 'client75', 'client76', 'client78', 'client79', 'client80', 'client81', 'client84', 'client87', 'client88', 'client89', 'client90', 'client91', 'client92', 'client93', 'client94', 'client95', 'client96', 'client97', 'client98', 'client99']
+[INFO](2026/07/08/ 05:21:14 AM) [Round: 199] >> Number_malicious_client: 77
+[INFO](2026/07/08/ 05:21:14 AM) [Round: 199] >> Server Defense accuracy: 0.270000
+[INFO](2026/07/08/ 05:21:14 AM) [Round: 199] >> Server Detect malicious Precision: 0.207792
+[INFO](2026/07/08/ 05:21:14 AM) [Round: 199] >> Server Detect malicious Recall: 0.571429
+[INFO](2026/07/08/ 05:21:14 AM) [Round: 199] >> Time of aggregation: 0.171481 s
+[INFO](2026/07/08/ 05:21:15 AM) [Round: 199] >> Global Model Test accuracy: 0.096484
+[INFO](2026/07/08/ 05:21:15 AM) [Round: 199] >> Global Model Test loss: 2.302590
+
+
+python main.py --dataset mnist --byz_type Scaling_attack --agg_type multi_krum --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/08/ 05:35:12 AM) agg_type: multi_krum
+[INFO](2026/07/08/ 05:35:12 AM) [Round: 199] >> Detect_malicious_client: ['client74', 'client57', 'client48', 'client32', 'client49', 'client75', 'client97', 'client92', 'client72', 'client12', 'client29', 'client8', 'client62', 'client77', 'client83', 'client2', 'client85', 'client26', 'client40', 'client15', 'client63', 'client55', 'client34', 'client3', 'client17', 'client13', 'client60', 'client0']
+[INFO](2026/07/08/ 05:35:12 AM) [Round: 199] >> Number_malicious_client: 28
+[INFO](2026/07/08/ 05:35:12 AM) [Round: 199] >> Server Defense accuracy: 1.000000
+[INFO](2026/07/08/ 05:35:12 AM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/08/ 05:35:12 AM) [Round: 199] >> Server Detect malicious Recall: 1.000000
+[INFO](2026/07/08/ 05:35:12 AM) [Round: 199] >> Time of aggregation: 0.145402 s
+[INFO](2026/07/08/ 05:35:17 AM) [Round: 199] >> Global ASR: 0.006800
+[INFO](2026/07/08/ 05:35:17 AM) [Round: 199] >> Global Model Test accuracy: 0.912109
+[INFO](2026/07/08/ 05:35:17 AM) [Round: 199] >> Global Model Test loss: 0.308368
+
+
+python main.py --dataset mnist --byz_type Scaling_attack --agg_type auror --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/08/ 05:51:44 AM) agg_type: auror
+[INFO](2026/07/08/ 05:51:44 AM) [Round: 199] >> Detect_malicious_client: ['client0', 'client2', 'client3', 'client8', 'client12', 'client13', 'client15', 'client17', 'client26', 'client29', 'client32', 'client34', 'client40', 'client48', 'client49', 'client55', 'client57', 'client60', 'client62', 'client63', 'client72', 'client74', 'client75', 'client77', 'client83', 'client85', 'client92', 'client97']
+[INFO](2026/07/08/ 05:51:44 AM) [Round: 199] >> Number_malicious_client: 28
+[INFO](2026/07/08/ 05:51:44 AM) [Round: 199] >> Server Defense accuracy: 1.000000
+[INFO](2026/07/08/ 05:51:44 AM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/08/ 05:51:44 AM) [Round: 199] >> Server Detect malicious Recall: 1.000000
+[INFO](2026/07/08/ 05:51:44 AM) [Round: 199] >> Time of aggregation: 0.195995 s
+[INFO](2026/07/08/ 05:51:48 AM) [Round: 199] >> Global ASR: 0.007000
+[INFO](2026/07/08/ 05:51:48 AM) [Round: 199] >> Global Model Test accuracy: 0.911816
+[INFO](2026/07/08/ 05:51:48 AM) [Round: 199] >> Global Model Test loss: 0.309001
+
+
+python main.py --dataset mnist --byz_type Scaling_attack --agg_type foolsgold --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/08/ 08:21:53 AM) agg_type: foolsgold
+[INFO](2026/07/08/ 08:21:53 AM) [Round: 199] >> Detect_malicious_client: ['client1', 'client2', 'client3', 'client4', 'client5', 'client6', 'client7', 'client8', 'client9', 'client10', 'client11', 'client12', 'client14', 'client16', 'client17', 'client18', 'client19', 'client20', 'client21', 'client22', 'client23', 'client24', 'client25', 'client26', 'client27', 'client28', 'client29', 'client30', 'client31', 'client32', 'client33', 'client34', 'client35', 'client36', 'client37', 'client38', 'client39', 'client41', 'client42', 'client43', 'client44', 'client45', 'client46', 'client47', 'client48', 'client49', 'client50', 'client51', 'client52', 'client53', 'client54', 'client55', 'client56', 'client57', 'client58', 'client59', 'client60', 'client61', 'client62', 'client63', 'client64', 'client65', 'client66', 'client67', 'client68', 'client69', 'client70', 'client71', 'client72', 'client73', 'client74', 'client75', 'client76', 'client77', 'client78', 'client79', 'client80', 'client81', 'client82', 'client83', 'client84', 'client85', 'client86', 'client87', 'client88', 'client89', 'client90', 'client91', 'client92', 'client93', 'client94', 'client95', 'client96', 'client97', 'client98', 'client99']
+[INFO](2026/07/08/ 08:21:53 AM) [Round: 199] >> Number_malicious_client: 96
+[INFO](2026/07/08/ 08:21:53 AM) [Round: 199] >> Server Defense accuracy: 0.240000
+[INFO](2026/07/08/ 08:21:53 AM) [Round: 199] >> Server Detect malicious Precision: 0.250000
+[INFO](2026/07/08/ 08:21:53 AM) [Round: 199] >> Server Detect malicious Recall: 0.857143
+[INFO](2026/07/08/ 08:21:53 AM) [Round: 199] >> Time of aggregation: 0.106422 s
+[INFO](2026/07/08/ 08:21:56 AM) [Round: 199] >> Global ASR: 0.901700
+[INFO](2026/07/08/ 08:21:56 AM) [Round: 199] >> Global Model Test accuracy: 0.906055
+[INFO](2026/07/08/ 08:21:56 AM) [Round: 199] >> Global Model Test loss: 0.339369
+
+
+
+
+python main.py --dataset mnist --byz_type LF_attack --agg_type average --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/08/ 10:52:58 PM) agg_type: average
+[INFO](2026/07/08/ 10:52:58 PM) [Round: 199] >> Detect_malicious_client: {}
+[INFO](2026/07/08/ 10:52:58 PM) [Round: 199] >> Number_malicious_client: 0
+[INFO](2026/07/08/ 10:52:58 PM) [Round: 199] >> Server Defense accuracy: 0.720000
+[INFO](2026/07/08/ 10:52:58 PM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/08/ 10:52:58 PM) [Round: 199] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/07/08/ 10:52:58 PM) [Round: 199] >> Time of aggregation: 0.066656 s
+[INFO](2026/07/08/ 10:52:59 PM) [Round: 199] >> Global Model Test accuracy: 0.907422
+[INFO](2026/07/08/ 10:52:59 PM) [Round: 199] >> Global Model Test loss: 0.685475
+
+
+python main.py --dataset mnist --byz_type LF_attack --agg_type average --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/08/ 10:52:49 PM) agg_type: average
+[INFO](2026/07/08/ 10:52:49 PM) [Round: 199] >> Detect_malicious_client: {}
+[INFO](2026/07/08/ 10:52:49 PM) [Round: 199] >> Number_malicious_client: 0
+[INFO](2026/07/08/ 10:52:49 PM) [Round: 199] >> Server Defense accuracy: 0.720000
+[INFO](2026/07/08/ 10:52:49 PM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/08/ 10:52:49 PM) [Round: 199] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/07/08/ 10:52:49 PM) [Round: 199] >> Time of aggregation: 0.069905 s
+[INFO](2026/07/08/ 10:52:50 PM) [Round: 199] >> Global Model Test accuracy: 0.911035
+[INFO](2026/07/08/ 10:52:50 PM) [Round: 199] >> Global Model Test loss: 0.677525
+
+
+
+python main.py --dataset mnist --byz_type LF_attack --agg_type pca_agglomer_a --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/09/ 08:17:36 AM) agg_type: pca_agglomer_a
+[INFO](2026/07/09/ 08:17:37 AM) [Round: 199] >> Detect_malicious_client: ['client0', 'client2', 'client3', 'client8', 'client12', 'client13', 'client15', 'client17', 'client26', 'client29', 'client32', 'client34', 'client40', 'client48', 'client49', 'client55', 'client57', 'client60', 'client62', 'client63', 'client72', 'client74', 'client75', 'client77', 'client83', 'client85', 'client92', 'client97']
+[INFO](2026/07/09/ 08:17:37 AM) [Round: 199] >> Number_malicious_client: 28
+[INFO](2026/07/09/ 08:17:37 AM) [Round: 199] >> Server Defense accuracy: 1.000000
+[INFO](2026/07/09/ 08:17:37 AM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/09/ 08:17:37 AM) [Round: 199] >> Server Detect malicious Recall: 1.000000
+[INFO](2026/07/09/ 08:17:37 AM) [Round: 199] >> Time of aggregation: 0.221452 s
+[INFO](2026/07/09/ 08:17:38 AM) [Round: 199] >> Global Model Test accuracy: 0.914062
+[INFO](2026/07/09/ 08:17:38 AM) [Round: 199] >> Global Model Test loss: 0.307269
+
+
+
+python main.py --dataset mnist --byz_type LF_attack --agg_type pca_agglomer_a --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/09/ 08:16:41 AM) agg_type: pca_agglomer_a
+[INFO](2026/07/09/ 08:16:42 AM) [Round: 199] >> Detect_malicious_client: ['client0', 'client2', 'client3', 'client8', 'client12', 'client13', 'client15', 'client17', 'client26', 'client29', 'client32', 'client34', 'client40', 'client48', 'client49', 'client55', 'client57', 'client60', 'client62', 'client63', 'client72', 'client74', 'client75', 'client77', 'client83', 'client85', 'client92', 'client97']
+[INFO](2026/07/09/ 08:16:42 AM) [Round: 199] >> Number_malicious_client: 28
+[INFO](2026/07/09/ 08:16:42 AM) [Round: 199] >> Server Defense accuracy: 1.000000
+[INFO](2026/07/09/ 08:16:42 AM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/09/ 08:16:42 AM) [Round: 199] >> Server Detect malicious Recall: 1.000000
+[INFO](2026/07/09/ 08:16:42 AM) [Round: 199] >> Time of aggregation: 0.299460 s
+[INFO](2026/07/09/ 08:16:43 AM) [Round: 199] >> Global Model Test accuracy: 0.912402
+[INFO](2026/07/09/ 08:16:43 AM) [Round: 199] >> Global Model Test loss: 0.309759
+
+
+python main.py --dataset mnist --byz_type LIT_attack --agg_type pca_agglomer_a --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/09/ 09:51:11 AM) agg_type: pca_agglomer_a
+[INFO](2026/07/09/ 09:51:11 AM) [Round: 199] >> Detect_malicious_client: ['client0', 'client2', 'client3', 'client8', 'client12', 'client13', 'client15', 'client17', 'client26', 'client29', 'client32', 'client34', 'client40', 'client48', 'client49', 'client55', 'client57', 'client60', 'client62', 'client63', 'client72', 'client74', 'client75', 'client77', 'client83', 'client85', 'client92', 'client97']
+[INFO](2026/07/09/ 09:51:11 AM) [Round: 199] >> Number_malicious_client: 28
+[INFO](2026/07/09/ 09:51:11 AM) [Round: 199] >> Server Defense accuracy: 1.000000
+[INFO](2026/07/09/ 09:51:11 AM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/09/ 09:51:11 AM) [Round: 199] >> Server Detect malicious Recall: 1.000000
+[INFO](2026/07/09/ 09:51:11 AM) [Round: 199] >> Time of aggregation: 0.220364 s
+[INFO](2026/07/09/ 09:51:14 AM) [Round: 199] >> Global ASR: 0.007100
+[INFO](2026/07/09/ 09:51:14 AM) [Round: 199] >> Global Model Test accuracy: 0.914453
+[INFO](2026/07/09/ 09:51:14 AM) [Round: 199] >> Global Model Test loss: 0.303493
+
+## to results
+python main.py --dataset mnist --byz_type LF_attack --agg_type pca_agglomer_a --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/10/ 03:56:35 AM) agg_type: pca_agglomer_a
+[INFO](2026/07/10/ 03:56:36 AM) [Round: 199] >> Detect_malicious_client: ['client0', 'client2', 'client3', 'client8', 'client12', 'client13', 'client15', 'client17', 'client26', 'client29', 'client32', 'client34', 'client40', 'client48', 'client49', 'client55', 'client57', 'client60', 'client62', 'client63', 'client72', 'client74', 'client75', 'client77', 'client83', 'client85', 'client92', 'client97']
+[INFO](2026/07/10/ 03:56:36 AM) [Round: 199] >> Number_malicious_client: 28
+[INFO](2026/07/10/ 03:56:36 AM) [Round: 199] >> Server Defense accuracy: 1.000000
+[INFO](2026/07/10/ 03:56:36 AM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/10/ 03:56:36 AM) [Round: 199] >> Server Detect malicious Recall: 1.000000
+[INFO](2026/07/10/ 03:56:36 AM) [Round: 199] >> Time of aggregation: 0.282450 s
+[INFO](2026/07/10/ 03:56:37 AM) [Round: 199] >> Global Model Test accuracy: 0.913574
+[INFO](2026/07/10/ 03:56:37 AM) [Round: 199] >> Global Model Test loss: 0.305754
+
+
+
+# ADAM
+python main.py --dataset mnist --byz_type no_attack --agg_type average --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10 
+
+[INFO](2026/07/10/ 01:47:24 AM) agg_type: average
+[INFO](2026/07/10/ 01:47:24 AM) [Round: 199] >> Detect_malicious_client: {}
+[INFO](2026/07/10/ 01:47:24 AM) [Round: 199] >> Number_malicious_client: 0
+[INFO](2026/07/10/ 01:47:24 AM) [Round: 199] >> Server Defense accuracy: 1.000000
+[INFO](2026/07/10/ 01:47:24 AM) [Round: 199] >> Server Detect malicious Precision: 1.000000
+[INFO](2026/07/10/ 01:47:24 AM) [Round: 199] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/07/10/ 01:47:24 AM) [Round: 199] >> Time of aggregation: 0.060343 s
+[INFO](2026/07/10/ 01:47:25 AM) [Round: 199] >> Global Model Test accuracy: 0.978516
+[INFO](2026/07/10/ 01:47:25 AM) [Round: 199] >> Global Model Test loss: 0.101759
+
+
+# back to sgd
+python main.py --dataset mnist --byz_type LIT_attack --agg_type auror --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+
+[INFO](2026/07/10/ 06:12:14 AM) agg_type: auror
+[INFO](2026/07/10/ 06:12:15 AM) [Round: 199] >> Detect_malicious_client: ['client5', 'client14', 'client22', 'client25', 'client37', 'client38', 'client42', 'client59', 'client66', 'client71', 'client86']
+[INFO](2026/07/10/ 06:12:15 AM) [Round: 199] >> Number_malicious_client: 11
+[INFO](2026/07/10/ 06:12:15 AM) [Round: 199] >> Server Defense accuracy: 0.610000
+[INFO](2026/07/10/ 06:12:15 AM) [Round: 199] >> Server Detect malicious Precision: 0.000000
+[INFO](2026/07/10/ 06:12:15 AM) [Round: 199] >> Server Detect malicious Recall: 0.000000
+[INFO](2026/07/10/ 06:12:15 AM) [Round: 199] >> Time of aggregation: 0.278428 s
+[INFO](2026/07/10/ 06:12:19 AM) [Round: 199] >> Global ASR: 0.010000
+[INFO](2026/07/10/ 06:12:19 AM) [Round: 199] >> Global Model Test accuracy: 0.912598
+[INFO](2026/07/10/ 06:12:19 AM) [Round: 199] >> Global Model Test loss: 0.309978
+
+
+python main.py --dataset mnist --byz_type LIT_attack --agg_type foolsgold --epoch 1 --beta 5 --num_of_clients 100 --num_malicious_client 28 --learning_rate 0.01 --pca_d 10
+
+[INFO](2026/07/10/ 06:12:45 AM) agg_type: foolsgold
+[INFO](2026/07/10/ 06:12:46 AM) [Round: 199] >> Detect_malicious_client: ['client0', 'client1', 'client2', 'client3', 'client4', 'client5', 'client6', 'client7', 'client8', 'client9', 'client10', 'client11', 'client12', 'client13', 'client15', 'client16', 'client17', 'client18', 'client19', 'client22', 'client23', 'client24', 'client25', 'client26', 'client27', 'client29', 'client30', 'client31', 'client32', 'client33', 'client34', 'client35', 'client37', 'client39', 'client40', 'client41', 'client42', 'client43', 'client44', 'client45', 'client46', 'client47', 'client48', 'client49', 'client50', 'client51', 'client52', 'client53', 'client54', 'client55', 'client56', 'client57', 'client59', 'client60', 'client61', 'client62', 'client63', 'client64', 'client65', 'client66', 'client67', 'client68', 'client69', 'client70', 'client71', 'client72', 'client73', 'client74', 'client75', 'client76', 'client77', 'client78', 'client79', 'client80', 'client81', 'client82', 'client83', 'client84', 'client85', 'client86', 'client87', 'client88', 'client89', 'client90', 'client91', 'client92', 'client93', 'client94', 'client95', 'client97', 'client98', 'client99']
+[INFO](2026/07/10/ 06:12:46 AM) [Round: 199] >> Number_malicious_client: 92
+[INFO](2026/07/10/ 06:12:46 AM) [Round: 199] >> Server Defense accuracy: 0.360000
+[INFO](2026/07/10/ 06:12:46 AM) [Round: 199] >> Server Detect malicious Precision: 0.304348
+[INFO](2026/07/10/ 06:12:46 AM) [Round: 199] >> Server Detect malicious Recall: 1.000000
+[INFO](2026/07/10/ 06:12:46 AM) [Round: 199] >> Time of aggregation: 0.120687 s
+[INFO](2026/07/10/ 06:12:48 AM) [Round: 199] >> Global ASR: 0.006600
+[INFO](2026/07/10/ 06:12:48 AM) [Round: 199] >> Global Model Test accuracy: 0.912793
+[INFO](2026/07/10/ 06:12:48 AM) [Round: 199] >> Global Model Test loss: 0.311319

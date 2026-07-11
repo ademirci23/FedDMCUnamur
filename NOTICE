@@ -1,0 +1,29 @@
+This repository is a replication and study of FedDMC, prepared for a master's
+thesis at the University of Namur (2026).
+
+Base code
+---------
+It is derived from the original FedDMC implementation by Xutong Mu et al.:
+
+    https://github.com/MuXutong/FedDMC
+
+which accompanies the paper:
+
+    Xutong Mu, Ke Cheng, Yulong Shen, Xiaoxiao Li, Zhao Chang, Tao Zhang,
+    and Xindi Ma. "FedDMC: Efficient and Robust Federated Learning via
+    Detecting Malicious Clients." IEEE Transactions on Dependable and Secure
+    Computing, 2024.
+    https://ieeexplore.ieee.org/abstract/document/10458320
+    DOI: 10.1109/TDSC.2024.3372634
+
+At the time this repository was forked, the original repository carried no
+license file. Under default copyright law that makes the original code "all
+rights reserved" by its authors. It is included here only for academic
+replication, with attribution. Anyone wishing to reuse the original portions
+should clear that with the original authors.
+
+Modifications
+-------------
+The MIT license in LICENSE applies to the modifications and additions made in
+this replication, not to the original FedDMC code. The exact changes are
+recorded in this repository's git history relative to the upstream fork point.

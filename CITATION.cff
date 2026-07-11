@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite it as below and also cite the original FedDMC paper (see references)."
+title: "FedDMC Replication Package"
+abstract: >-
+  Replication and analysis of FedDMC (Mu et al., IEEE TDSC 2024), prepared for
+  a master's thesis at the University of Namur. Re-runs FedDMC and its baselines
+  against four poisoning attacks on MNIST and documents where the released code
+  and the paper diverge.
+type: software
+authors:
+  - family-names: Demirci
+    given-names: Ayhan
+    affiliation: "University of Namur"
+version: "0.1.0"
+date-released: "2026-07-06"
+license: MIT
+repository-code: "https://github.com/ademirci23/FedDMCUnamur"
+references:
+  - type: article
+    title: "FedDMC: Efficient and Robust Federated Learning via Detecting Malicious Clients"
+    authors:
+      - family-names: Mu
+        given-names: Xutong
+      - family-names: Cheng
+        given-names: Ke
+      - family-names: Shen
+        given-names: Yulong
+      - family-names: Li
+        given-names: Xiaoxiao
+      - family-names: Chang
+        given-names: Zhao
+      - family-names: Zhang
+        given-names: Tao
+      - family-names: Ma
+        given-names: Xindi
+    journal: "IEEE Transactions on Dependable and Secure Computing"
+    volume: 21
+    issue: 6
+    start: 5259
+    end: 5274
+    year: 2024
+    doi: "10.1109/TDSC.2024.3372634"
+    url: "https://ieeexplore.ieee.org/abstract/document/10458320"
