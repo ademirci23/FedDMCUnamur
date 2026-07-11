@@ -27,9 +27,9 @@ a generated summary of all results.
 | `utils.py` | Backdoor trigger, detection metrics, logging. |
 | `model/` | The network (`Mnist_2NN`, a small two-layer model). |
 | `requirements.txt` | Pinned dependencies. |
-| `Results/results_summary.md` | Every completed run with its final metrics, generated from the logs. Start here if you just want the numbers. |
-| `Results/verify_numbers.py` | The script that builds that summary. |
-| `Results/Tests.md` | My run journal: the commands I launched and what they printed, in order. |
+| `results/results_summary.md` | Every completed run with its final metrics, generated from the logs. Start here if you just want the numbers. |
+| `results/verify_numbers.py` | The script that builds that summary. |
+| `results/Tests.md` | My run journal: the commands I launched and what they printed, in order. |
 | `logs/` | The raw logs: one dated folder per run with its config, per-round metrics, and clustering snapshots (machine identifiers redacted). |
 | `clustering/`, `log_viewer.py` | Exploration scripts left over from the original repository, not used here. |
 
@@ -70,8 +70,8 @@ python main.py --dataset mnist --byz_type <attack> --agg_type <defense> \
   split with Dirichlet beta 5, 200 rounds.
 
 If you only want to check my numbers without running anything for hours, open
-[`Results/results_summary.md`](Results/results_summary.md) instead. Every
-completed run is in there, and `Results/Tests.md` has the launch commands.
+[`results/results_summary.md`](results/results_summary.md) instead. Every
+completed run is in there, and `results/Tests.md` has the launch commands.
 
 ### Careful: two defaults are traps
 

@@ -1,4 +1,4 @@
-# CTRL + SHIFT + V To render it.
+# CTRL + SHIFT + V To render it
 
 # Results Summary (generated)
 
@@ -6,7 +6,7 @@ One line per complete run (a run that reached round 199) found under `logs/`,
 with its final-round metrics. This file is generated from the raw logs by
 `verify_numbers.py` and is never edited by hand. To update it after new runs:
 
-    python Results/verify_numbers.py
+    python results/verify_numbers.py
 
 How to read the columns:
 

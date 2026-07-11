@@ -1,7 +1,7 @@
 """Builds results_summary.md: every complete run found under logs/, with its
 final-round metrics. The summary is generated from the raw logs, never edited
 by hand. The script sits in Results/ and looks for logs/ one level up, so it
-can be run from anywhere:  python Results/verify_numbers.py
+can be run from anywhere:  python results/verify_numbers.py
 """
 import re, glob, os
 from datetime import datetime
@@ -150,7 +150,7 @@ out.append('One line per complete run (a run that reached round 199) found under
 out.append('with its final-round metrics. This file is generated from the raw logs by')
 out.append('`verify_numbers.py` and is never edited by hand. To update it after new runs:')
 out.append('')
-out.append('    python Results/verify_numbers.py')
+out.append('    python results/verify_numbers.py')
 out.append('')
 out.append('How to read the columns:')
 out.append('')
