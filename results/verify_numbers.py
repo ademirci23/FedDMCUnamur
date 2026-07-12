@@ -32,6 +32,7 @@ ADAM_AFTER_SWITCH = {
     '2026-06-20/00.42.42',   # Scaling, faithful variant, Adam side of the comparison
     '2026-06-20/01.22.06',   # LIT, faithful variant, Adam side of the comparison
     '2026-07-09/19.51.30',   # no-attack Adam run (the measured Adam ceiling)
+    '2026-07-11/16.01.45',   # GS, HDBSCAN variant, Adam: non-IID redo of the early IID run
 }
 
 # Display names, in the order the thesis uses (not alphabetical).

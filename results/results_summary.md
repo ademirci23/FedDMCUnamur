@@ -1,5 +1,3 @@
-# CTRL + SHIFT + V To render it
-
 # Results Summary (generated)
 
 One line per complete run (a run that reached round 199) found under `logs/`,
@@ -40,7 +38,8 @@ value of a lone run or the low-to-high spread of repeated runs.
 | Gaussian Noise attack       | No defense (plain averaging)                       | SGD       | non-IID | 1    | 11.38          | -              | 0.72         |
 |                             | FedDMC, binary tree (faithful)                     | SGD       | non-IID | 3    | 91.26 to 91.44 | -              | 1.00         |
 |                             |                                                    | Adam      | non-IID | 2    | 98.07 to 98.12 | -              | 1.00         |
-|                             | FedDMC, HDBSCAN variant                            | Adam      | IID     | 1    | 98.08          | -              | 1.00         |
+|                             | FedDMC, HDBSCAN variant                            | Adam      | non-IID | 1    | 98.12          | -              | 1.00         |
+|                             |                                                    | Adam      | IID     | 1    | 98.08          | -              | 1.00         |
 |                             | Multi-Krum                                         | SGD       | non-IID | 2    | 90.84 to 91.16 | -              | 1.00         |
 |                             | Auror                                              | SGD       | non-IID | 2    | 91.16 to 91.18 | -              | 1.00         |
 |                             | FoolsGold                                          | SGD       | non-IID | 2    | 9.65           | -              | 0.22 to 0.27 |
@@ -48,7 +47,8 @@ value of a lone run or the low-to-high spread of repeated runs.
 |                             |                                                    | Adam      | non-IID | 1    | 85.08          | -              | 0.72         |
 |                             | FedDMC, binary tree (faithful)                     | SGD       | non-IID | 4    | 91.22 to 91.41 | -              | 1.00         |
 |                             |                                                    | Adam      | non-IID | 5    | 41.09 to 93.71 | -              | 0.23 to 0.26 |
-|                             | FedDMC, HDBSCAN variant                            | Adam      | non-IID | 4    | 94.82 to 97.17 | -              | 0.65 to 0.80 |
+|                             | FedDMC, HDBSCAN variant                            | SGD       | non-IID | 1    | 91.10          | -              | 1.00         |
+|                             |                                                    | Adam      | non-IID | 4    | 94.82 to 97.17 | -              | 0.65 to 0.80 |
 |                             | Multi-Krum                                         | SGD       | non-IID | 1    | 90.96          | -              | 1.00         |
 |                             | Auror                                              | SGD       | non-IID | 1    | 91.02          | -              | 1.00         |
 |                             | FoolsGold                                          | SGD       | non-IID | 1    | 87.63          | -              | 0.26         |
@@ -56,7 +56,8 @@ value of a lone run or the low-to-high spread of repeated runs.
 | LIT backdoor attack         | No defense (plain averaging)                       | SGD       | non-IID | 1    | 91.40          | 1.02           | 0.72         |
 |                             | FedDMC, binary tree (faithful)                     | SGD       | non-IID | 3    | 91.11 to 91.45 | 0.61 to 0.71   | 1.00         |
 |                             |                                                    | Adam      | non-IID | 2    | 97.94 to 98.01 | 0.31 to 0.38   | 1.00         |
-|                             | FedDMC, HDBSCAN variant                            | Adam      | non-IID | 1    | 97.89          | 0.39           | 0.81         |
+|                             | FedDMC, HDBSCAN variant                            | SGD       | non-IID | 1    | 91.23          | 0.62           | 0.89         |
+|                             |                                                    | Adam      | non-IID | 1    | 97.89          | 0.39           | 0.81         |
 |                             | Multi-Krum                                         | SGD       | non-IID | 2    | 91.29 to 91.37 | 1.14 to 1.25   | 0.44         |
 |                             |                                                    | Adam      | non-IID | 1    | 97.40          | 82.73          | 0.44         |
 |                             |                                                    | Adam      | IID     | 5    | 97.37 to 97.70 | 54.80 to 60.04 | 0.44         |
@@ -93,6 +94,7 @@ value of a lone run or the low-to-high spread of repeated runs.
 |                                | 2026-07-05/13.58.46 | SGD       | non-IID | 91.44    | -       | 1.00 | 1.00      | 1.00   | -           |
 |                                | 2026-07-07/01.30.57 | SGD       | non-IID | 91.26    | -       | 1.00 | 1.00      | 1.00   | -           |
 | FedDMC, HDBSCAN variant        | 2026-04-12/01.32.45 | Adam      | IID     | 98.08    | -       | 1.00 | 1.00      | 1.00   | yes         |
+|                                | 2026-07-11/16.01.45 | Adam      | non-IID | 98.12    | -       | 1.00 | 1.00      | 1.00   | -           |
 | Multi-Krum                     | 2026-07-04/01.36.49 | SGD       | non-IID | 91.16    | -       | 1.00 | 1.00      | 1.00   | -           |
 |                                | 2026-07-07/13.42.14 | SGD       | non-IID | 90.84    | -       | 1.00 | 1.00      | 1.00   | -           |
 | Auror                          | 2026-07-04/01.37.16 | SGD       | non-IID | 91.18    | -       | 1.00 | 1.00      | 1.00   | -           |
@@ -121,6 +123,7 @@ value of a lone run or the low-to-high spread of repeated runs.
 |                                | 2026-06-18/01.22.37 | Adam      | non-IID | 97.15    | -       | 0.77 | 0.55      | 1.00   | yes         |
 |                                | 2026-06-18/11.32.30 | Adam      | non-IID | 97.17    | -       | 0.80 | 0.58      | 1.00   | yes         |
 |                                | 2026-06-18/11.32.46 | Adam      | non-IID | 95.37    | -       | 0.65 | 0.36      | 0.32   | yes         |
+|                                | 2026-07-11/21.21.45 | SGD       | non-IID | 91.10    | -       | 1.00 | 1.00      | 1.00   | -           |
 | Multi-Krum                     | 2026-06-20/17.03.55 | SGD       | non-IID | 90.96    | -       | 1.00 | 1.00      | 1.00   | -           |
 | Auror                          | 2026-06-20/17.04.17 | SGD       | non-IID | 91.02    | -       | 1.00 | 1.00      | 1.00   | -           |
 | FoolsGold                      | 2026-04-12/12.07.35 | Adam      | IID     | 42.77    | -       | 0.32 | 0.00      | 0.00   | yes         |
@@ -137,6 +140,7 @@ value of a lone run or the low-to-high spread of repeated runs.
 |                                                    | 2026-07-05/20.38.57 | SGD       | non-IID | 91.21    | 0.65    | 1.00 | 1.00      | 1.00   | -           |
 |                                                    | 2026-07-09/00.25.36 | SGD       | non-IID | 91.45    | 0.71    | 1.00 | 1.00      | 1.00   | -           |
 | FedDMC, HDBSCAN variant                            | 2026-04-14/08.21.40 | Adam      | non-IID | 97.89    | 0.39    | 0.81 | 0.60      | 1.00   | yes         |
+|                                                    | 2026-07-11/21.23.16 | SGD       | non-IID | 91.23    | 0.62    | 0.89 | 0.72      | 1.00   | -           |
 | Multi-Krum                                         | 2026-04-12/23.59.50 | Adam      | IID     | 97.70    | 60.04   | 0.44 | 0.00      | 0.00   | yes         |
 |                                                    | 2026-04-13/00.00.21 | Adam      | IID     | 97.50    | 54.80   | 0.44 | 0.00      | 0.00   | yes         |
 |                                                    | 2026-04-13/00.00.38 | Adam      | IID     | 97.49    | 60.04   | 0.44 | 0.00      | 0.00   | yes         |
