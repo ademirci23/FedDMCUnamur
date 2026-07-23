@@ -11,8 +11,8 @@ authors:
   - family-names: Demirci
     given-names: Ayhan
     affiliation: "University of Namur"
-version: "0.1.0"
-date-released: "2026-07-06"
+version: "1.0.0"
+date-released: "2026-07-23"
 license: MIT
 repository-code: "https://github.com/ademirci23/FedDMCUnamur"
 references:
